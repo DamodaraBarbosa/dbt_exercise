@@ -1,0 +1,10 @@
+dbt_exercise:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: corded-sunlight-464012-e2
+      dataset: "{{ env_var('DBT_DBNAME', 'dbt_dw') }}"
+      threads: 4 # Must be a value of 1 or greater 
+      keyfile: /mnt/c/Users/Damodara Barbosa/Downloads/corded-sunlight-464012-e2-3c9f4e1a32bc.json
