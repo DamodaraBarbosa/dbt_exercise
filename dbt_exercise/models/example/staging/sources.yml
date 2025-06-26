@@ -4,6 +4,7 @@ sources:
   - name: Financeiro
     description: 'Dados brutos do sistema financeiro da empresa'
     schema: dbt_dw_raw
+    loader: bigquery
 
     tables:
       - name: dados_financeiros
@@ -14,6 +15,8 @@ sources:
             description: 'Nome do tipo de lancamento financeiro para cada transacao'
           - name: data
             description: 'Data do lançamento financeiro'
+            tests:
+              - not_null
           - name: valor
             description: 'Valor monetário do lançamento financeiro'
           - name: status
