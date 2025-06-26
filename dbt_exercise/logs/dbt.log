@@ -114,3 +114,43 @@
 [0m11:35:21.238264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6f31a54620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6f31fea630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6ef489d8e0>]}
 [0m11:35:21.239004 [debug] [MainThread]: Flushing usage events
 [0m11:35:21.587919 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:48:57.547346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78661b9db4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78661b864fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78661b63ede0>]}
+
+
+============================== 16:48:57.573526 | 57deaada-bb15-48cd-b357-a20e903044c9 ==============================
+[0m16:48:57.573526 [info ] [MainThread]: Running with dbt=1.10.2
+[0m16:48:57.574655 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt seed', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:50:08.228191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '57deaada-bb15-48cd-b357-a20e903044c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7865de0b8e00>]}
+[0m16:50:08.326043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '57deaada-bb15-48cd-b357-a20e903044c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7865e0452240>]}
+[0m16:50:08.330453 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m16:51:13.154425 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m16:51:13.226932 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:51:13.228808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '57deaada-bb15-48cd-b357-a20e903044c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7865dda36d50>]}
+[0m16:51:21.565049 [error] [MainThread]: Encountered an error:
+Parsing Error
+  at path ['packages'][0]: {'package': 'dbt-labs/dbt_utils', 'version': '0.7.0'} is not of type 'string'
+[0m16:51:21.573685 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 141.89519, "process_in_blocks": "132336", "process_kernel_time": 18.824837, "process_mem_max_rss": "355300", "process_out_blocks": "40", "process_user_time": 14.132183}
+[0m16:51:21.575133 [debug] [MainThread]: Command `dbt seed` failed at 16:51:21.574869 after 141.90 seconds
+[0m16:51:21.575893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78661b864fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7865ddae7290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78661ab1e0c0>]}
+[0m16:51:21.576484 [debug] [MainThread]: Flushing usage events
+[0m16:51:21.944633 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:52:11.868171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988de98b950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988def7cef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988dea845f0>]}
+
+
+============================== 16:52:11.897449 | 39aed30e-6ce0-438c-bd8d-e07d635a4f18 ==============================
+[0m16:52:11.897449 [info ] [MainThread]: Running with dbt=1.10.2
+[0m16:52:11.898354 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt seed', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:53:20.419409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '39aed30e-6ce0-438c-bd8d-e07d635a4f18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988a16b8200>]}
+[0m16:53:20.538934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '39aed30e-6ce0-438c-bd8d-e07d635a4f18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988def7cfe0>]}
+[0m16:53:20.544612 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m16:54:30.903490 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m16:54:30.919726 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:54:30.920517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '39aed30e-6ce0-438c-bd8d-e07d635a4f18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988a1101280>]}
+[0m16:54:38.657533 [error] [MainThread]: Encountered an error:
+Parsing Error
+  at path ['packages'][0]: {'package': 'dbt-labs/dbt_utils', 'version': '0.7.0'} is not of type 'string'
+[0m16:54:38.684995 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 146.91423, "process_in_blocks": "135032", "process_kernel_time": 17.900011, "process_mem_max_rss": "355084", "process_out_blocks": "40", "process_user_time": 13.967331}
+[0m16:54:38.687273 [debug] [MainThread]: Command `dbt seed` failed at 16:54:38.686924 after 146.92 seconds
+[0m16:54:38.688115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988ddfdc290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988a0f647a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988a31c0ce0>]}
+[0m16:54:38.688949 [debug] [MainThread]: Flushing usage events
+[0m16:54:39.051094 [debug] [MainThread]: An error was encountered while trying to flush usage events

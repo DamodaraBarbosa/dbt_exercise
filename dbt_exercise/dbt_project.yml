@@ -28,10 +28,6 @@ models:
       schema: marts
       +materialized: table
 
-  packages:
-    - package: dbt-labs/dbt_utils
-      version: 0.7.0
-  
   debug: true
 
 seeds:
