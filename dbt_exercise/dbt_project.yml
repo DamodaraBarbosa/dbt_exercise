@@ -33,3 +33,10 @@ models:
       version: 0.7.0
   
   debug: true
+
+seeds:
+  dbt_exercise:
+    dados_financeiros:
+      +schema: raw
+      +quote_columns: false
+      +materialized: table
