@@ -154,3 +154,181 @@ Parsing Error
 [0m16:54:38.688115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988ddfdc290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988a0f647a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7988a31c0ce0>]}
 [0m16:54:38.688949 [debug] [MainThread]: Flushing usage events
 [0m16:54:39.051094 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:58:14.128318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70b3c295cbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70b3c254aab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70b3c2549e20>]}
+
+
+============================== 16:58:14.149167 | 4a98088c-7c76-4ab8-8e79-00c48bac3fe1 ==============================
+[0m16:58:14.149167 [info ] [MainThread]: Running with dbt=1.10.2
+[0m16:58:14.150172 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:58:15.154493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4a98088c-7c76-4ab8-8e79-00c48bac3fe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70b3c1df33e0>]}
+[0m16:58:15.800562 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-lsewjl6q'
+[0m16:58:15.801663 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:58:16.069275 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:58:16.070348 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:58:16.099619 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:58:16.106922 [error] [MainThread]: Encountered an error:
+Could not find a matching compatible version for package dbt-labs/dbt_utils
+  Requested range: =0.7.0, =0.7.0
+  Compatible versions: ['0.0.1', '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5', '0.1.6', '0.1.7', '0.1.8', '0.1.9', '0.1.10', '0.1.11', '0.1.12', '0.1.13', '0.1.14', '0.1.15', '0.1.16', '0.1.17', '0.1.18', '0.1.19', '0.1.20', '0.1.21', '0.1.22', '0.1.23', '0.1.24', '0.1.25', '0.2.0', '0.2.1', '0.2.2', '0.2.3', '0.2.4', '0.2.5', '0.3.0', '0.4.0', '0.4.1', '0.5.0', '0.8.0', '0.8.1', '0.8.2', '0.8.3', '0.8.4', '0.8.5', '0.8.6', '0.9.0', '0.9.1', '0.9.2', '0.9.5', '0.9.6', '1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0']
+
+  Not shown: package versions incompatible with installed version of dbt-core
+  To include them, run 'dbt --no-version-check deps'
+[0m16:58:16.175758 [error] [MainThread]: Traceback (most recent call last):
+  File "/mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 237, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 285, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 461, in deps
+    results = task.run()
+              ^^^^^^^^^^
+  File "/mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/lib/python3.12/site-packages/dbt/task/deps.py", line 215, in run
+    self.lock()
+  File "/mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/lib/python3.12/site-packages/dbt/task/deps.py", line 187, in lock
+    resolved_deps = resolve_packages(packages, self.project, self.cli_vars)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/lib/python3.12/site-packages/dbt/deps/resolver.py", line 131, in resolve_packages
+    target = final[package].resolved().fetch_metadata(project, renderer)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/lib/python3.12/site-packages/dbt/deps/registry.py", line 124, in resolved
+    raise PackageVersionNotFoundError(
+dbt.exceptions.PackageVersionNotFoundError: Could not find a matching compatible version for package dbt-labs/dbt_utils
+  Requested range: =0.7.0, =0.7.0
+  Compatible versions: ['0.0.1', '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5', '0.1.6', '0.1.7', '0.1.8', '0.1.9', '0.1.10', '0.1.11', '0.1.12', '0.1.13', '0.1.14', '0.1.15', '0.1.16', '0.1.17', '0.1.18', '0.1.19', '0.1.20', '0.1.21', '0.1.22', '0.1.23', '0.1.24', '0.1.25', '0.2.0', '0.2.1', '0.2.2', '0.2.3', '0.2.4', '0.2.5', '0.3.0', '0.4.0', '0.4.1', '0.5.0', '0.8.0', '0.8.1', '0.8.2', '0.8.3', '0.8.4', '0.8.5', '0.8.6', '0.9.0', '0.9.1', '0.9.2', '0.9.5', '0.9.6', '1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0']
+
+  Not shown: package versions incompatible with installed version of dbt-core
+  To include them, run 'dbt --no-version-check deps'
+
+[0m16:58:16.199515 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 2.1827762, "process_in_blocks": "26744", "process_kernel_time": 3.03503, "process_mem_max_rss": "101020", "process_out_blocks": "40", "process_user_time": 3.467955}
+[0m16:58:16.201009 [debug] [MainThread]: Command `dbt deps` failed at 16:58:16.200611 after 2.19 seconds
+[0m16:58:16.202220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70b3c631b200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70b3c1d53680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70b3c25e0aa0>]}
+[0m16:58:16.203207 [debug] [MainThread]: Flushing usage events
+[0m16:58:16.575309 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:59:48.060641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78a5d62032f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78a5d76792e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78a5d609cfb0>]}
+
+
+============================== 16:59:48.085129 | 7523e42e-ec88-441d-8dd7-f0f65f3f032b ==============================
+[0m16:59:48.085129 [info ] [MainThread]: Running with dbt=1.10.2
+[0m16:59:48.086057 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt deps', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:59:49.085570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7523e42e-ec88-441d-8dd7-f0f65f3f032b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78a5d690d370>]}
+[0m16:59:49.815803 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-vqxyo9to'
+[0m16:59:49.816642 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:59:49.855987 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:59:49.857176 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:59:49.887780 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:59:49.906313 [info ] [MainThread]: Updating lock file in file path: /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/package-lock.yml
+[0m16:59:49.911524 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-7qr3dd0_'
+[0m16:59:49.916571 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:59:50.467310 [info ] [MainThread]: Installed from version 1.3.0
+[0m16:59:50.468083 [info ] [MainThread]: Up to date!
+[0m16:59:50.469218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7523e42e-ec88-441d-8dd7-f0f65f3f032b', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78a5d5946990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78a5d5946810>]}
+[0m16:59:50.475611 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.5132644, "process_in_blocks": "29408", "process_kernel_time": 3.056072, "process_mem_max_rss": "101100", "process_out_blocks": "2312", "process_user_time": 3.281828}
+[0m16:59:50.477025 [debug] [MainThread]: Command `dbt deps` succeeded at 16:59:50.476696 after 2.52 seconds
+[0m16:59:50.478168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78a5d62032f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78a5d58fde20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78a5d58fee40>]}
+[0m16:59:50.478999 [debug] [MainThread]: Flushing usage events
+[0m16:59:50.830903 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:00:22.803367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c2111d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c22d6540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c354d9d0>]}
+
+
+============================== 17:00:22.828472 | 4dd3e3c3-4811-4887-a273-b9c320225c30 ==============================
+[0m17:00:22.828472 [info ] [MainThread]: Running with dbt=1.10.2
+[0m17:00:22.847191 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m17:01:17.415795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4dd3e3c3-4811-4887-a273-b9c320225c30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa985a0e4b0>]}
+[0m17:01:17.528827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4dd3e3c3-4811-4887-a273-b9c320225c30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c1b2daf0>]}
+[0m17:01:17.533426 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:02:10.306811 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m17:02:10.320843 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:02:10.321624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4dd3e3c3-4811-4887-a273-b9c320225c30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9847af500>]}
+[0m17:02:17.543202 [error] [MainThread]: Encountered an error:
+Parsing Error
+  at path []: A seed must have a materialized value of 'seed'
+[0m17:02:17.567776 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 114.85119, "process_in_blocks": "126776", "process_kernel_time": 15.450491, "process_mem_max_rss": "359816", "process_out_blocks": "40", "process_user_time": 12.808721}
+[0m17:02:17.568946 [debug] [MainThread]: Command `dbt seed` failed at 17:02:17.568747 after 114.85 seconds
+[0m17:02:17.569917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c354d9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa98425f050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9842acc80>]}
+[0m17:02:17.570977 [debug] [MainThread]: Flushing usage events
+[0m17:02:17.948454 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:04:35.829456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a17ab37cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a17babf9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a17a7da180>]}
+
+
+============================== 17:04:35.851337 | 2becd658-12b9-4c25-805b-51c4dbf00da0 ==============================
+[0m17:04:35.851337 [info ] [MainThread]: Running with dbt=1.10.2
+[0m17:04:35.854577 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt seed', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:05:33.489589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2becd658-12b9-4c25-805b-51c4dbf00da0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a13cebfcb0>]}
+[0m17:05:33.597259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2becd658-12b9-4c25-805b-51c4dbf00da0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a13d0e2e70>]}
+[0m17:05:33.601784 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:06:25.708752 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m17:06:25.723225 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:06:25.723977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2becd658-12b9-4c25-805b-51c4dbf00da0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a13cfded20>]}
+[0m17:06:33.563521 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.dbt_exercise.marts
+- models.dbt_exercise.intermediate
+- models.dbt_exercise.staging
+[0m17:06:33.571412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2becd658-12b9-4c25-805b-51c4dbf00da0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a13c10b3b0>]}
+[0m17:06:33.706582 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m17:06:33.724263 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m17:06:34.224171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2becd658-12b9-4c25-805b-51c4dbf00da0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a13c12a060>]}
+[0m17:06:34.224830 [info ] [MainThread]: Found 2 models, 1 seed, 4 data tests, 609 macros
+[0m17:06:34.225330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2becd658-12b9-4c25-805b-51c4dbf00da0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a13c196180>]}
+[0m17:06:34.227932 [info ] [MainThread]: 
+[0m17:06:34.228638 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:06:34.229242 [info ] [MainThread]: 
+[0m17:06:34.230462 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:06:34.232391 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2'
+[0m17:06:34.233058 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:06:35.151521 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2, now create_corded-sunlight-464012-e2_dbt_dw_raw)
+[0m17:06:35.152421 [debug] [ThreadPool]: Creating schema "database: "corded-sunlight-464012-e2"
+schema: "dbt_dw_raw"
+"
+[0m17:06:35.169834 [debug] [ThreadPool]: On create_corded-sunlight-464012-e2_dbt_dw_raw: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "connection_name": "create_corded-sunlight-464012-e2_dbt_dw_raw"} */
+create schema if not exists `corded-sunlight-464012-e2`.`dbt_dw_raw`
+  
+[0m17:06:35.170691 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:06:36.471455 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:82d66229-76f0-41df-be0a-84a9bf00c771&page=queryresults
+[0m17:06:42.696297 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_corded-sunlight-464012-e2_dbt_dw_raw, now list_corded-sunlight-464012-e2_dbt_dw)
+[0m17:06:42.697667 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:06:42.698838 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2_dbt_dw_raw'
+[0m17:06:42.699939 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:06:43.655637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2becd658-12b9-4c25-805b-51c4dbf00da0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a17c59c290>]}
+[0m17:06:43.656524 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:06:43.692725 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.dados_financeiros
+[0m17:06:43.693896 [info ] [Thread-1 (]: 1 of 1 START seed file dbt_dw_raw.dados_financeiros ............................ [RUN]
+[0m17:06:43.695071 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_raw, now seed.dbt_exercise.dados_financeiros)
+[0m17:06:43.695968 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.dados_financeiros
+[0m17:06:43.696493 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.dados_financeiros
+[0m17:06:43.766207 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:06:48.806012 [debug] [Thread-1 (]: On seed.dbt_exercise.dados_financeiros: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.dados_financeiros"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`dados_financeiros` set OPTIONS()
+  
+[0m17:06:49.287387 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:d426741f-e14c-4001-ba3f-27df438a17cf&page=queryresults
+[0m17:06:49.870225 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.dados_financeiros"
+[0m17:06:49.925187 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2becd658-12b9-4c25-805b-51c4dbf00da0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a17ad98aa0>]}
+[0m17:06:49.926724 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file dbt_dw_raw.dados_financeiros ........................ [[32mINSERT 190[0m in 6.21s]
+[0m17:06:49.927956 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.dados_financeiros
+[0m17:06:49.931984 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:06:49.941415 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:06:49.942588 [debug] [MainThread]: Connection 'list_corded-sunlight-464012-e2_dbt_dw' was properly closed.
+[0m17:06:49.943436 [debug] [MainThread]: Connection 'seed.dbt_exercise.dados_financeiros' was properly closed.
+[0m17:06:49.943952 [info ] [MainThread]: 
+[0m17:06:49.944595 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 15.71 seconds (15.71s).
+[0m17:06:49.947027 [debug] [MainThread]: Command end result
+[0m17:06:50.021308 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m17:06:50.043826 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m17:06:50.053168 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/run_results.json
+[0m17:06:50.053812 [info ] [MainThread]: 
+[0m17:06:50.054494 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:06:50.054986 [info ] [MainThread]: 
+[0m17:06:50.055662 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:06:50.066897 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 134.33344, "process_in_blocks": "146064", "process_kernel_time": 16.922964, "process_mem_max_rss": "370436", "process_out_blocks": "3888", "process_user_time": 14.875904}
+[0m17:06:50.067886 [debug] [MainThread]: Command `dbt seed` succeeded at 17:06:50.067694 after 134.34 seconds
+[0m17:06:50.068412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a17a3f3770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a13c80c320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a17af3fd70>]}
+[0m17:06:50.068947 [debug] [MainThread]: Flushing usage events
+[0m17:06:50.439216 [debug] [MainThread]: An error was encountered while trying to flush usage events
