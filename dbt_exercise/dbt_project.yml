@@ -35,4 +35,4 @@ seeds:
     dados_financeiros:
       +schema: raw
       +quote_columns: false
-      +materialized: table
+      +materialized: seed
