@@ -1,3 +1,5 @@
+version: 2
+
 name: 'dbt_exercise'
 version: '1.0.0'
 
@@ -28,11 +30,8 @@ models:
       schema: marts
       +materialized: table
 
-  debug: true
-
 seeds:
   dbt_exercise:
-    dados_financeiros:
-      +schema: raw
-      +quote_columns: false
-      +materialized: seed
+    +schema: raw
+    +quote_columns: false
+    +materialized: seed
