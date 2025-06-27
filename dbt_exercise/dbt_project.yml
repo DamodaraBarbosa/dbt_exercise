@@ -28,8 +28,6 @@ models:
       schema: marts
       +materialized: table
 
-debug: true
-
 seeds:
   dbt_exercise:
     +schema: raw
