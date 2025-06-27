@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: Financeiro
+  - name: northwind
     description: 'Dados brutos do sistema financeiro da empresa'
     schema: dbt_dw_raw
     loader: bigquery

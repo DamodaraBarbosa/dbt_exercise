@@ -1,6 +1,6 @@
 with orders as (
     select *
-    from {{ source('dbt_dw_raw', 'orders') }}
+    from {{ source('raw', 'orders') }}
 )
 
 select
