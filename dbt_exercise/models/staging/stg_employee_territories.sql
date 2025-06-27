@@ -1,4 +1,4 @@
-with emplyoee_territories as (
+with employee_territories as (
     select *
     from {{ source('northwind', 'employee_territories') }}
 )

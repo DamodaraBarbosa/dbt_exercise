@@ -5361,3 +5361,109 @@ parsing.
 [0m16:29:02.142457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74d00cc66570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfcf042c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfcf0d4da0>]}
 [0m16:29:02.143698 [debug] [MainThread]: Flushing usage events
 [0m16:29:02.465920 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:32:20.605449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8cd3d1430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8cc6bf110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8cb751670>]}
+
+
+============================== 16:32:20.627600 | 2f47a724-68cf-404c-93df-7c52e7e372db ==============================
+[0m16:32:20.627600 [info ] [MainThread]: Running with dbt=1.10.2
+[0m16:32:20.628462 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run -s stg_employee_territories', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:33:18.514711 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key 'version' in "<unicode string>", line 4, column 1 in file
+`/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/dbt_project.yml`
+[0m16:33:18.515471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2f47a724-68cf-404c-93df-7c52e7e372db', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8caac0d70>]}
+[0m16:33:19.340495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2f47a724-68cf-404c-93df-7c52e7e372db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8caac18e0>]}
+[0m16:33:19.433252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2f47a724-68cf-404c-93df-7c52e7e372db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8cd2c2930>]}
+[0m16:33:19.438188 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m16:34:15.898837 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m16:34:23.865050 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:34:23.865872 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:34:23.877837 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dbt_exercise.marts
+- models.dbt_exercise.intermediate
+[0m16:34:23.945225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2f47a724-68cf-404c-93df-7c52e7e372db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd88dad25a0>]}
+[0m16:34:24.406815 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m16:34:24.420169 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m16:34:24.981992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2f47a724-68cf-404c-93df-7c52e7e372db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd88dc10620>]}
+[0m16:34:24.983722 [info ] [MainThread]: Found 14 seeds, 31 data tests, 11 models, 14 sources, 609 macros
+[0m16:34:24.984925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2f47a724-68cf-404c-93df-7c52e7e372db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd88d64a8d0>]}
+[0m16:34:24.987595 [info ] [MainThread]: 
+[0m16:34:24.988254 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:34:24.988665 [info ] [MainThread]: 
+[0m16:34:24.989357 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:34:24.992721 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2'
+[0m16:34:24.994590 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:34:25.892888 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2, now list_corded-sunlight-464012-e2_dbt_dw_staging)
+[0m16:34:25.894566 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2_dbt_dw_raw'
+[0m16:34:25.895249 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:34:25.896008 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:34:26.751672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2f47a724-68cf-404c-93df-7c52e7e372db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd88dcfab10>]}
+[0m16:34:26.752955 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:34:26.788516 [debug] [Thread-1 (]: Began running node model.dbt_exercise.stg_employee_territories
+[0m16:34:26.789698 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_dw_staging.stg_employee_territories ............ [RUN]
+[0m16:34:26.791219 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_raw, now model.dbt_exercise.stg_employee_territories)
+[0m16:34:26.791888 [debug] [Thread-1 (]: Began compiling node model.dbt_exercise.stg_employee_territories
+[0m16:34:26.805374 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_exercise.stg_employee_territories"
+[0m16:34:26.807376 [debug] [Thread-1 (]: Began executing node model.dbt_exercise.stg_employee_territories
+[0m16:34:26.857615 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_exercise.stg_employee_territories"
+[0m16:34:26.858850 [debug] [Thread-1 (]: On model.dbt_exercise.stg_employee_territories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "model.dbt_exercise.stg_employee_territories"} */
+
+
+  create or replace view `corded-sunlight-464012-e2`.`dbt_dw_staging`.`stg_employee_territories`
+  OPTIONS()
+  as with emplyoee_territories as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`employee_territories`
+)
+
+select
+    cast(employee_id as string) as employee_id
+    , cast(territory_id as string) as territory_id
+from employee_territories;
+
+
+[0m16:34:26.859593 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:34:27.688548 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:6df9df1a-15a3-4bd6-a6ad-65a9853985de&page=queryresults
+[0m16:34:27.689226 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:6df9df1a-15a3-4bd6-a6ad-65a9853985de&page=queryresults
+[0m16:34:27.803827 [debug] [Thread-1 (]: Database Error in model stg_employee_territories (models/staging/stg_employee_territories.sql)
+  Table "employee_territories" must be qualified with a dataset (e.g. dataset.table).
+  compiled code at target/run/dbt_exercise/models/staging/stg_employee_territories.sql
+[0m16:34:27.844146 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2f47a724-68cf-404c-93df-7c52e7e372db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd88dad27b0>]}
+[0m16:34:27.845897 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_dw_staging.stg_employee_territories ... [[31mERROR[0m in 1.01s]
+[0m16:34:27.847202 [debug] [Thread-1 (]: Finished running node model.dbt_exercise.stg_employee_territories
+[0m16:34:27.848531 [debug] [Thread-7 (]: Marking all children of 'model.dbt_exercise.stg_employee_territories' to be skipped because of status 'error'.  Reason: Database Error in model stg_employee_territories (models/staging/stg_employee_territories.sql)
+  Table "employee_territories" must be qualified with a dataset (e.g. dataset.table).
+  compiled code at target/run/dbt_exercise/models/staging/stg_employee_territories.sql.
+[0m16:34:27.853914 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:34:27.863999 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:34:27.866219 [debug] [MainThread]: Connection 'list_corded-sunlight-464012-e2_dbt_dw_staging' was properly closed.
+[0m16:34:27.867516 [debug] [MainThread]: Connection 'model.dbt_exercise.stg_employee_territories' was properly closed.
+[0m16:34:27.868716 [info ] [MainThread]: 
+[0m16:34:27.869762 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 2.88 seconds (2.88s).
+[0m16:34:27.871248 [debug] [MainThread]: Command end result
+[0m16:34:27.943455 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m16:34:27.961527 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m16:34:27.969838 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/run_results.json
+[0m16:34:27.970602 [info ] [MainThread]: 
+[0m16:34:27.971472 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:34:27.972036 [info ] [MainThread]: 
+[0m16:34:27.972775 [error] [MainThread]: [31mFailure in model stg_employee_territories (models/staging/stg_employee_territories.sql)[0m
+[0m16:34:27.973362 [error] [MainThread]:   Database Error in model stg_employee_territories (models/staging/stg_employee_territories.sql)
+  Table "employee_territories" must be qualified with a dataset (e.g. dataset.table).
+  compiled code at target/run/dbt_exercise/models/staging/stg_employee_territories.sql
+[0m16:34:27.974086 [info ] [MainThread]: 
+[0m16:34:27.974880 [info ] [MainThread]:   compiled code at target/compiled/dbt_exercise/models/staging/stg_employee_territories.sql
+[0m16:34:27.975811 [info ] [MainThread]: 
+[0m16:34:27.976866 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:34:27.977940 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:34:27.984450 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 121.381775, "process_in_blocks": "139864", "process_kernel_time": 16.482712, "process_mem_max_rss": "362196", "process_out_blocks": "3344", "process_user_time": 14.865206}
+[0m16:34:27.986344 [debug] [MainThread]: Command `dbt run` failed at 16:34:27.985864 after 121.38 seconds
+[0m16:34:27.987511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8cd4d9d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8cb42ff80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8cb42f620>]}
+[0m16:34:27.988446 [debug] [MainThread]: Flushing usage events
+[0m16:34:28.322663 [debug] [MainThread]: An error was encountered while trying to flush usage events
