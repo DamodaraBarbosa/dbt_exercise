@@ -370,3 +370,96 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m11:32:31.208597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a0db14d1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a09b84bf80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a09b849760>]}
 [0m11:32:31.209327 [debug] [MainThread]: Flushing usage events
 [0m11:32:31.561939 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:48:04.859887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d8efab91f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d8ed5c9c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d8f097ad20>]}
+
+
+============================== 16:48:04.884043 | 87926447-d9ac-4b5b-983e-1ecd90d2749a ==============================
+[0m16:48:04.884043 [info ] [MainThread]: Running with dbt=1.10.2
+[0m16:48:04.885594 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt seed', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:48:04.886914 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:48:04.893694 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.13034192, "process_in_blocks": "15320", "process_kernel_time": 3.189655, "process_mem_max_rss": "97656", "process_out_blocks": "8", "process_user_time": 2.973846}
+[0m16:48:04.894393 [debug] [MainThread]: Command `dbt seed` failed at 16:48:04.894247 after 0.13 seconds
+[0m16:48:04.895051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d8ed6d78f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d8ed9f4b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d8ee1c4500>]}
+[0m16:48:04.895991 [debug] [MainThread]: Flushing usage events
+[0m16:48:05.374302 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:25:54.783937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a07b7bdd0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a07b5a6dfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a07b629f050>]}
+
+
+============================== 09:25:54.823654 | 1348045f-cdc4-43d5-9b04-a47d0f5d610d ==============================
+[0m09:25:54.823654 [info ] [MainThread]: Running with dbt=1.10.2
+[0m09:25:54.824663 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/damodara_barbosa/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m09:25:55.645417 [info ] [MainThread]: dbt version: 1.10.2
+[0m09:25:55.646023 [info ] [MainThread]: python version: 3.12.3
+[0m09:25:55.646750 [info ] [MainThread]: python path: /mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/bin/python3
+[0m09:25:55.647517 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m09:27:21.559312 [info ] [MainThread]: Using profiles dir at /home/damodara_barbosa/.dbt
+[0m09:27:21.560024 [info ] [MainThread]: Using profiles.yml file at /home/damodara_barbosa/.dbt/profiles.yml
+[0m09:27:21.560535 [info ] [MainThread]: Using dbt_project.yml file at /home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml
+[0m09:27:21.561337 [info ] [MainThread]: adapter type: bigquery
+[0m09:27:21.561942 [info ] [MainThread]: adapter version: 1.9.2
+[0m09:27:21.562609 [info ] [MainThread]: Configuration:
+[0m09:27:21.563225 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:27:21.564040 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:27:21.564778 [info ] [MainThread]: Required dependencies:
+[0m09:27:21.565833 [debug] [MainThread]: Executing "git --help"
+[0m09:27:21.591014 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:27:21.591476 [debug] [MainThread]: STDERR: "b''"
+[0m09:27:21.591781 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:27:21.592215 [info ] [MainThread]: Connection:
+[0m09:27:21.593097 [info ] [MainThread]:   method: service-account
+[0m09:27:21.594028 [info ] [MainThread]:   database: corded-sunlight-464012-e2
+[0m09:27:21.594816 [info ] [MainThread]:   execution_project: corded-sunlight-464012-e2
+[0m09:27:21.595411 [info ] [MainThread]:   schema: dbt_dw
+[0m09:27:21.596021 [info ] [MainThread]:   location: None
+[0m09:27:21.596566 [info ] [MainThread]:   priority: None
+[0m09:27:21.597229 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m09:27:21.598546 [info ] [MainThread]:   impersonate_service_account: None
+[0m09:27:21.599820 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m09:27:21.602008 [info ] [MainThread]:   job_retries: 1
+[0m09:27:21.603034 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m09:27:21.603669 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m09:27:21.604822 [info ] [MainThread]:   timeout_seconds: None
+[0m09:27:21.605750 [info ] [MainThread]:   client_id: None
+[0m09:27:21.606130 [info ] [MainThread]:   token_uri: None
+[0m09:27:21.606555 [info ] [MainThread]:   compute_region: None
+[0m09:27:21.607020 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m09:27:21.607649 [info ] [MainThread]:   gcs_bucket: None
+[0m09:27:21.608325 [info ] [MainThread]:   dataproc_batch: None
+[0m09:27:21.612677 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m09:28:23.934644 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m09:28:23.935707 [debug] [MainThread]: On debug: select 1 as id
+[0m09:28:23.936431 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:28:25.001584 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:a0164f71-13d3-464f-9246-ebdec122ce8e&page=queryresults
+[0m09:28:36.272690 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:28:36.274226 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:28:36.275287 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml> not found
+
+[0m09:28:36.285675 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 154.46227, "process_in_blocks": "126352", "process_kernel_time": 16.540104, "process_mem_max_rss": "355816", "process_out_blocks": "48", "process_user_time": 11.310686}
+[0m09:28:36.287078 [debug] [MainThread]: Command `dbt debug` failed at 09:28:36.286877 after 154.47 seconds
+[0m09:28:36.287676 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:28:36.288166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a07b7058530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a077852ec90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a07788a3e60>]}
+[0m09:28:36.288774 [debug] [MainThread]: Flushing usage events
+[0m09:28:36.796656 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:35:43.258928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9743d0bdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9745ded730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d97459d9a60>]}
+
+
+============================== 09:35:43.282499 | b36d5250-6ce7-4917-93b2-52d6370053c6 ==============================
+[0m09:35:43.282499 [info ] [MainThread]: Running with dbt=1.10.2
+[0m09:35:43.283547 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt seed', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:35:43.284363 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:35:43.290905 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.12954107, "process_in_blocks": "12592", "process_kernel_time": 3.445717, "process_mem_max_rss": "98344", "process_out_blocks": "16", "process_user_time": 3.092427}
+[0m09:35:43.291997 [debug] [MainThread]: Command `dbt seed` failed at 09:35:43.291572 after 0.13 seconds
+[0m09:35:43.292822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9743b47770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9745ded730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d974348ac00>]}
+[0m09:35:43.293570 [debug] [MainThread]: Flushing usage events
+[0m09:35:43.610110 [debug] [MainThread]: An error was encountered while trying to flush usage events
