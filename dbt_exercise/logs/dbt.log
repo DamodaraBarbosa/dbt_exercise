@@ -4521,3 +4521,353 @@ parsing.
 [0m14:54:09.062740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7df92381f9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7df8e4612960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7df9264331d0>]}
 [0m14:54:09.063673 [debug] [MainThread]: Flushing usage events
 [0m14:54:09.411953 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:27:52.292201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf5fd81670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf5d408d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf5eed6360>]}
+
+
+============================== 15:27:52.313743 | 3b8f1695-472b-4cb2-93a6-e957c14d9c39 ==============================
+[0m15:27:52.313743 [info ] [MainThread]: Running with dbt=1.10.2
+[0m15:27:52.315047 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run -s stg_products_northwind', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:28:51.602501 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key 'version' in "<unicode string>", line 4, column 1 in file
+`/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/dbt_project.yml`
+[0m15:28:51.603629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3b8f1695-472b-4cb2-93a6-e957c14d9c39', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf1f632420>]}
+[0m15:28:52.705980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3b8f1695-472b-4cb2-93a6-e957c14d9c39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf5c495a00>]}
+[0m15:28:52.828836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3b8f1695-472b-4cb2-93a6-e957c14d9c39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf1f7121b0>]}
+[0m15:28:52.835090 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m15:29:51.611643 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m15:29:58.289975 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:29:58.290634 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:29:58.300672 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dbt_exercise.intermediate
+- models.dbt_exercise.marts
+[0m15:29:58.399537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3b8f1695-472b-4cb2-93a6-e957c14d9c39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf1f270050>]}
+[0m15:29:58.812670 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m15:29:58.832819 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m15:29:59.407339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3b8f1695-472b-4cb2-93a6-e957c14d9c39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf1f1a2540>]}
+[0m15:29:59.408298 [info ] [MainThread]: Found 14 seeds, 31 data tests, 5 models, 14 sources, 609 macros
+[0m15:29:59.409182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3b8f1695-472b-4cb2-93a6-e957c14d9c39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf5c4946e0>]}
+[0m15:29:59.412778 [info ] [MainThread]: 
+[0m15:29:59.413515 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:29:59.414175 [info ] [MainThread]: 
+[0m15:29:59.415381 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:29:59.417353 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2'
+[0m15:29:59.418561 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:30:00.455573 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2, now list_corded-sunlight-464012-e2_dbt_dw_staging)
+[0m15:30:00.456725 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2_dbt_dw_raw'
+[0m15:30:00.457570 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:30:00.458295 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:30:01.431503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3b8f1695-472b-4cb2-93a6-e957c14d9c39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf1f0246b0>]}
+[0m15:30:01.432537 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:30:01.450300 [debug] [Thread-1 (]: Began running node model.dbt_exercise.stg_products_northwind
+[0m15:30:01.451374 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_dw_staging.stg_products_northwind .............. [RUN]
+[0m15:30:01.452424 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_staging, now model.dbt_exercise.stg_products_northwind)
+[0m15:30:01.453147 [debug] [Thread-1 (]: Began compiling node model.dbt_exercise.stg_products_northwind
+[0m15:30:01.472689 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_exercise.stg_products_northwind"
+[0m15:30:01.476165 [debug] [Thread-1 (]: Began executing node model.dbt_exercise.stg_products_northwind
+[0m15:30:01.556094 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_exercise.stg_products_northwind"
+[0m15:30:01.558415 [debug] [Thread-1 (]: On model.dbt_exercise.stg_products_northwind: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "model.dbt_exercise.stg_products_northwind"} */
+
+
+  create or replace view `corded-sunlight-464012-e2`.`dbt_dw_staging`.`stg_products_northwind`
+  OPTIONS()
+  as with products as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`products`
+)
+
+select
+    cast(product_id as string) as product_id
+    , cast(product_name as string) as product_name
+    , cast(supplier_id as string) as supplier_id
+    , cast(category_id as string) as category_id
+    , cast(quantity_per_unit as string) as quantity_per_unit
+    , cast(unit_price as numeric) as unit_price
+    , cast(units_in_stock as numeric) as units_in_stock
+    , cast(units_on_order as numeric) as units_on_order
+    , cast(reorder_level as numeric) as reorder_level
+    , cast(discontinued as boolean) as discontinued
+from products;
+
+
+[0m15:30:01.559620 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:30:02.708113 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:2ea55977-702b-453f-9424-d502d9636f66&page=queryresults
+[0m15:30:10.262796 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b8f1695-472b-4cb2-93a6-e957c14d9c39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf5d541ee0>]}
+[0m15:30:10.264052 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_dw_staging.stg_products_northwind ......... [[32mCREATE VIEW (0 processed)[0m in 8.79s]
+[0m15:30:10.265004 [debug] [Thread-1 (]: Finished running node model.dbt_exercise.stg_products_northwind
+[0m15:30:10.268386 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:30:10.277661 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:30:10.278580 [debug] [MainThread]: Connection 'model.dbt_exercise.stg_products_northwind' was properly closed.
+[0m15:30:10.279752 [debug] [MainThread]: Connection 'list_corded-sunlight-464012-e2_dbt_dw_raw' was properly closed.
+[0m15:30:10.280755 [info ] [MainThread]: 
+[0m15:30:10.281889 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 10.87 seconds (10.87s).
+[0m15:30:10.284035 [debug] [MainThread]: Command end result
+[0m15:30:10.361840 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m15:30:10.380197 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m15:30:10.389377 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/run_results.json
+[0m15:30:10.390025 [info ] [MainThread]: 
+[0m15:30:10.390736 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:30:10.391540 [info ] [MainThread]: 
+[0m15:30:10.392318 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:30:10.393326 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m15:30:10.401620 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 138.21854, "process_in_blocks": "126968", "process_kernel_time": 17.319447, "process_mem_max_rss": "365840", "process_out_blocks": "3272", "process_user_time": 14.021353}
+[0m15:30:10.402619 [debug] [MainThread]: Command `dbt run` succeeded at 15:30:10.402414 after 138.22 seconds
+[0m15:30:10.403315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf5c66fb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf5c8eef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dbf5c4df500>]}
+[0m15:30:10.403881 [debug] [MainThread]: Flushing usage events
+[0m15:30:10.755566 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:31:43.105197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7658134b16a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765811592180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765811285760>]}
+
+
+============================== 15:31:43.127868 | 2b3e40e3-39ae-47e7-a6bf-dd15016e2525 ==============================
+[0m15:31:43.127868 [info ] [MainThread]: Running with dbt=1.10.2
+[0m15:31:43.129158 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'debug': 'False', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:32:55.444687 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key 'version' in "<unicode string>", line 4, column 1 in file
+`/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/dbt_project.yml`
+[0m15:32:55.445966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d3ccffb0>]}
+[0m15:32:56.837053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d4323aa0>]}
+[0m15:32:56.947442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d3c214f0>]}
+[0m15:32:56.954085 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m15:34:09.360554 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m15:34:16.783683 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:34:16.784477 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:34:16.795575 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dbt_exercise.intermediate
+- models.dbt_exercise.marts
+[0m15:34:16.889146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d3890bf0>]}
+[0m15:34:17.389295 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m15:34:17.408287 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m15:34:18.047393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d3617d70>]}
+[0m15:34:18.048210 [info ] [MainThread]: Found 14 seeds, 31 data tests, 5 models, 14 sources, 609 macros
+[0m15:34:18.048917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d3683cb0>]}
+[0m15:34:18.053525 [info ] [MainThread]: 
+[0m15:34:18.055238 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:34:18.056087 [info ] [MainThread]: 
+[0m15:34:18.057395 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:34:18.064556 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2'
+[0m15:34:18.065526 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:34:19.021235 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2, now list_corded-sunlight-464012-e2_dbt_dw_raw)
+[0m15:34:19.022310 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:34:19.024018 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2_dbt_dw_staging'
+[0m15:34:19.025710 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:34:19.932547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d3cb5d00>]}
+[0m15:34:19.933514 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:34:19.958987 [debug] [Thread-1 (]: Began running node model.dbt_exercise.stg_categories_northwind
+[0m15:34:19.959994 [debug] [Thread-2 (]: Began running node model.dbt_exercise.stg_customers_northwind
+[0m15:34:19.962384 [debug] [Thread-3 (]: Began running node model.dbt_exercise.stg_employees_northwind
+[0m15:34:19.961433 [info ] [Thread-1 (]: 1 of 5 START sql view model dbt_dw_staging.stg_categories_northwind ............ [RUN]
+[0m15:34:19.964014 [debug] [Thread-4 (]: Began running node model.dbt_exercise.stg_orders_northwind
+[0m15:34:19.965219 [info ] [Thread-2 (]: 2 of 5 START sql view model dbt_dw_staging.stg_customers_northwind ............. [RUN]
+[0m15:34:19.967513 [info ] [Thread-3 (]: 3 of 5 START sql view model dbt_dw_staging.stg_employees_northwind ............. [RUN]
+[0m15:34:19.969727 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_staging, now model.dbt_exercise.stg_categories_northwind)
+[0m15:34:19.971363 [info ] [Thread-4 (]: 4 of 5 START sql view model dbt_dw_staging.stg_orders_northwind ................ [RUN]
+[0m15:34:19.972625 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_raw, now model.dbt_exercise.stg_customers_northwind)
+[0m15:34:19.974226 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_exercise.stg_employees_northwind'
+[0m15:34:19.975602 [debug] [Thread-1 (]: Began compiling node model.dbt_exercise.stg_categories_northwind
+[0m15:34:19.977210 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_exercise.stg_orders_northwind'
+[0m15:34:19.978665 [debug] [Thread-2 (]: Began compiling node model.dbt_exercise.stg_customers_northwind
+[0m15:34:19.980456 [debug] [Thread-3 (]: Began compiling node model.dbt_exercise.stg_employees_northwind
+[0m15:34:20.001031 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_exercise.stg_categories_northwind"
+[0m15:34:20.002035 [debug] [Thread-4 (]: Began compiling node model.dbt_exercise.stg_orders_northwind
+[0m15:34:20.007304 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_exercise.stg_customers_northwind"
+[0m15:34:20.015392 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_exercise.stg_employees_northwind"
+[0m15:34:20.026581 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_exercise.stg_orders_northwind"
+[0m15:34:20.028630 [debug] [Thread-1 (]: Began executing node model.dbt_exercise.stg_categories_northwind
+[0m15:34:20.031843 [debug] [Thread-2 (]: Began executing node model.dbt_exercise.stg_customers_northwind
+[0m15:34:20.033140 [debug] [Thread-3 (]: Began executing node model.dbt_exercise.stg_employees_northwind
+[0m15:34:20.111371 [debug] [Thread-4 (]: Began executing node model.dbt_exercise.stg_orders_northwind
+[0m15:34:20.148437 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_exercise.stg_customers_northwind"
+[0m15:34:20.150537 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_exercise.stg_categories_northwind"
+[0m15:34:20.156870 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_exercise.stg_employees_northwind"
+[0m15:34:20.162509 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_exercise.stg_orders_northwind"
+[0m15:34:20.165735 [debug] [Thread-2 (]: On model.dbt_exercise.stg_customers_northwind: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "model.dbt_exercise.stg_customers_northwind"} */
+
+
+  create or replace view `corded-sunlight-464012-e2`.`dbt_dw_staging`.`stg_customers_northwind`
+  OPTIONS()
+  as with customers as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`customers`
+)
+
+select
+    cast(customer_id as string) as customer_id
+    , cast(company_name as string) as company_name
+    , cast(contact_name as string) as contact_name
+    , cast(contact_title as string) as contact_title
+    , cast(address as string) as address
+    , cast(city as string) as city
+    , cast(region as string) as region
+    , cast(postal_code as string) as postal_code
+    , cast(country as string) as country
+    , cast(phone as string) as phone
+    , cast(fax as string) as fax
+from customers;
+
+
+[0m15:34:20.167422 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:34:20.168938 [debug] [Thread-3 (]: On model.dbt_exercise.stg_employees_northwind: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "model.dbt_exercise.stg_employees_northwind"} */
+
+
+  create or replace view `corded-sunlight-464012-e2`.`dbt_dw_staging`.`stg_employees_northwind`
+  OPTIONS()
+  as with employees as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`employees`
+)
+
+/* Os campos photo, notes e reports_to e photo_path não são carregadas na staging */
+select
+    cast(employee_id as string) as employee_id
+    , cast(first_name as string) as first_name
+    , cast(last_name as string) as last_name
+    , cast(title as string) as title
+    , cast(title_of_courtesy as string) as title_of_courtesy
+    , cast(birth_date as date) as birth_date
+    , cast(hire_date as date) as hire_date
+    , cast(address as string) as address
+    , cast(city as string) as city
+    , cast(region as string) as region
+    , cast(postal_code as string) as postal_code
+    , cast(country as string) as country
+    , cast(home_phone as string) as home_phone
+    , cast(extension as string) as extension
+from employees;
+
+
+[0m15:34:20.170596 [debug] [Thread-1 (]: On model.dbt_exercise.stg_categories_northwind: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "model.dbt_exercise.stg_categories_northwind"} */
+
+
+  create or replace view `corded-sunlight-464012-e2`.`dbt_dw_staging`.`stg_categories_northwind`
+  OPTIONS()
+  as with categories as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`categories`
+)
+
+/* Ao construir a staging não vamos trazer a coluna picture, pois ela não traz informação relevante */
+select
+    cast(category_id as string) as category_id
+    , cast(category_name as string) as category_name
+    , cast(description as string) as description
+from categories;
+
+
+[0m15:34:20.172312 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:34:20.173715 [debug] [Thread-4 (]: On model.dbt_exercise.stg_orders_northwind: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "model.dbt_exercise.stg_orders_northwind"} */
+
+
+  create or replace view `corded-sunlight-464012-e2`.`dbt_dw_staging`.`stg_orders_northwind`
+  OPTIONS()
+  as with orders as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`orders`
+)
+
+select
+    cast(order_id as string) as order_id
+    , cast(customer_id as string) as customer_id
+    , cast(employee_id as string) as employee_id
+    , cast(order_date as date) as order_date
+    , cast(required_date as date) as required_date
+    , cast(shipped_date as date) as shipped_date
+    , cast(ship_via as string) as ship_via
+    , cast(freight as numeric) as freight
+    , cast(ship_name as string) as ship_name
+    , cast(ship_address as string) as ship_address
+    , cast(ship_city as string) as ship_city
+    , cast(ship_region as string) as ship_region
+    , cast(ship_postal_code as string) as ship_postal_code
+    , cast(ship_country as string) as ship_country
+from orders;
+
+
+[0m15:34:20.174677 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:34:20.176387 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:34:21.255569 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:7180ada9-c152-45b8-8e97-bba441d19eb2&page=queryresults
+[0m15:34:21.322103 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:894fa3ec-544b-4058-b4b0-0edec57afa04&page=queryresults
+[0m15:34:21.433442 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:c9b4fccb-bf62-45e9-9ffb-6a7b70f9b475&page=queryresults
+[0m15:34:21.438021 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:4eeca997-c18e-4d6b-9274-eab5a06e241e&page=queryresults
+[0m15:34:28.511562 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d01fe450>]}
+[0m15:34:28.512362 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657dc6ca780>]}
+[0m15:34:28.513310 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d3bc0da0>]}
+[0m15:34:28.515443 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657d376c7d0>]}
+[0m15:34:28.514605 [info ] [Thread-3 (]: 3 of 5 OK created sql view model dbt_dw_staging.stg_employees_northwind ........ [[32mCREATE VIEW (0 processed)[0m in 8.51s]
+[0m15:34:28.517221 [info ] [Thread-2 (]: 2 of 5 OK created sql view model dbt_dw_staging.stg_customers_northwind ........ [[32mCREATE VIEW (0 processed)[0m in 8.52s]
+[0m15:34:28.518955 [info ] [Thread-1 (]: 1 of 5 OK created sql view model dbt_dw_staging.stg_categories_northwind ....... [[32mCREATE VIEW (0 processed)[0m in 8.53s]
+[0m15:34:28.520745 [info ] [Thread-4 (]: 4 of 5 OK created sql view model dbt_dw_staging.stg_orders_northwind ........... [[32mCREATE VIEW (0 processed)[0m in 8.53s]
+[0m15:34:28.522682 [debug] [Thread-3 (]: Finished running node model.dbt_exercise.stg_employees_northwind
+[0m15:34:28.524791 [debug] [Thread-2 (]: Finished running node model.dbt_exercise.stg_customers_northwind
+[0m15:34:28.526302 [debug] [Thread-1 (]: Finished running node model.dbt_exercise.stg_categories_northwind
+[0m15:34:28.527814 [debug] [Thread-4 (]: Finished running node model.dbt_exercise.stg_orders_northwind
+[0m15:34:28.529432 [debug] [Thread-3 (]: Began running node model.dbt_exercise.stg_products_northwind
+[0m15:34:28.533052 [info ] [Thread-3 (]: 5 of 5 START sql view model dbt_dw_staging.stg_products_northwind .............. [RUN]
+[0m15:34:28.534336 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_exercise.stg_employees_northwind, now model.dbt_exercise.stg_products_northwind)
+[0m15:34:28.535540 [debug] [Thread-3 (]: Began compiling node model.dbt_exercise.stg_products_northwind
+[0m15:34:28.543490 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_exercise.stg_products_northwind"
+[0m15:34:28.544723 [debug] [Thread-3 (]: Began executing node model.dbt_exercise.stg_products_northwind
+[0m15:34:28.551250 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_exercise.stg_products_northwind"
+[0m15:34:28.553161 [debug] [Thread-3 (]: On model.dbt_exercise.stg_products_northwind: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "model.dbt_exercise.stg_products_northwind"} */
+
+
+  create or replace view `corded-sunlight-464012-e2`.`dbt_dw_staging`.`stg_products_northwind`
+  OPTIONS()
+  as with products as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`products`
+)
+
+select
+    cast(product_id as string) as product_id
+    , cast(product_name as string) as product_name
+    , cast(supplier_id as string) as supplier_id
+    , cast(category_id as string) as category_id
+    , cast(quantity_per_unit as string) as quantity_per_unit
+    , cast(unit_price as numeric) as unit_price
+    , cast(units_in_stock as numeric) as units_in_stock
+    , cast(units_on_order as numeric) as units_on_order
+    , cast(reorder_level as numeric) as reorder_level
+    , cast(discontinued as boolean) as discontinued
+from products;
+
+
+[0m15:34:28.554563 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:34:29.581010 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:c3a5dd0d-688a-4c0b-ab67-6708a81058e2&page=queryresults
+[0m15:34:30.227431 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b3e40e3-39ae-47e7-a6bf-dd15016e2525', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7657dc6ca780>]}
+[0m15:34:30.228688 [info ] [Thread-3 (]: 5 of 5 OK created sql view model dbt_dw_staging.stg_products_northwind ......... [[32mCREATE VIEW (0 processed)[0m in 1.69s]
+[0m15:34:30.230101 [debug] [Thread-3 (]: Finished running node model.dbt_exercise.stg_products_northwind
+[0m15:34:30.235368 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:34:30.245165 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:34:30.246464 [debug] [MainThread]: Connection 'model.dbt_exercise.stg_customers_northwind' was properly closed.
+[0m15:34:30.247163 [debug] [MainThread]: Connection 'model.dbt_exercise.stg_categories_northwind' was properly closed.
+[0m15:34:30.247930 [debug] [MainThread]: Connection 'model.dbt_exercise.stg_products_northwind' was properly closed.
+[0m15:34:30.249065 [debug] [MainThread]: Connection 'model.dbt_exercise.stg_orders_northwind' was properly closed.
+[0m15:34:30.253231 [info ] [MainThread]: 
+[0m15:34:30.255205 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 12.19 seconds (12.19s).
+[0m15:34:30.257356 [debug] [MainThread]: Command end result
+[0m15:34:30.329383 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m15:34:30.345307 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m15:34:30.355642 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/run_results.json
+[0m15:34:30.356322 [info ] [MainThread]: 
+[0m15:34:30.356955 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:34:30.357612 [info ] [MainThread]: 
+[0m15:34:30.358204 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m15:34:30.359389 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m15:34:30.365753 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 167.3544, "process_in_blocks": "144360", "process_kernel_time": 20.170736, "process_mem_max_rss": "367856", "process_out_blocks": "3384", "process_user_time": 15.702907}
+[0m15:34:30.367675 [debug] [MainThread]: Command `dbt run` succeeded at 15:34:30.366939 after 167.36 seconds
+[0m15:34:30.369094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765811285760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765811a3cc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x765810b3bf20>]}
+[0m15:34:30.369950 [debug] [MainThread]: Flushing usage events
+[0m15:34:30.796637 [debug] [MainThread]: An error was encountered while trying to flush usage events
