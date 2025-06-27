@@ -32,7 +32,6 @@ models:
 
 seeds:
   dbt_exercise:
-    dados_financeiros:
-      +schema: raw
-      +quote_columns: false
-      +materialized: seed
+    +schema: raw
+    +quote_columns: false
+    +materialized: seed
