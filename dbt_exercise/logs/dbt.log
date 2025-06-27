@@ -332,3 +332,827 @@ create schema if not exists `corded-sunlight-464012-e2`.`dbt_dw_raw`
 [0m17:06:50.068412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a17a3f3770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a13c80c320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a17af3fd70>]}
 [0m17:06:50.068947 [debug] [MainThread]: Flushing usage events
 [0m17:06:50.439216 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:24:58.531345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e8bd1b500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e8bcb7e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e8bcb6a80>]}
+
+
+============================== 18:24:58.556121 | 16611795-5c36-4c6f-bc0f-ef3ca53849ba ==============================
+[0m18:24:58.556121 [info ] [MainThread]: Running with dbt=1.10.2
+[0m18:24:58.557795 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt seed', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:25:52.253180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e8c2913d0>]}
+[0m18:25:52.344285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e8dc1fbf0>]}
+[0m18:25:52.349337 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m18:26:54.457250 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m18:27:01.454784 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 14 files added, 0 files changed.
+[0m18:27:01.455696 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/products.csv
+[0m18:27:01.456235 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/country_codes.csv
+[0m18:27:01.456666 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/suppliers.csv
+[0m18:27:01.457050 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/territories.csv
+[0m18:27:01.457406 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/region.csv
+[0m18:27:01.457952 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/order_details.csv
+[0m18:27:01.458498 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/orders.csv
+[0m18:27:01.459163 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/categories.csv
+[0m18:27:01.459782 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/employee_territories.csv
+[0m18:27:01.460276 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/shippers.csv
+[0m18:27:01.460819 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/us_states.csv
+[0m18:27:01.461225 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/employees.csv
+[0m18:27:01.461661 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://seeds/erp_northwind/customers.csv
+[0m18:27:01.462271 [debug] [MainThread]: Partial parsing: added file: dbt_exercise://models/example/staging/sources.yml
+[0m18:27:02.559638 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.dbt_exercise.staging
+- models.dbt_exercise.intermediate
+- models.dbt_exercise.marts
+[0m18:27:02.577072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e4de78140>]}
+[0m18:27:02.752437 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m18:27:02.770667 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m18:27:03.449471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e4deaf980>]}
+[0m18:27:03.450362 [info ] [MainThread]: Found 2 models, 14 seeds, 5 data tests, 1 source, 609 macros
+[0m18:27:03.450941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e4dba9cd0>]}
+[0m18:27:03.455805 [info ] [MainThread]: 
+[0m18:27:03.456769 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:27:03.457763 [info ] [MainThread]: 
+[0m18:27:03.459219 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:27:03.466860 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2'
+[0m18:27:03.469948 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2'
+[0m18:27:03.471210 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:27:03.472772 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:27:04.891992 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2, now list_corded-sunlight-464012-e2_dbt_dw)
+[0m18:27:04.894153 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2, now list_corded-sunlight-464012-e2_dbt_dw_raw)
+[0m18:27:04.894911 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:27:04.895900 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:27:05.842069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e4e064d10>]}
+[0m18:27:05.843068 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:27:05.880542 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.categories
+[0m18:27:05.881952 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.country_codes
+[0m18:27:05.883727 [debug] [Thread-3 (]: Began running node seed.dbt_exercise.customers
+[0m18:27:05.885955 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.dados_financeiros
+[0m18:27:05.885118 [info ] [Thread-1 (]: 1 of 14 START seed file dbt_dw.categories ...................................... [RUN]
+[0m18:27:05.887753 [info ] [Thread-2 (]: 2 of 14 START seed file dbt_dw.country_codes ................................... [RUN]
+[0m18:27:05.889003 [info ] [Thread-3 (]: 3 of 14 START seed file dbt_dw.customers ....................................... [RUN]
+[0m18:27:05.890194 [info ] [Thread-4 (]: 4 of 14 START seed file dbt_dw_raw.dados_financeiros ........................... [RUN]
+[0m18:27:05.891235 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw, now seed.dbt_exercise.categories)
+[0m18:27:05.892373 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_raw, now seed.dbt_exercise.country_codes)
+[0m18:27:05.893473 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.dbt_exercise.customers'
+[0m18:27:05.895185 [debug] [Thread-4 (]: Acquiring new bigquery connection 'seed.dbt_exercise.dados_financeiros'
+[0m18:27:05.896701 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.categories
+[0m18:27:05.897692 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.country_codes
+[0m18:27:05.898610 [debug] [Thread-3 (]: Began compiling node seed.dbt_exercise.customers
+[0m18:27:05.899647 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.dados_financeiros
+[0m18:27:05.900742 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.categories
+[0m18:27:05.901627 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.country_codes
+[0m18:27:05.902491 [debug] [Thread-3 (]: Began executing node seed.dbt_exercise.customers
+[0m18:27:05.903477 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.dados_financeiros
+[0m18:27:13.280497 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:27:13.282340 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:27:13.307289 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:27:13.311516 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:27:18.584317 [debug] [Thread-2 (]: On seed.dbt_exercise.country_codes: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.country_codes"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`country_codes` set OPTIONS()
+  
+[0m18:27:18.740610 [debug] [Thread-1 (]: On seed.dbt_exercise.categories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.categories"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`categories` set OPTIONS()
+  
+[0m18:27:18.803420 [debug] [Thread-3 (]: On seed.dbt_exercise.customers: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.customers"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`customers` set OPTIONS()
+  
+[0m18:27:18.993527 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:ea38059f-661b-4923-a121-9d7262e56960&page=queryresults
+[0m18:27:19.209771 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:a9dc6b98-c3f4-4691-9851-4fcd4c80f1d6&page=queryresults
+[0m18:27:19.244499 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:ea492f2b-9f73-4014-9649-6c3894ad34b3&page=queryresults
+[0m18:27:19.549701 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.country_codes"
+[0m18:27:19.629386 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e8db75700>]}
+[0m18:27:19.630461 [info ] [Thread-2 (]: 2 of 14 OK loaded seed file dbt_dw.country_codes ............................... [[32mINSERT 3[0m in 13.71s]
+[0m18:27:19.631438 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.country_codes
+[0m18:27:19.632462 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.employee_territories
+[0m18:27:19.634687 [info ] [Thread-2 (]: 5 of 14 START seed file dbt_dw.employee_territories ............................ [RUN]
+[0m18:27:19.637516 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.country_codes, now seed.dbt_exercise.employee_territories)
+[0m18:27:19.638996 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.employee_territories
+[0m18:27:19.639780 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.employee_territories
+[0m18:27:19.648729 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:27:19.709539 [debug] [Thread-4 (]: On seed.dbt_exercise.dados_financeiros: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.dados_financeiros"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`dados_financeiros` set OPTIONS()
+  
+[0m18:27:19.756307 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.categories"
+[0m18:27:19.784454 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dec3fb0>]}
+[0m18:27:19.786438 [info ] [Thread-1 (]: 1 of 14 OK loaded seed file dbt_dw.categories .................................. [[32mINSERT 8[0m in 13.89s]
+[0m18:27:19.787884 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.categories
+[0m18:27:19.788817 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.employees
+[0m18:27:19.789865 [info ] [Thread-1 (]: 6 of 14 START seed file dbt_dw.employees ....................................... [RUN]
+[0m18:27:19.790692 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.categories, now seed.dbt_exercise.employees)
+[0m18:27:19.792382 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.employees
+[0m18:27:19.793411 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.employees
+[0m18:27:19.801704 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:27:19.808730 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_exercise.customers"
+[0m18:27:19.815099 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dec04a0>]}
+[0m18:27:19.817097 [info ] [Thread-3 (]: 3 of 14 OK loaded seed file dbt_dw.customers ................................... [[32mINSERT 91[0m in 13.92s]
+[0m18:27:19.821860 [debug] [Thread-3 (]: Finished running node seed.dbt_exercise.customers
+[0m18:27:19.823002 [debug] [Thread-3 (]: Began running node seed.dbt_exercise.order_details
+[0m18:27:19.824936 [info ] [Thread-3 (]: 7 of 14 START seed file dbt_dw.order_details ................................... [RUN]
+[0m18:27:19.829138 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.customers, now seed.dbt_exercise.order_details)
+[0m18:27:19.873081 [debug] [Thread-3 (]: Began compiling node seed.dbt_exercise.order_details
+[0m18:27:19.875507 [debug] [Thread-3 (]: Began executing node seed.dbt_exercise.order_details
+[0m18:27:19.990879 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:27:20.148064 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:f7525b33-d618-4e03-a88a-5dd7b9826ced&page=queryresults
+[0m18:27:20.716772 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.dados_financeiros"
+[0m18:27:20.722993 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dec16d0>]}
+[0m18:27:20.724165 [info ] [Thread-4 (]: 4 of 14 OK loaded seed file dbt_dw_raw.dados_financeiros ....................... [[32mINSERT 190[0m in 14.83s]
+[0m18:27:20.725177 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.dados_financeiros
+[0m18:27:20.726049 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.orders
+[0m18:27:20.726997 [info ] [Thread-4 (]: 8 of 14 START seed file dbt_dw.orders .......................................... [RUN]
+[0m18:27:20.728701 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.dados_financeiros, now seed.dbt_exercise.orders)
+[0m18:27:20.730104 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.orders
+[0m18:27:20.730654 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.orders
+[0m18:27:20.838457 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:27:25.130815 [debug] [Thread-2 (]: On seed.dbt_exercise.employee_territories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.employee_territories"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`employee_territories` set OPTIONS()
+  
+[0m18:27:25.546290 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:11d38277-6e56-474f-a4bd-fddd868f57fd&page=queryresults
+[0m18:27:26.068134 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.employee_territories"
+[0m18:27:26.073052 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dfdc710>]}
+[0m18:27:26.075141 [info ] [Thread-2 (]: 5 of 14 OK loaded seed file dbt_dw.employee_territories ........................ [[32mINSERT 49[0m in 6.44s]
+[0m18:27:26.077269 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.employee_territories
+[0m18:27:26.078082 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.products
+[0m18:27:26.079138 [info ] [Thread-2 (]: 9 of 14 START seed file dbt_dw.products ........................................ [RUN]
+[0m18:27:26.080006 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.employee_territories, now seed.dbt_exercise.products)
+[0m18:27:26.080689 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.products
+[0m18:27:26.081207 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.products
+[0m18:27:26.090217 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:27:26.412806 [debug] [Thread-1 (]: On seed.dbt_exercise.employees: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.employees"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`employees` set OPTIONS()
+  
+[0m18:27:26.418608 [debug] [Thread-4 (]: On seed.dbt_exercise.orders: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.orders"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`orders` set OPTIONS()
+  
+[0m18:27:26.486237 [debug] [Thread-3 (]: On seed.dbt_exercise.order_details: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.order_details"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`order_details` set OPTIONS()
+  
+[0m18:27:26.815773 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:f9bc918d-a2b4-4b67-be01-d430b1164a2b&page=queryresults
+[0m18:27:26.834400 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:d07e84a5-07f6-4d2c-a952-5a10e36fff68&page=queryresults
+[0m18:27:26.928857 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:89e24ab4-15eb-4815-93bc-5464033c1b30&page=queryresults
+[0m18:27:27.358714 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.employees"
+[0m18:27:27.364854 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dfdee70>]}
+[0m18:27:27.366103 [info ] [Thread-1 (]: 6 of 14 OK loaded seed file dbt_dw.employees ................................... [[32mINSERT 9[0m in 7.57s]
+[0m18:27:27.368576 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.employees
+[0m18:27:27.370292 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.region
+[0m18:27:27.372261 [info ] [Thread-1 (]: 10 of 14 START seed file dbt_dw.region ......................................... [RUN]
+[0m18:27:27.375016 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.employees, now seed.dbt_exercise.region)
+[0m18:27:27.376132 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.region
+[0m18:27:27.378453 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.region
+[0m18:27:27.384696 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.orders"
+[0m18:27:27.387738 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:27:27.396280 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dd67ce0>]}
+[0m18:27:27.397686 [info ] [Thread-4 (]: 8 of 14 OK loaded seed file dbt_dw.orders ...................................... [[32mINSERT 830[0m in 6.67s]
+[0m18:27:27.399002 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.orders
+[0m18:27:27.400199 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.shippers
+[0m18:27:27.401620 [info ] [Thread-4 (]: 11 of 14 START seed file dbt_dw.shippers ....................................... [RUN]
+[0m18:27:27.403485 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.orders, now seed.dbt_exercise.shippers)
+[0m18:27:27.404402 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.shippers
+[0m18:27:27.407777 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.shippers
+[0m18:27:27.460223 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:27:27.462722 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_exercise.order_details"
+[0m18:27:27.467494 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3ded1e80>]}
+[0m18:27:27.469813 [info ] [Thread-3 (]: 7 of 14 OK loaded seed file dbt_dw.order_details ............................... [[32mINSERT 2155[0m in 7.64s]
+[0m18:27:27.472309 [debug] [Thread-3 (]: Finished running node seed.dbt_exercise.order_details
+[0m18:27:27.473423 [debug] [Thread-3 (]: Began running node seed.dbt_exercise.suppliers
+[0m18:27:27.474813 [info ] [Thread-3 (]: 12 of 14 START seed file dbt_dw.suppliers ...................................... [RUN]
+[0m18:27:27.476312 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.order_details, now seed.dbt_exercise.suppliers)
+[0m18:27:27.478547 [debug] [Thread-3 (]: Began compiling node seed.dbt_exercise.suppliers
+[0m18:27:27.479276 [debug] [Thread-3 (]: Began executing node seed.dbt_exercise.suppliers
+[0m18:27:27.527632 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:27:31.113197 [debug] [Thread-2 (]: On seed.dbt_exercise.products: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.products"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`products` set OPTIONS()
+  
+[0m18:27:31.557977 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:20acb110-9cef-474f-81a5-cec9882978cd&page=queryresults
+[0m18:27:32.071805 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.products"
+[0m18:27:32.078206 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dd72e70>]}
+[0m18:27:32.081611 [info ] [Thread-2 (]: 9 of 14 OK loaded seed file dbt_dw.products .................................... [[32mINSERT 77[0m in 6.00s]
+[0m18:27:32.085260 [debug] [Thread-1 (]: On seed.dbt_exercise.region: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.region"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`region` set OPTIONS()
+  
+[0m18:27:32.086589 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.products
+[0m18:27:32.090108 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.territories
+[0m18:27:32.092577 [info ] [Thread-2 (]: 13 of 14 START seed file dbt_dw.territories .................................... [RUN]
+[0m18:27:32.094031 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.products, now seed.dbt_exercise.territories)
+[0m18:27:32.095505 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.territories
+[0m18:27:32.096767 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.territories
+[0m18:27:32.110296 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:27:32.499792 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:86df23d4-5408-4290-8dc3-599d608ca77d&page=queryresults
+[0m18:27:33.017152 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.region"
+[0m18:27:33.023765 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3da59250>]}
+[0m18:27:33.025476 [info ] [Thread-1 (]: 10 of 14 OK loaded seed file dbt_dw.region ..................................... [[32mINSERT 4[0m in 5.65s]
+[0m18:27:33.026592 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.region
+[0m18:27:33.027606 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.us_states
+[0m18:27:33.029202 [info ] [Thread-1 (]: 14 of 14 START seed file dbt_dw.us_states ...................................... [RUN]
+[0m18:27:33.030390 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.region, now seed.dbt_exercise.us_states)
+[0m18:27:33.031135 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.us_states
+[0m18:27:33.031675 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.us_states
+[0m18:27:33.042027 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:27:33.049800 [debug] [Thread-4 (]: On seed.dbt_exercise.shippers: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.shippers"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`shippers` set OPTIONS()
+  
+[0m18:27:33.140879 [debug] [Thread-3 (]: On seed.dbt_exercise.suppliers: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.suppliers"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`suppliers` set OPTIONS()
+  
+[0m18:27:33.505956 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:d11ba092-b4a5-4c97-b786-66e0e7204df6&page=queryresults
+[0m18:27:33.510685 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:1367d608-f094-4797-80db-45dd8df020b1&page=queryresults
+[0m18:27:34.049700 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.shippers"
+[0m18:27:34.056708 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dd90a70>]}
+[0m18:27:34.058464 [info ] [Thread-4 (]: 11 of 14 OK loaded seed file dbt_dw.shippers ................................... [[32mINSERT 6[0m in 6.65s]
+[0m18:27:34.059882 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.shippers
+[0m18:27:34.106786 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_exercise.suppliers"
+[0m18:27:34.114334 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dd80050>]}
+[0m18:27:34.115509 [info ] [Thread-3 (]: 12 of 14 OK loaded seed file dbt_dw.suppliers .................................. [[32mINSERT 29[0m in 6.64s]
+[0m18:27:34.119796 [debug] [Thread-3 (]: Finished running node seed.dbt_exercise.suppliers
+[0m18:27:37.030854 [debug] [Thread-2 (]: On seed.dbt_exercise.territories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.territories"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`territories` set OPTIONS()
+  
+[0m18:27:37.409060 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:e76d2715-f2f2-4d9f-a072-3d672e930efc&page=queryresults
+[0m18:27:37.957568 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.territories"
+[0m18:27:37.962492 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3dd90440>]}
+[0m18:27:37.964115 [info ] [Thread-2 (]: 13 of 14 OK loaded seed file dbt_dw.territories ................................ [[32mINSERT 53[0m in 5.87s]
+[0m18:27:37.966030 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.territories
+[0m18:27:37.971321 [debug] [Thread-1 (]: On seed.dbt_exercise.us_states: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.us_states"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`us_states` set OPTIONS()
+  
+[0m18:27:38.400751 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:de215a01-fe25-404a-89cc-5e7040d29b04&page=queryresults
+[0m18:27:38.949640 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.us_states"
+[0m18:27:38.956262 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '16611795-5c36-4c6f-bc0f-ef3ca53849ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e3da98050>]}
+[0m18:27:38.957083 [info ] [Thread-1 (]: 14 of 14 OK loaded seed file dbt_dw.us_states .................................. [[32mINSERT 51[0m in 5.93s]
+[0m18:27:38.958008 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.us_states
+[0m18:27:38.964376 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:27:38.975632 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:27:38.976703 [debug] [MainThread]: Connection 'seed.dbt_exercise.us_states' was properly closed.
+[0m18:27:38.977348 [debug] [MainThread]: Connection 'seed.dbt_exercise.territories' was properly closed.
+[0m18:27:38.977858 [debug] [MainThread]: Connection 'seed.dbt_exercise.suppliers' was properly closed.
+[0m18:27:38.978262 [debug] [MainThread]: Connection 'seed.dbt_exercise.shippers' was properly closed.
+[0m18:27:38.978804 [info ] [MainThread]: 
+[0m18:27:38.979444 [info ] [MainThread]: Finished running 14 seeds in 0 hours 0 minutes and 35.52 seconds (35.52s).
+[0m18:27:38.983251 [debug] [MainThread]: Command end result
+[0m18:27:39.055038 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m18:27:39.078093 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m18:27:39.089908 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/run_results.json
+[0m18:27:39.090891 [info ] [MainThread]: 
+[0m18:27:39.092296 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:27:39.093132 [info ] [MainThread]: 
+[0m18:27:39.094027 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=14
+[0m18:27:39.104562 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 160.67813, "process_in_blocks": "146168", "process_kernel_time": 18.443094, "process_mem_max_rss": "374448", "process_out_blocks": "4272", "process_user_time": 17.825167}
+[0m18:27:39.105920 [debug] [MainThread]: Command `dbt seed` succeeded at 18:27:39.105655 after 160.68 seconds
+[0m18:27:39.106846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e8f8ef200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e8c200950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x774e5316b170>]}
+[0m18:27:39.107462 [debug] [MainThread]: Flushing usage events
+[0m18:27:39.830013 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:38:13.303596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebf92e180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebf1ec500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebf1c48c0>]}
+
+
+============================== 09:38:13.325149 | f07a744e-efc0-461f-b53b-f6d0cb7a1cf8 ==============================
+[0m09:38:13.325149 [info ] [MainThread]: Running with dbt=1.10.2
+[0m09:38:13.326207 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m09:39:32.408804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e81da2060>]}
+[0m09:39:32.608331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e87069850>]}
+[0m09:39:32.616040 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m09:41:44.311744 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m09:41:44.723021 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m09:41:44.724360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e817d4740>]}
+[0m09:42:06.238617 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.dbt_exercise.staging
+- models.dbt_exercise.marts
+- models.dbt_exercise.intermediate
+[0m09:42:06.264945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e5b49c800>]}
+[0m09:42:06.529232 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m09:42:06.607908 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m09:42:07.753597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e5b389a90>]}
+[0m09:42:07.756170 [info ] [MainThread]: Found 2 models, 14 seeds, 5 data tests, 2 sources, 609 macros
+[0m09:42:07.757554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e5b4d8b30>]}
+[0m09:42:07.763138 [info ] [MainThread]: 
+[0m09:42:07.764406 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:42:07.765858 [info ] [MainThread]: 
+[0m09:42:07.769049 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:42:07.781759 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2'
+[0m09:42:07.784051 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:42:07.786356 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2'
+[0m09:42:07.788260 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:42:09.122323 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2, now create_corded-sunlight-464012-e2_dbt_dw_dbt_dw_raw)
+[0m09:42:09.123739 [debug] [ThreadPool]: Creating schema "database: "corded-sunlight-464012-e2"
+schema: "dbt_dw_dbt_dw_raw"
+"
+[0m09:42:09.149567 [debug] [ThreadPool]: On create_corded-sunlight-464012-e2_dbt_dw_dbt_dw_raw: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "connection_name": "create_corded-sunlight-464012-e2_dbt_dw_dbt_dw_raw"} */
+create schema if not exists `corded-sunlight-464012-e2`.`dbt_dw_dbt_dw_raw`
+  
+[0m09:42:09.150869 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:42:10.483567 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:ae22527c-b2d6-4155-b34d-cfd971f1ea1d&page=queryresults
+[0m09:42:23.822296 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_corded-sunlight-464012-e2_dbt_dw_dbt_dw_raw, now list_corded-sunlight-464012-e2_dbt_dw)
+[0m09:42:23.824255 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2, now list_corded-sunlight-464012-e2_dbt_dw_dbt_dw_raw)
+[0m09:42:23.827056 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:42:23.828637 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:42:24.849789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e8183eb40>]}
+[0m09:42:24.851085 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:42:24.896585 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.categories
+[0m09:42:24.898035 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.country_codes
+[0m09:42:24.900895 [debug] [Thread-3 (]: Began running node seed.dbt_exercise.customers
+[0m09:42:24.902634 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.dados_financeiros
+[0m09:42:24.899552 [info ] [Thread-1 (]: 1 of 14 START seed file dbt_dw.categories ...................................... [RUN]
+[0m09:42:24.905983 [info ] [Thread-2 (]: 2 of 14 START seed file dbt_dw.country_codes ................................... [RUN]
+[0m09:42:24.908462 [info ] [Thread-3 (]: 3 of 14 START seed file dbt_dw.customers ....................................... [RUN]
+[0m09:42:24.911047 [info ] [Thread-4 (]: 4 of 14 START seed file dbt_dw_dbt_dw_raw.dados_financeiros .................... [RUN]
+[0m09:42:24.913327 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_dbt_dw_raw, now seed.dbt_exercise.categories)
+[0m09:42:24.914980 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw, now seed.dbt_exercise.country_codes)
+[0m09:42:24.916515 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.dbt_exercise.customers'
+[0m09:42:24.918374 [debug] [Thread-4 (]: Acquiring new bigquery connection 'seed.dbt_exercise.dados_financeiros'
+[0m09:42:24.920428 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.categories
+[0m09:42:24.922612 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.country_codes
+[0m09:42:24.924367 [debug] [Thread-3 (]: Began compiling node seed.dbt_exercise.customers
+[0m09:42:24.925536 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.dados_financeiros
+[0m09:42:24.926674 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.categories
+[0m09:42:24.927790 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.country_codes
+[0m09:42:24.929240 [debug] [Thread-3 (]: Began executing node seed.dbt_exercise.customers
+[0m09:42:24.930367 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.dados_financeiros
+[0m09:42:25.186430 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:42:25.194953 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:42:25.201592 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:42:25.229528 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m09:42:31.086884 [debug] [Thread-1 (]: On seed.dbt_exercise.categories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.categories"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`categories` set OPTIONS()
+  
+[0m09:42:31.282363 [debug] [Thread-3 (]: On seed.dbt_exercise.customers: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.customers"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`customers` set OPTIONS()
+  
+[0m09:42:31.289423 [debug] [Thread-4 (]: On seed.dbt_exercise.dados_financeiros: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.dados_financeiros"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_dbt_dw_raw`.`dados_financeiros` set OPTIONS()
+  
+[0m09:42:31.322122 [debug] [Thread-2 (]: On seed.dbt_exercise.country_codes: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.country_codes"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`country_codes` set OPTIONS()
+  
+[0m09:42:31.477274 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:a3774c45-3473-4e81-8767-2bc05eb14c98&page=queryresults
+[0m09:42:31.675225 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:3cd838d3-839b-4509-a2ec-12e92965e709&page=queryresults
+[0m09:42:31.706020 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:014741e1-3222-4e5c-91c1-4e3d72d81630&page=queryresults
+[0m09:42:31.740800 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:2d6121f8-9a80-42f3-8144-8de8fcd326ea&page=queryresults
+[0m09:42:32.024018 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.categories"
+[0m09:42:32.138000 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e59ec7350>]}
+[0m09:42:32.139399 [info ] [Thread-1 (]: 1 of 14 OK loaded seed file dbt_dw.categories .................................. [[32mINSERT 8[0m in 7.17s]
+[0m09:42:32.141824 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.categories
+[0m09:42:32.143520 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.employee_territories
+[0m09:42:32.145446 [info ] [Thread-1 (]: 5 of 14 START seed file dbt_dw.employee_territories ............................ [RUN]
+[0m09:42:32.146778 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.categories, now seed.dbt_exercise.employee_territories)
+[0m09:42:32.147952 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.employee_territories
+[0m09:42:32.149291 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.employee_territories
+[0m09:42:32.161086 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:42:32.258964 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.dados_financeiros"
+[0m09:42:32.278743 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e59e453d0>]}
+[0m09:42:32.280483 [info ] [Thread-4 (]: 4 of 14 OK loaded seed file dbt_dw_dbt_dw_raw.dados_financeiros ................ [[32mINSERT 190[0m in 7.36s]
+[0m09:42:32.283741 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.dados_financeiros
+[0m09:42:32.286064 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.employees
+[0m09:42:32.292241 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.country_codes"
+[0m09:42:32.287840 [info ] [Thread-4 (]: 6 of 14 START seed file dbt_dw.employees ....................................... [RUN]
+[0m09:42:32.294403 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.dados_financeiros, now seed.dbt_exercise.employees)
+[0m09:42:32.295428 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.employees
+[0m09:42:32.297030 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.employees
+[0m09:42:32.308984 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e5851eab0>]}
+[0m09:42:32.315648 [info ] [Thread-2 (]: 2 of 14 OK loaded seed file dbt_dw.country_codes ............................... [[32mINSERT 3[0m in 7.39s]
+[0m09:42:32.318489 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.country_codes
+[0m09:42:32.323456 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:42:32.324813 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.order_details
+[0m09:42:32.327600 [info ] [Thread-2 (]: 7 of 14 START seed file dbt_dw.order_details ................................... [RUN]
+[0m09:42:32.329146 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.country_codes, now seed.dbt_exercise.order_details)
+[0m09:42:32.331020 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.order_details
+[0m09:42:32.332747 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.order_details
+[0m09:42:32.550273 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:42:32.639437 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_exercise.customers"
+[0m09:42:32.648864 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e585b1640>]}
+[0m09:42:32.651443 [info ] [Thread-3 (]: 3 of 14 OK loaded seed file dbt_dw.customers ................................... [[32mINSERT 91[0m in 7.73s]
+[0m09:42:32.656946 [debug] [Thread-3 (]: Finished running node seed.dbt_exercise.customers
+[0m09:42:32.659064 [debug] [Thread-3 (]: Began running node seed.dbt_exercise.orders
+[0m09:42:32.661970 [info ] [Thread-3 (]: 8 of 14 START seed file dbt_dw.orders .......................................... [RUN]
+[0m09:42:32.664988 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.customers, now seed.dbt_exercise.orders)
+[0m09:42:32.666392 [debug] [Thread-3 (]: Began compiling node seed.dbt_exercise.orders
+[0m09:42:32.668314 [debug] [Thread-3 (]: Began executing node seed.dbt_exercise.orders
+[0m09:42:32.836749 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m09:42:37.315684 [debug] [Thread-4 (]: On seed.dbt_exercise.employees: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.employees"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`employees` set OPTIONS()
+  
+[0m09:42:37.452957 [debug] [Thread-1 (]: On seed.dbt_exercise.employee_territories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.employee_territories"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`employee_territories` set OPTIONS()
+  
+[0m09:42:37.698730 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:5c4990a2-adbd-421e-a852-b2e20f9e9a8b&page=queryresults
+[0m09:42:37.798222 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:74916be8-9826-4413-9040-1756dfd58ce1&page=queryresults
+[0m09:42:38.230714 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.employees"
+[0m09:42:38.241069 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e5856d100>]}
+[0m09:42:38.246476 [info ] [Thread-4 (]: 6 of 14 OK loaded seed file dbt_dw.employees ................................... [[32mINSERT 9[0m in 5.95s]
+[0m09:42:38.250141 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.employees
+[0m09:42:38.252201 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.products
+[0m09:42:38.255700 [info ] [Thread-4 (]: 9 of 14 START seed file dbt_dw.products ........................................ [RUN]
+[0m09:42:38.258902 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.employees, now seed.dbt_exercise.products)
+[0m09:42:38.261792 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.products
+[0m09:42:38.263737 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.products
+[0m09:42:38.299321 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:42:38.394633 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.employee_territories"
+[0m09:42:38.404763 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e5851c2c0>]}
+[0m09:42:38.406627 [info ] [Thread-1 (]: 5 of 14 OK loaded seed file dbt_dw.employee_territories ........................ [[32mINSERT 49[0m in 6.26s]
+[0m09:42:38.409031 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.employee_territories
+[0m09:42:38.410124 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.region
+[0m09:42:38.412175 [info ] [Thread-1 (]: 10 of 14 START seed file dbt_dw.region ......................................... [RUN]
+[0m09:42:38.414736 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.employee_territories, now seed.dbt_exercise.region)
+[0m09:42:38.416676 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.region
+[0m09:42:38.417924 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.region
+[0m09:42:38.431336 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:42:38.540809 [debug] [Thread-2 (]: On seed.dbt_exercise.order_details: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.order_details"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`order_details` set OPTIONS()
+  
+[0m09:42:39.146677 [debug] [Thread-3 (]: On seed.dbt_exercise.orders: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.orders"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`orders` set OPTIONS()
+  
+[0m09:42:39.527082 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:37dfdaec-c441-4bd1-8813-a1e3ecd7abe3&page=queryresults
+[0m09:42:39.615512 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:b768f0db-fa0b-4bb5-97e5-ce539308fe4a&page=queryresults
+[0m09:42:40.120434 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_exercise.orders"
+[0m09:42:40.134766 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e58235b20>]}
+[0m09:42:40.136611 [info ] [Thread-3 (]: 8 of 14 OK loaded seed file dbt_dw.orders ...................................... [[32mINSERT 830[0m in 7.47s]
+[0m09:42:40.138881 [debug] [Thread-3 (]: Finished running node seed.dbt_exercise.orders
+[0m09:42:40.140836 [debug] [Thread-3 (]: Began running node seed.dbt_exercise.shippers
+[0m09:42:40.143314 [info ] [Thread-3 (]: 11 of 14 START seed file dbt_dw.shippers ....................................... [RUN]
+[0m09:42:40.146524 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.orders, now seed.dbt_exercise.shippers)
+[0m09:42:40.148624 [debug] [Thread-3 (]: Began compiling node seed.dbt_exercise.shippers
+[0m09:42:40.150693 [debug] [Thread-3 (]: Began executing node seed.dbt_exercise.shippers
+[0m09:42:40.162835 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m09:42:40.314280 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.order_details"
+[0m09:42:40.336278 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e5855d130>]}
+[0m09:42:40.338584 [info ] [Thread-2 (]: 7 of 14 OK loaded seed file dbt_dw.order_details ............................... [[32mINSERT 2155[0m in 8.01s]
+[0m09:42:40.341539 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.order_details
+[0m09:42:40.344252 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.suppliers
+[0m09:42:40.346694 [info ] [Thread-2 (]: 12 of 14 START seed file dbt_dw.suppliers ...................................... [RUN]
+[0m09:42:40.349427 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.order_details, now seed.dbt_exercise.suppliers)
+[0m09:42:40.351173 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.suppliers
+[0m09:42:40.353123 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.suppliers
+[0m09:42:40.369348 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:42:43.318855 [debug] [Thread-1 (]: On seed.dbt_exercise.region: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.region"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`region` set OPTIONS()
+  
+[0m09:42:43.565967 [debug] [Thread-4 (]: On seed.dbt_exercise.products: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.products"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`products` set OPTIONS()
+  
+[0m09:42:43.731194 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:2e8537aa-ca95-4259-946e-ce1500ad19f6&page=queryresults
+[0m09:42:43.973963 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:eff54812-764b-438f-8a05-59e080808394&page=queryresults
+[0m09:42:44.220308 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.region"
+[0m09:42:44.226985 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e58272330>]}
+[0m09:42:44.228740 [info ] [Thread-1 (]: 10 of 14 OK loaded seed file dbt_dw.region ..................................... [[32mINSERT 4[0m in 5.81s]
+[0m09:42:44.232175 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.region
+[0m09:42:44.233630 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.territories
+[0m09:42:44.235262 [info ] [Thread-1 (]: 13 of 14 START seed file dbt_dw.territories .................................... [RUN]
+[0m09:42:44.237417 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.region, now seed.dbt_exercise.territories)
+[0m09:42:44.239601 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.territories
+[0m09:42:44.241486 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.territories
+[0m09:42:44.254378 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:42:44.464003 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.products"
+[0m09:42:44.471481 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e58552d80>]}
+[0m09:42:44.473059 [info ] [Thread-4 (]: 9 of 14 OK loaded seed file dbt_dw.products .................................... [[32mINSERT 77[0m in 6.21s]
+[0m09:42:44.474580 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.products
+[0m09:42:44.475809 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.us_states
+[0m09:42:44.477900 [info ] [Thread-4 (]: 14 of 14 START seed file dbt_dw.us_states ...................................... [RUN]
+[0m09:42:44.479729 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.products, now seed.dbt_exercise.us_states)
+[0m09:42:44.481749 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.us_states
+[0m09:42:44.483107 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.us_states
+[0m09:42:44.494538 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:42:45.422143 [debug] [Thread-3 (]: On seed.dbt_exercise.shippers: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.shippers"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`shippers` set OPTIONS()
+  
+[0m09:42:45.909026 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:f21be0c3-2025-463b-a974-74a1de7c9a6d&page=queryresults
+[0m09:42:46.396870 [debug] [Thread-2 (]: On seed.dbt_exercise.suppliers: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.suppliers"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`suppliers` set OPTIONS()
+  
+[0m09:42:46.417416 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_exercise.shippers"
+[0m09:42:46.426751 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e58281370>]}
+[0m09:42:46.429200 [info ] [Thread-3 (]: 11 of 14 OK loaded seed file dbt_dw.shippers ................................... [[32mINSERT 6[0m in 6.28s]
+[0m09:42:46.431848 [debug] [Thread-3 (]: Finished running node seed.dbt_exercise.shippers
+[0m09:42:46.796015 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:97e33a8e-a7eb-4579-b248-ba1810ed2f38&page=queryresults
+[0m09:42:47.341200 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.suppliers"
+[0m09:42:47.346725 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e58271310>]}
+[0m09:42:47.348094 [info ] [Thread-2 (]: 12 of 14 OK loaded seed file dbt_dw.suppliers .................................. [[32mINSERT 29[0m in 7.00s]
+[0m09:42:47.350377 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.suppliers
+[0m09:42:48.978338 [debug] [Thread-1 (]: On seed.dbt_exercise.territories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.territories"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`territories` set OPTIONS()
+  
+[0m09:42:49.417699 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:8d251c54-037d-4e1f-b143-2ad18d48f198&page=queryresults
+[0m09:42:51.338612 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.territories"
+[0m09:42:51.348269 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e582a8ef0>]}
+[0m09:42:51.349662 [info ] [Thread-1 (]: 13 of 14 OK loaded seed file dbt_dw.territories ................................ [[32mINSERT 53[0m in 7.11s]
+[0m09:42:51.352389 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.territories
+[0m09:42:51.435691 [debug] [Thread-4 (]: On seed.dbt_exercise.us_states: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.us_states"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw`.`us_states` set OPTIONS()
+  
+[0m09:42:51.822842 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:a22121f2-3132-4370-a0b3-b07151b488dc&page=queryresults
+[0m09:42:52.335847 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.us_states"
+[0m09:42:52.342034 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f07a744e-efc0-461f-b53b-f6d0cb7a1cf8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e582a9220>]}
+[0m09:42:52.343656 [info ] [Thread-4 (]: 14 of 14 OK loaded seed file dbt_dw.us_states .................................. [[32mINSERT 51[0m in 7.86s]
+[0m09:42:52.346062 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.us_states
+[0m09:42:52.353460 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:42:52.367193 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:42:52.368929 [debug] [MainThread]: Connection 'seed.dbt_exercise.suppliers' was properly closed.
+[0m09:42:52.370284 [debug] [MainThread]: Connection 'seed.dbt_exercise.territories' was properly closed.
+[0m09:42:52.371715 [debug] [MainThread]: Connection 'seed.dbt_exercise.shippers' was properly closed.
+[0m09:42:52.373086 [debug] [MainThread]: Connection 'seed.dbt_exercise.us_states' was properly closed.
+[0m09:42:52.374070 [info ] [MainThread]: 
+[0m09:42:52.375205 [info ] [MainThread]: Finished running 14 seeds in 0 hours 0 minutes and 44.61 seconds (44.61s).
+[0m09:42:52.383838 [debug] [MainThread]: Command end result
+[0m09:42:52.475191 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m09:42:52.500883 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m09:42:52.519055 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/run_results.json
+[0m09:42:52.520143 [info ] [MainThread]: 
+[0m09:42:52.521437 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:42:52.522793 [info ] [MainThread]: 
+[0m09:42:52.524479 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=14
+[0m09:42:52.535041 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 266.87604, "process_in_blocks": "130016", "process_kernel_time": 27.968687, "process_mem_max_rss": "380528", "process_out_blocks": "4264", "process_user_time": 25.514032}
+[0m09:42:52.536731 [debug] [MainThread]: Command `dbt seed` succeeded at 09:42:52.536342 after 266.88 seconds
+[0m09:42:52.537823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebfd93e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3e582a7fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a3ebfe1bf80>]}
+[0m09:42:52.538802 [debug] [MainThread]: Flushing usage events
+[0m09:42:52.956529 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:45:57.139960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x704114d297f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x704115969760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7041154e78f0>]}
+
+
+============================== 09:45:57.180789 | 936407fc-a6e4-40f5-b8e0-ab06b26cd2ae ==============================
+[0m09:45:57.180789 [info ] [MainThread]: Running with dbt=1.10.2
+[0m09:45:57.182322 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'version_check': 'True', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt seed', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:47:54.762282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040d7b27800>]}
+[0m09:47:54.942266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x704114c57200>]}
+[0m09:47:54.949840 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m09:50:07.649646 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m09:50:08.098043 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m09:50:08.100592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040d7d45460>]}
+[0m09:50:27.497994 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.dbt_exercise.staging
+- models.dbt_exercise.intermediate
+- models.dbt_exercise.marts
+[0m09:50:27.526048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040d5644500>]}
+[0m09:50:27.782164 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m09:50:27.810235 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m09:50:28.803612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040d533a3f0>]}
+[0m09:50:28.804776 [info ] [MainThread]: Found 2 models, 14 seeds, 5 data tests, 2 sources, 609 macros
+[0m09:50:28.805775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040d549d8e0>]}
+[0m09:50:28.813333 [info ] [MainThread]: 
+[0m09:50:28.814432 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:50:28.815548 [info ] [MainThread]: 
+[0m09:50:28.817679 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:50:28.831487 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2'
+[0m09:50:28.832985 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:50:30.029315 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2, now list_corded-sunlight-464012-e2_dbt_dw)
+[0m09:50:30.031841 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:50:30.033348 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2_dbt_dw_raw'
+[0m09:50:30.035330 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:50:31.135205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040d81884d0>]}
+[0m09:50:31.139651 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:50:31.171246 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.categories
+[0m09:50:31.172729 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.country_codes
+[0m09:50:31.173997 [debug] [Thread-3 (]: Began running node seed.dbt_exercise.customers
+[0m09:50:31.177513 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.dados_financeiros
+[0m09:50:31.175740 [info ] [Thread-1 (]: 1 of 14 START seed file dbt_dw_raw.categories .................................. [RUN]
+[0m09:50:31.180518 [info ] [Thread-2 (]: 2 of 14 START seed file dbt_dw_raw.country_codes ............................... [RUN]
+[0m09:50:31.183975 [info ] [Thread-3 (]: 3 of 14 START seed file dbt_dw_raw.customers ................................... [RUN]
+[0m09:50:31.187576 [info ] [Thread-4 (]: 4 of 14 START seed file dbt_dw_raw.dados_financeiros ........................... [RUN]
+[0m09:50:31.189407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_raw, now seed.dbt_exercise.categories)
+[0m09:50:31.191210 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw, now seed.dbt_exercise.country_codes)
+[0m09:50:31.193744 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.dbt_exercise.customers'
+[0m09:50:31.196137 [debug] [Thread-4 (]: Acquiring new bigquery connection 'seed.dbt_exercise.dados_financeiros'
+[0m09:50:31.198169 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.categories
+[0m09:50:31.200978 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.country_codes
+[0m09:50:31.203005 [debug] [Thread-3 (]: Began compiling node seed.dbt_exercise.customers
+[0m09:50:31.204809 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.dados_financeiros
+[0m09:50:31.206373 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.categories
+[0m09:50:31.208374 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.country_codes
+[0m09:50:31.209813 [debug] [Thread-3 (]: Began executing node seed.dbt_exercise.customers
+[0m09:50:31.211138 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.dados_financeiros
+[0m09:50:42.098064 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:50:42.104970 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:50:42.108163 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:50:42.143906 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m09:50:46.766243 [debug] [Thread-1 (]: On seed.dbt_exercise.categories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.categories"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`categories` set OPTIONS()
+  
+[0m09:50:47.141544 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:995a7acb-5b75-444e-9eb5-caf44013f891&page=queryresults
+[0m09:50:47.576753 [debug] [Thread-2 (]: On seed.dbt_exercise.country_codes: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.country_codes"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`country_codes` set OPTIONS()
+  
+[0m09:50:47.661681 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.categories"
+[0m09:50:47.761120 [debug] [Thread-4 (]: On seed.dbt_exercise.dados_financeiros: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.dados_financeiros"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`dados_financeiros` set OPTIONS()
+  
+[0m09:50:47.789699 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70411746d5e0>]}
+[0m09:50:47.791343 [info ] [Thread-1 (]: 1 of 14 OK loaded seed file dbt_dw_raw.categories .............................. [[32mINSERT 8[0m in 16.57s]
+[0m09:50:47.793791 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.categories
+[0m09:50:47.795622 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.employee_territories
+[0m09:50:47.798034 [info ] [Thread-1 (]: 5 of 14 START seed file dbt_dw_raw.employee_territories ........................ [RUN]
+[0m09:50:47.799913 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.categories, now seed.dbt_exercise.employee_territories)
+[0m09:50:47.801406 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.employee_territories
+[0m09:50:47.802891 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.employee_territories
+[0m09:50:47.814047 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:50:48.020045 [debug] [Thread-3 (]: On seed.dbt_exercise.customers: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.customers"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`customers` set OPTIONS()
+  
+[0m09:50:48.026242 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:fda2a914-ed81-4b7e-994a-6241715c1f3a&page=queryresults
+[0m09:50:48.173982 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:bdb80e1e-b7a0-4ebb-868f-775901e510bf&page=queryresults
+[0m09:50:48.481283 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:c55e64fd-0f90-48b0-9388-894359804f60&page=queryresults
+[0m09:50:48.546903 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.country_codes"
+[0m09:50:48.574314 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040d5255e20>]}
+[0m09:50:48.576607 [info ] [Thread-2 (]: 2 of 14 OK loaded seed file dbt_dw_raw.country_codes ........................... [[32mINSERT 3[0m in 17.38s]
+[0m09:50:48.579372 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.country_codes
+[0m09:50:48.580610 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.employees
+[0m09:50:48.582220 [info ] [Thread-2 (]: 6 of 14 START seed file dbt_dw_raw.employees ................................... [RUN]
+[0m09:50:48.584683 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.country_codes, now seed.dbt_exercise.employees)
+[0m09:50:48.586488 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.employees
+[0m09:50:48.588281 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.employees
+[0m09:50:48.601663 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:50:48.725635 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.dados_financeiros"
+[0m09:50:48.731969 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b552de50>]}
+[0m09:50:48.733403 [info ] [Thread-4 (]: 4 of 14 OK loaded seed file dbt_dw_raw.dados_financeiros ....................... [[32mINSERT 190[0m in 17.54s]
+[0m09:50:48.735103 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.dados_financeiros
+[0m09:50:48.736813 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.order_details
+[0m09:50:48.739236 [info ] [Thread-4 (]: 7 of 14 START seed file dbt_dw_raw.order_details ............................... [RUN]
+[0m09:50:48.741299 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.dados_financeiros, now seed.dbt_exercise.order_details)
+[0m09:50:48.742405 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.order_details
+[0m09:50:48.743495 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.order_details
+[0m09:50:48.872533 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:50:49.002116 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_exercise.customers"
+[0m09:50:49.015737 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b565bef0>]}
+[0m09:50:49.017515 [info ] [Thread-3 (]: 3 of 14 OK loaded seed file dbt_dw_raw.customers ............................... [[32mINSERT 91[0m in 17.82s]
+[0m09:50:49.019920 [debug] [Thread-3 (]: Finished running node seed.dbt_exercise.customers
+[0m09:50:49.021434 [debug] [Thread-3 (]: Began running node seed.dbt_exercise.orders
+[0m09:50:49.023881 [info ] [Thread-3 (]: 8 of 14 START seed file dbt_dw_raw.orders ...................................... [RUN]
+[0m09:50:49.025996 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.customers, now seed.dbt_exercise.orders)
+[0m09:50:49.027452 [debug] [Thread-3 (]: Began compiling node seed.dbt_exercise.orders
+[0m09:50:49.028527 [debug] [Thread-3 (]: Began executing node seed.dbt_exercise.orders
+[0m09:50:49.200307 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m09:50:53.874540 [debug] [Thread-2 (]: On seed.dbt_exercise.employees: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.employees"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`employees` set OPTIONS()
+  
+[0m09:50:54.288410 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:e7b1b020-2112-42a2-9f93-256f6cc7025e&page=queryresults
+[0m09:50:54.811394 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.employees"
+[0m09:50:54.819188 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b55b6180>]}
+[0m09:50:54.820689 [info ] [Thread-2 (]: 6 of 14 OK loaded seed file dbt_dw_raw.employees ............................... [[32mINSERT 9[0m in 6.23s]
+[0m09:50:54.822567 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.employees
+[0m09:50:54.824288 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.products
+[0m09:50:54.826526 [info ] [Thread-2 (]: 9 of 14 START seed file dbt_dw_raw.products .................................... [RUN]
+[0m09:50:54.828963 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.employees, now seed.dbt_exercise.products)
+[0m09:50:54.830364 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.products
+[0m09:50:54.831781 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.products
+[0m09:50:54.849401 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:50:54.946145 [debug] [Thread-4 (]: On seed.dbt_exercise.order_details: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.order_details"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`order_details` set OPTIONS()
+  
+[0m09:50:55.357430 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:dec7fe1e-a1a3-4fce-ab27-7d70f38f7745&page=queryresults
+[0m09:50:55.867808 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.order_details"
+[0m09:50:55.871766 [debug] [Thread-1 (]: On seed.dbt_exercise.employee_territories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.employee_territories"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`employee_territories` set OPTIONS()
+  
+[0m09:50:55.882943 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b55b5a30>]}
+[0m09:50:55.885219 [info ] [Thread-4 (]: 7 of 14 OK loaded seed file dbt_dw_raw.order_details ........................... [[32mINSERT 2155[0m in 7.14s]
+[0m09:50:55.887587 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.order_details
+[0m09:50:55.891191 [debug] [Thread-4 (]: Began running node seed.dbt_exercise.region
+[0m09:50:55.892994 [info ] [Thread-4 (]: 10 of 14 START seed file dbt_dw_raw.region ..................................... [RUN]
+[0m09:50:55.895952 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.order_details, now seed.dbt_exercise.region)
+[0m09:50:55.898598 [debug] [Thread-4 (]: Began compiling node seed.dbt_exercise.region
+[0m09:50:55.900846 [debug] [Thread-4 (]: Began executing node seed.dbt_exercise.region
+[0m09:50:55.917055 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:50:56.267009 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:6218499f-f527-4aea-9bc1-e11880e8acff&page=queryresults
+[0m09:50:56.767128 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.employee_territories"
+[0m09:50:56.775626 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b552f8c0>]}
+[0m09:50:56.777716 [info ] [Thread-1 (]: 5 of 14 OK loaded seed file dbt_dw_raw.employee_territories .................... [[32mINSERT 49[0m in 8.98s]
+[0m09:50:56.779860 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.employee_territories
+[0m09:50:56.781205 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.shippers
+[0m09:50:56.783208 [info ] [Thread-1 (]: 11 of 14 START seed file dbt_dw_raw.shippers ................................... [RUN]
+[0m09:50:56.785125 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.employee_territories, now seed.dbt_exercise.shippers)
+[0m09:50:56.786198 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.shippers
+[0m09:50:56.787407 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.shippers
+[0m09:50:56.797666 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:50:58.287798 [debug] [Thread-3 (]: On seed.dbt_exercise.orders: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.orders"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`orders` set OPTIONS()
+  
+[0m09:50:58.741738 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:b791f86b-b313-4503-8b0e-48dddbdfed0b&page=queryresults
+[0m09:50:59.292536 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_exercise.orders"
+[0m09:50:59.322971 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b5100050>]}
+[0m09:50:59.326324 [info ] [Thread-3 (]: 8 of 14 OK loaded seed file dbt_dw_raw.orders .................................. [[32mINSERT 830[0m in 10.30s]
+[0m09:50:59.332481 [debug] [Thread-3 (]: Finished running node seed.dbt_exercise.orders
+[0m09:50:59.334611 [debug] [Thread-3 (]: Began running node seed.dbt_exercise.suppliers
+[0m09:50:59.337238 [info ] [Thread-3 (]: 12 of 14 START seed file dbt_dw_raw.suppliers .................................. [RUN]
+[0m09:50:59.339357 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.orders, now seed.dbt_exercise.suppliers)
+[0m09:50:59.340776 [debug] [Thread-3 (]: Began compiling node seed.dbt_exercise.suppliers
+[0m09:50:59.342219 [debug] [Thread-3 (]: Began executing node seed.dbt_exercise.suppliers
+[0m09:50:59.356068 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m09:51:02.163764 [debug] [Thread-2 (]: On seed.dbt_exercise.products: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.products"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`products` set OPTIONS()
+  
+[0m09:51:02.572129 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:c8ed21db-45f2-48d7-8301-3e439bc611e1&page=queryresults
+[0m09:51:03.182474 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.products"
+[0m09:51:03.193045 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b520d010>]}
+[0m09:51:03.195351 [info ] [Thread-2 (]: 9 of 14 OK loaded seed file dbt_dw_raw.products ................................ [[32mINSERT 77[0m in 8.36s]
+[0m09:51:03.197999 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.products
+[0m09:51:03.199287 [debug] [Thread-2 (]: Began running node seed.dbt_exercise.territories
+[0m09:51:03.200861 [info ] [Thread-2 (]: 13 of 14 START seed file dbt_dw_raw.territories ................................ [RUN]
+[0m09:51:03.202255 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.products, now seed.dbt_exercise.territories)
+[0m09:51:03.204626 [debug] [Thread-2 (]: Began compiling node seed.dbt_exercise.territories
+[0m09:51:03.205811 [debug] [Thread-2 (]: Began executing node seed.dbt_exercise.territories
+[0m09:51:03.219796 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:51:04.197424 [debug] [Thread-4 (]: On seed.dbt_exercise.region: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.region"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`region` set OPTIONS()
+  
+[0m09:51:04.303389 [debug] [Thread-1 (]: On seed.dbt_exercise.shippers: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.shippers"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`shippers` set OPTIONS()
+  
+[0m09:51:04.631511 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:279e6956-c57e-4427-b1fb-a6fc7bddebc7&page=queryresults
+[0m09:51:04.677268 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:b25ee32e-25e0-4107-a822-78a9541d0ca9&page=queryresults
+[0m09:51:05.134097 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.shippers"
+[0m09:51:05.145579 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b52f28a0>]}
+[0m09:51:05.148431 [info ] [Thread-1 (]: 11 of 14 OK loaded seed file dbt_dw_raw.shippers ............................... [[32mINSERT 6[0m in 8.36s]
+[0m09:51:05.150419 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.shippers
+[0m09:51:05.152015 [debug] [Thread-1 (]: Began running node seed.dbt_exercise.us_states
+[0m09:51:05.154108 [info ] [Thread-1 (]: 14 of 14 START seed file dbt_dw_raw.us_states .................................. [RUN]
+[0m09:51:05.155670 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_exercise.shippers, now seed.dbt_exercise.us_states)
+[0m09:51:05.156744 [debug] [Thread-1 (]: Began compiling node seed.dbt_exercise.us_states
+[0m09:51:05.157724 [debug] [Thread-1 (]: Began executing node seed.dbt_exercise.us_states
+[0m09:51:05.169221 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:51:05.255778 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.dbt_exercise.region"
+[0m09:51:05.266115 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b55dbad0>]}
+[0m09:51:05.267796 [info ] [Thread-4 (]: 10 of 14 OK loaded seed file dbt_dw_raw.region ................................. [[32mINSERT 4[0m in 9.37s]
+[0m09:51:05.269557 [debug] [Thread-4 (]: Finished running node seed.dbt_exercise.region
+[0m09:51:06.542713 [debug] [Thread-3 (]: On seed.dbt_exercise.suppliers: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.suppliers"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`suppliers` set OPTIONS()
+  
+[0m09:51:06.896685 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:e6e2d5b7-f3d5-41aa-821c-4576ca2b0aca&page=queryresults
+[0m09:51:07.364720 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.dbt_exercise.suppliers"
+[0m09:51:07.374047 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b515a4e0>]}
+[0m09:51:07.375615 [info ] [Thread-3 (]: 12 of 14 OK loaded seed file dbt_dw_raw.suppliers .............................. [[32mINSERT 29[0m in 8.03s]
+[0m09:51:07.377976 [debug] [Thread-3 (]: Finished running node seed.dbt_exercise.suppliers
+[0m09:51:08.326850 [debug] [Thread-2 (]: On seed.dbt_exercise.territories: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.territories"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`territories` set OPTIONS()
+  
+[0m09:51:08.711071 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:82a307a6-1e4e-43a3-b9f1-dd9c2b5d0597&page=queryresults
+[0m09:51:09.154365 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.dbt_exercise.territories"
+[0m09:51:09.161446 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b51570b0>]}
+[0m09:51:09.162976 [info ] [Thread-2 (]: 13 of 14 OK loaded seed file dbt_dw_raw.territories ............................ [[32mINSERT 53[0m in 5.96s]
+[0m09:51:09.165778 [debug] [Thread-2 (]: Finished running node seed.dbt_exercise.territories
+[0m09:51:10.301762 [debug] [Thread-1 (]: On seed.dbt_exercise.us_states: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "seed.dbt_exercise.us_states"} */
+
+    alter table `corded-sunlight-464012-e2`.`dbt_dw_raw`.`us_states` set OPTIONS()
+  
+[0m09:51:10.765517 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:c093202c-2d6c-4247-8252-c07095719a5c&page=queryresults
+[0m09:51:11.288598 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_exercise.us_states"
+[0m09:51:11.316082 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '936407fc-a6e4-40f5-b8e0-ab06b26cd2ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040b55daea0>]}
+[0m09:51:11.318271 [info ] [Thread-1 (]: 14 of 14 OK loaded seed file dbt_dw_raw.us_states .............................. [[32mINSERT 51[0m in 6.16s]
+[0m09:51:11.319972 [debug] [Thread-1 (]: Finished running node seed.dbt_exercise.us_states
+[0m09:51:11.326186 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:51:11.340630 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:51:11.341547 [debug] [MainThread]: Connection 'seed.dbt_exercise.territories' was properly closed.
+[0m09:51:11.342206 [debug] [MainThread]: Connection 'seed.dbt_exercise.us_states' was properly closed.
+[0m09:51:11.342729 [debug] [MainThread]: Connection 'seed.dbt_exercise.suppliers' was properly closed.
+[0m09:51:11.343817 [debug] [MainThread]: Connection 'seed.dbt_exercise.region' was properly closed.
+[0m09:51:11.345291 [info ] [MainThread]: 
+[0m09:51:11.346683 [info ] [MainThread]: Finished running 14 seeds in 0 hours 0 minutes and 42.53 seconds (42.53s).
+[0m09:51:11.353193 [debug] [MainThread]: Command end result
+[0m09:51:11.428427 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m09:51:11.457117 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m09:51:11.474928 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/run_results.json
+[0m09:51:11.475774 [info ] [MainThread]: 
+[0m09:51:11.476884 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:51:11.477940 [info ] [MainThread]: 
+[0m09:51:11.479829 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=14
+[0m09:51:11.490630 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 298.14484, "process_in_blocks": "148088", "process_kernel_time": 33.030067, "process_mem_max_rss": "378760", "process_out_blocks": "4280", "process_user_time": 30.601187}
+[0m09:51:11.491876 [debug] [MainThread]: Command `dbt seed` succeeded at 09:51:11.491618 after 298.15 seconds
+[0m09:51:11.493151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x704114c0c770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040d5489d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7040d5644f20>]}
+[0m09:51:11.494654 [debug] [MainThread]: Flushing usage events
+[0m09:51:11.897746 [debug] [MainThread]: An error was encountered while trying to flush usage events
