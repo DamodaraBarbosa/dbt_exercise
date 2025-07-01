@@ -463,3 +463,125 @@ Runtime Error
 [0m09:35:43.292822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9743b47770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9745ded730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d974348ac00>]}
 [0m09:35:43.293570 [debug] [MainThread]: Flushing usage events
 [0m09:35:43.610110 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:18:45.775390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4278efb770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c427a3bdb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4279fdf620>]}
+
+
+============================== 11:18:45.807826 | 8ce2ecdd-d038-467c-bc83-3f9cb547cd1d ==============================
+[0m11:18:45.807826 [info ] [MainThread]: Running with dbt=1.10.2
+[0m11:18:45.808585 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:18:46.311190 [info ] [MainThread]: dbt version: 1.10.2
+[0m11:18:46.311610 [info ] [MainThread]: python version: 3.12.3
+[0m11:18:46.311874 [info ] [MainThread]: python path: /mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/bin/python3
+[0m11:18:46.312288 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m11:19:50.324993 [info ] [MainThread]: Using profiles dir at /home/damodara_barbosa/.dbt
+[0m11:19:50.326702 [info ] [MainThread]: Using profiles.yml file at /home/damodara_barbosa/.dbt/profiles.yml
+[0m11:19:50.327401 [info ] [MainThread]: Using dbt_project.yml file at /home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml
+[0m11:19:50.327828 [info ] [MainThread]: adapter type: bigquery
+[0m11:19:50.328229 [info ] [MainThread]: adapter version: 1.9.2
+[0m11:19:50.328658 [info ] [MainThread]: Configuration:
+[0m11:19:50.329060 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:19:50.329451 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:19:50.329832 [info ] [MainThread]: Required dependencies:
+[0m11:19:50.330217 [debug] [MainThread]: Executing "git --help"
+[0m11:19:50.355347 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:19:50.355775 [debug] [MainThread]: STDERR: "b''"
+[0m11:19:50.355989 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:19:50.356253 [info ] [MainThread]: Connection:
+[0m11:19:50.356540 [info ] [MainThread]:   method: service-account
+[0m11:19:50.356822 [info ] [MainThread]:   database: corded-sunlight-464012-e2
+[0m11:19:50.357068 [info ] [MainThread]:   execution_project: corded-sunlight-464012-e2
+[0m11:19:50.357347 [info ] [MainThread]:   schema: dbt_dw
+[0m11:19:50.357701 [info ] [MainThread]:   location: None
+[0m11:19:50.358010 [info ] [MainThread]:   priority: None
+[0m11:19:50.358386 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m11:19:50.358770 [info ] [MainThread]:   impersonate_service_account: None
+[0m11:19:50.359122 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m11:19:50.359493 [info ] [MainThread]:   job_retries: 1
+[0m11:19:50.359857 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m11:19:50.360223 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m11:19:50.360627 [info ] [MainThread]:   timeout_seconds: None
+[0m11:19:50.360965 [info ] [MainThread]:   client_id: None
+[0m11:19:50.361265 [info ] [MainThread]:   token_uri: None
+[0m11:19:50.361611 [info ] [MainThread]:   compute_region: None
+[0m11:19:50.361969 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m11:19:50.362274 [info ] [MainThread]:   gcs_bucket: None
+[0m11:19:50.362588 [info ] [MainThread]:   dataproc_batch: None
+[0m11:19:50.365594 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m11:20:31.881022 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m11:20:31.881390 [debug] [MainThread]: On debug: select 1 as id
+[0m11:20:31.881655 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:20:32.853008 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:3a334f0c-1d80-4ebd-9235-d58b15042944&page=queryresults
+[0m11:20:39.697289 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:20:39.697797 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:20:39.698184 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml> not found
+
+[0m11:20:39.704251 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 110.61391, "process_in_blocks": "140848", "process_kernel_time": 11.512647, "process_mem_max_rss": "355580", "process_out_blocks": "40", "process_user_time": 9.303053}
+[0m11:20:39.704759 [debug] [MainThread]: Command `dbt debug` failed at 11:20:39.704669 after 110.61 seconds
+[0m11:20:39.705049 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:20:39.705342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4278219a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c423a7ff740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c423a8342c0>]}
+[0m11:20:39.705661 [debug] [MainThread]: Flushing usage events
+[0m11:20:40.135748 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:50:18.322112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d3c18a10a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d3c200b1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d3c1eb6e40>]}
+
+
+============================== 13:50:18.344457 | e78508d2-856d-4b72-8b86-db0d7edf0167 ==============================
+[0m13:50:18.344457 [info ] [MainThread]: Running with dbt=1.10.2
+[0m13:50:18.345258 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/damodara_barbosa/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:50:18.693993 [info ] [MainThread]: dbt version: 1.10.2
+[0m13:50:18.694444 [info ] [MainThread]: python version: 3.12.3
+[0m13:50:18.694766 [info ] [MainThread]: python path: /mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/bin/python3
+[0m13:50:18.695196 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m13:51:04.029536 [info ] [MainThread]: Using profiles dir at /home/damodara_barbosa/.dbt
+[0m13:51:04.030173 [info ] [MainThread]: Using profiles.yml file at /home/damodara_barbosa/.dbt/profiles.yml
+[0m13:51:04.030496 [info ] [MainThread]: Using dbt_project.yml file at /home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml
+[0m13:51:04.030912 [info ] [MainThread]: adapter type: bigquery
+[0m13:51:04.031360 [info ] [MainThread]: adapter version: 1.9.2
+[0m13:51:04.031719 [info ] [MainThread]: Configuration:
+[0m13:51:04.032063 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:51:04.032428 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:51:04.032776 [info ] [MainThread]: Required dependencies:
+[0m13:51:04.033165 [debug] [MainThread]: Executing "git --help"
+[0m13:51:04.038410 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:51:04.039237 [debug] [MainThread]: STDERR: "b''"
+[0m13:51:04.039574 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:51:04.039961 [info ] [MainThread]: Connection:
+[0m13:51:04.040398 [info ] [MainThread]:   method: service-account
+[0m13:51:04.040798 [info ] [MainThread]:   database: corded-sunlight-464012-e2
+[0m13:51:04.041259 [info ] [MainThread]:   execution_project: corded-sunlight-464012-e2
+[0m13:51:04.041628 [info ] [MainThread]:   schema: dbt_dw
+[0m13:51:04.042012 [info ] [MainThread]:   location: None
+[0m13:51:04.042348 [info ] [MainThread]:   priority: None
+[0m13:51:04.042699 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m13:51:04.043099 [info ] [MainThread]:   impersonate_service_account: None
+[0m13:51:04.043423 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m13:51:04.043746 [info ] [MainThread]:   job_retries: 1
+[0m13:51:04.044059 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m13:51:04.044388 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m13:51:04.044702 [info ] [MainThread]:   timeout_seconds: None
+[0m13:51:04.045012 [info ] [MainThread]:   client_id: None
+[0m13:51:04.045371 [info ] [MainThread]:   token_uri: None
+[0m13:51:04.045736 [info ] [MainThread]:   compute_region: None
+[0m13:51:04.046035 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m13:51:04.046368 [info ] [MainThread]:   gcs_bucket: None
+[0m13:51:04.046712 [info ] [MainThread]:   dataproc_batch: None
+[0m13:51:04.051172 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m13:51:44.885107 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m13:51:44.885672 [debug] [MainThread]: On debug: select 1 as id
+[0m13:51:44.886090 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:51:45.949838 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:43791c51-8e0e-4f05-8f66-8ad83e541756&page=queryresults
+[0m13:51:50.544559 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:51:50.545309 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:51:50.545811 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml> not found
+
+[0m13:51:50.550537 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 92.2926, "process_in_blocks": "122848", "process_kernel_time": 11.262072, "process_mem_max_rss": "356208", "process_out_blocks": "48", "process_user_time": 9.20057}
+[0m13:51:50.551400 [debug] [MainThread]: Command `dbt debug` failed at 13:51:50.551216 after 92.29 seconds
+[0m13:51:50.551877 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:51:50.552319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d3c156baa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d3849bc1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d38435ef30>]}
+[0m13:51:50.552767 [debug] [MainThread]: Flushing usage events
+[0m13:51:50.896823 [debug] [MainThread]: An error was encountered while trying to flush usage events
