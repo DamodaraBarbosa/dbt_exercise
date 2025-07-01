@@ -8,7 +8,7 @@ with orders as (
     from {{ ref('stg_order_details_northwind') }}
 )
 
-, final_table as (    
+, transformed_table as (    
     select
         orders.order_id 
         , orders.customer_id
@@ -16,11 +16,7 @@ with orders as (
         , orders.order_date
         , orders.required_date
         , orders.shipped_date
-        , date_diff(orders.shipped_date, orders.order_date, day) as days_to_ship
-        , case 
-            when days_to_ship is null then False
-            else True
-        end as is_shipped        
+        , date_diff(orders.shipped_date, orders.order_date, day) as days_to_ship      
         , orders.ship_via
         , sum(order_details.unit_price * order_details.quantity * (1 - order_details.discount)) as total_order_amount
         , orders.freight
@@ -46,6 +42,30 @@ with orders as (
         , orders.ship_city
         , orders.ship_region
         , orders.ship_country
+)
+
+, final_table as (
+    select
+        transformed_table.order_id
+        , transformed_table.customer_id
+        , transformed_table.employee_id
+        , transformed_table.order_date
+        , transformed_table.required_date
+        , transformed_table.shipped_date
+        , transformed_table.days_to_ship
+        , transformed_table.ship_via
+        , transformed_table.total_order_amount
+        , transformed_table.freight
+        , transformed_table.ship_name
+        , transformed_table.ship_address
+        , transformed_table.ship_city
+        , transformed_table.ship_region
+        , transformed_table.ship_country
+        , case 
+            when transformed_table.days_to_ship is null then False
+            else True
+          end as is_shipped
+    from transformed_table
 )
 
 select *
