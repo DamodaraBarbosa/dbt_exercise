@@ -3,8 +3,6 @@ with customers as (
     from {{ ref('stg_customers_northwind') }}
 )
 
-select * from customers
-
 , final_table as (
     select 
         customer_id
