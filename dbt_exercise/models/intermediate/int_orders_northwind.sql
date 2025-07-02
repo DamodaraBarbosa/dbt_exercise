@@ -31,6 +31,13 @@ with orders as (
         , orders.ship_city
         , orders.ship_region
         , orders.ship_country
+        , case
+            when orders.ship_country in ('USA', 'Canada', 'Mexico') then 'North America'
+            when orders.ship_country in ('UK', 'France', 'Germany', 'Austria', 'Belgium', 
+            'Denmark', 'Ireland', 'Finland', 'Italy', 'Norway', 'Poland', 'Portugal', 'Spain', 'Sweden', 'Switzerland') then 'Europe'
+            when orders.ship_country in ('Brazil', 'Argentina', 'Venezuela') then 'South America'
+            else 'Other'
+        end as ship_continent
     from orders
     left join order_details
         on orders.order_id = order_details.order_id
@@ -70,6 +77,7 @@ with orders as (
         , transformed_table.ship_city
         , transformed_table.ship_region
         , transformed_table.ship_country
+        , transformed_table.ship_continent
         , case 
             when transformed_table.days_to_ship is null then False
             else True
