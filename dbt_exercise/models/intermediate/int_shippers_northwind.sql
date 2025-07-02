@@ -16,22 +16,28 @@ with shippers as (
         , orders.ship_city
         , orders.ship_region
         , orders.ship_country
-        , case
-            when orders.ship_country in ('USA', 'Canada', 'Mexico') then 'North America'
-            when orders.ship_country in ('UK', 'France', 'Germany', 'Austria', 'Belgium', 
-            'Denmark', 'Ireland', 'Finland', 'Italy', 'Norway', 'Poland', 'Portugal', 'Spain', 'Sweden', 'Switzerland') then 'Europe'
-            when orders.ship_country in ('Brazil', 'Argentina', 'Venezuela') then 'South America'
-            else 'Other'
-        end as ship_continent
     from shippers
     left join orders
         on shippers.shipper_id = orders.ship_via
 )
 
 /* Aqui é feita a deduplicação da transformed_table */
-, final_table as (
+, dedup_table as (
     select distinct *
     from transformed_table
+)
+
+, final_table as (
+    select 
+        *
+        , case
+            when dedup_table.ship_country in ('USA', 'Canada', 'Mexico') then 'North America'
+            when dedup_table.ship_country in ('UK', 'France', 'Germany', 'Austria', 'Belgium', 
+            'Denmark', 'Ireland', 'Finland', 'Italy', 'Norway', 'Poland', 'Portugal', 'Spain', 'Sweden', 'Switzerland') then 'Europe'
+            when dedup_table.ship_country in ('Brazil', 'Argentina', 'Venezuela') then 'South America'
+            else 'Other'
+        end as ship_continent
+    from dedup_table
 )
 
 select *
