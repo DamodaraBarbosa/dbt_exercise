@@ -22,6 +22,13 @@ with orders as (
         , orders.required_date
         , orders.shipped_date
         , date_diff(orders.shipped_date, orders.order_date, day) as days_to_ship
+        , concat(
+            coalesce(orders.ship_via, '')
+            , '-'
+            , coalesce(shippers.company_name, '')
+            , '-'
+            , coalesce(orders.ship_address, '')
+        ) as ship_id
         , orders.ship_via      
         , shippers.company_name as shipper_name
         , sum(order_details.unit_price * order_details.quantity * (1 - order_details.discount)) as total_order_amount
@@ -69,6 +76,8 @@ with orders as (
         , transformed_table.required_date
         , transformed_table.shipped_date
         , transformed_table.days_to_ship
+        , transformed_table.ship_id
+        , transformed_table.ship_via
         , transformed_table.shipper_name
         , transformed_table.total_order_amount
         , transformed_table.freight
