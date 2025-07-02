@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: "Dimensão de produtos do Northwind."
+    columns:
+      - name: product_sk
+        description: "Surrogate key gerada para o produto."
+        tests:
+          - not_null
+          - unique
+      - name: product_id
+        description: "ID do produto original."
+        tests:
+          - not_null
+          - unique
+      - name: product_name
+        description: "Nome do produto."
+      - name: supplier_id
+        description: "ID do fornecedor."
+      - name: category_name
+        description: "Categoria a qual o produto pertence"
+      - name: quantity_per_unit
+        description: "Quantidade por unidade."
+      - name: supplier_name
+        description: "Nome do fornecedor."
+      - name: supplier_city
+        description: "Cidade do fornecedor."
+      - name: supplier_country
+        description: "País do fornecedor."
+      - name: supplier_country
+        description: "País do fornecedor."

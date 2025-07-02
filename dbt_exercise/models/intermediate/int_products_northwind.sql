@@ -23,6 +23,14 @@ with products as (
         , suppliers.city as supplier_city
         , suppliers.region as supplier_region
         , suppliers.country as supplier_country
+        , case
+            when suppliers.country in ('USA', 'Canada') then 'North America'
+            when suppliers.country in ('Brazil') then 'South America'
+            when suppliers.country in ('UK', 'Germany', 'Netherlands', 'Spain', 'France', 'Norway', 'Italy', 'Denmark', 'Sweden', 'Finland') then 'Europe'
+            when suppliers.country in ('Singapore', 'Japan') then 'Asia'
+            when suppliers.country in ('Australia') then 'Oceania'
+            else 'Other'
+          end as supplier_continent
         , products.discontinued
     from products
     left join categories
