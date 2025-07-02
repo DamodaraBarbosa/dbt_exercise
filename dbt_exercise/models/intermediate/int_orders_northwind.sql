@@ -8,6 +8,11 @@ with orders as (
     from {{ ref('stg_order_details_northwind') }}
 )
 
+, shippers as (
+    select *
+    from {{ ref('stg_shippers_northwind') }}
+)
+
 , transformed_table as (    
     select
         orders.order_id 
@@ -16,8 +21,9 @@ with orders as (
         , orders.order_date
         , orders.required_date
         , orders.shipped_date
-        , date_diff(orders.shipped_date, orders.order_date, day) as days_to_ship      
-        , orders.ship_via
+        , date_diff(orders.shipped_date, orders.order_date, day) as days_to_ship
+        , orders.ship_via      
+        , shippers.company_name as shipper_name
         , sum(order_details.unit_price * order_details.quantity * (1 - order_details.discount)) as total_order_amount
         , orders.freight
         , orders.ship_name
@@ -28,6 +34,8 @@ with orders as (
     from orders
     left join order_details
         on orders.order_id = order_details.order_id
+    left join shippers
+        on orders.ship_via = shippers.shipper_id
     group by 
         orders.order_id
         , orders.customer_id
@@ -36,6 +44,7 @@ with orders as (
         , orders.required_date
         , orders.shipped_date
         , orders.ship_via
+        , shippers.company_name
         , orders.freight
         , orders.ship_name
         , orders.ship_address
@@ -53,7 +62,7 @@ with orders as (
         , transformed_table.required_date
         , transformed_table.shipped_date
         , transformed_table.days_to_ship
-        , transformed_table.ship_via
+        , transformed_table.shipper_name
         , transformed_table.total_order_amount
         , transformed_table.freight
         , transformed_table.ship_name
