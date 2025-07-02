@@ -5,10 +5,12 @@ with employees as (
 
 , max_fact_date as (
     select 
-        case 
-            when max(order_date) >= max(shipped_date) then max(order_date)
-            else max(shipped_date)
-        end as max_date
+        cast(
+            case 
+                when max(order_date) >= max(shipped_date) then max(order_date)
+                else max(shipped_date)
+            end 
+        as date) as max_date
     from {{ ref('stg_orders_northwind') }}
 )
 

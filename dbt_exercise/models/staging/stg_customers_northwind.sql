@@ -16,7 +16,7 @@ with raw_customers as (
         , cast(country as string) as country
         , cast(phone as string) as phone
         , cast(fax as string) as fax
-    from raw_customerscustomers
+    from raw_customers
 )
 
 select *

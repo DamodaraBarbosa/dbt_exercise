@@ -13,4 +13,4 @@ with raw_categories as (
 )
 
 select *
-from raw_categories
+from stg_categories_northwind

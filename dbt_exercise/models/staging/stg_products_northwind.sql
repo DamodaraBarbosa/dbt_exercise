@@ -15,7 +15,7 @@ with raw_products as (
         , cast(units_on_order as numeric) as units_on_order
         , cast(reorder_level as numeric) as reorder_level
         , cast(discontinued as integer) as discontinued
-    from products
+    from raw_products
 )
 
 select *

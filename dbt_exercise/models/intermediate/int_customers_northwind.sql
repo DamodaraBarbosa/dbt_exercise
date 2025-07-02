@@ -1,4 +1,4 @@
-with customers as (
+with stg_customers_northwind as (
     select *
     from {{ ref('stg_customers_northwind') }}
 )
@@ -20,7 +20,7 @@ with customers as (
             when country in ('Brazil', 'Argentina', 'Venezuela') then 'South America'
             else 'Other'
         end as continent
-    from customers
+    from stg_customers_northwind
 )
 
 select *
