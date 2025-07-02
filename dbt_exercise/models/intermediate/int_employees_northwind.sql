@@ -1,18 +1,20 @@
-with employees as (
+with raw_employees as (
     select *
     from {{ ref('stg_employees_northwind') }}
 )
 
 , max_fact_date as (
     select 
-        case 
-            when max(order_date) >= max(shipped_date) then max(order_date)
-            else max(shipped_date)
-        end as max_date
+        cast(
+            case 
+                when max(order_date) >= max(shipped_date) then max(order_date)
+                else max(shipped_date)
+            end 
+        as date) as max_date
     from {{ ref('stg_orders_northwind') }}
 )
 
-, final_table as (
+, int_employees_northwind as (
     select
         employee_id
         , concat(first_name, ' ', last_name) as employee_name
@@ -25,8 +27,8 @@ with employees as (
         , city
         , region
         , country
-    from employees
+    from raw_employees
 )
 
 select *
-from final_table
+from int_employees_northwind

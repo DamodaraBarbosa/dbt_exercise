@@ -1,9 +1,9 @@
-with shippers as (
+with stg_shippers_northwind as (
     select *
     from {{ ref('stg_shippers_northwind') }}
 )
 
-, orders as (
+, stg_orders_northwind as (
     select *
     from {{ ref('stg_orders_northwind') }}
 )
@@ -11,21 +11,21 @@ with shippers as (
 , transformed_table as (
     select
         concat(
-            coalesce(shippers.shipper_id, '')
+            coalesce(stg_shippers_northwind.shipper_id, '')
             , '-'
-            , coalesce(shippers.company_name, '')
+            , coalesce(stg_shippers_northwind.company_name, '')
             , '-'
-            , coalesce(orders.ship_address, '')
+            , coalesce(stg_orders_northwind.ship_address, '')
         ) as ship_id
-        , shippers.shipper_id
-        , shippers.company_name
-        , orders.ship_address
-        , orders.ship_city
-        , orders.ship_region
-        , orders.ship_country
-    from shippers
-    left join orders
-        on shippers.shipper_id = orders.ship_via
+        , stg_shippers_northwind.shipper_id
+        , stg_shippers_northwind.company_name
+        , stg_orders_northwind.ship_address
+        , stg_orders_northwind.ship_city
+        , stg_orders_northwind.ship_region
+        , stg_orders_northwind.ship_country
+    from stg_shippers_northwind
+    left join stg_orders_northwind
+        on stg_shippers_northwind.shipper_id = stg_orders_northwind.ship_via
 )
 
 /* Aqui é feita a deduplicação da transformed_table */
@@ -34,7 +34,7 @@ with shippers as (
     from transformed_table
 )
 
-, final_table as (
+, int_shippers_northwind as (
     select 
         *
         , case
@@ -48,4 +48,4 @@ with shippers as (
 )
 
 select *
-from final_table
+from int_shippers_northwind
