@@ -1,4 +1,4 @@
-with int_products as (
+with int_products_northwind as (
     select *
     from {{ ref('int_products_northwind') }}
 )
@@ -15,8 +15,8 @@ with int_products as (
         , supplier_region
         , supplier_country
         , supplier_continent
-        , discontinued
-    from int_products
+        , is_discontinued
+    from int_products_northwind
 )
 
 select *

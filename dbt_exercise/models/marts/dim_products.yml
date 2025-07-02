@@ -34,4 +34,4 @@ models:
         description: 'Indica se o produto está descontinuado'
         tests:
           - accepted_values:
-              values: ['true', 'false']
+              values: [True, False]

@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: dim_employees
+    description: 'Dimensão de funcionários do Northwind'
+    columns:
+      - name: employee_sk
+        description: 'Surrogate key gerada para o funcionário'
+        tests:
+          - not_null
+          - unique
+      - name: employee_id
+        description: 'ID do funcionário original'
+        tests:
+          - not_null
+          - unique
+      - name: employee_name
+        description: 'Nome completo do funcionário'
+      - name: title
+        description: 'Cargo do funcionário'
+      - name: birth_date
+        description: 'Data de nascimento do funcionário'
+      - name: age
+        description: 'Idade do funcionário calculada na data de referência'
+      - name: hire_date
+        description: 'Data de contratação do funcionário'
+      - name: years_hired
+        description: 'Anos desde a contratação até a data de referência'
+      - name: address
+        description: 'Endereço do funcionário'
+      - name: city
+        description: 'Cidade do funcionário'
+      - name: region
+        description: 'Região do funcionário'
+      - name: country
+        description: 'País do funcionário'
