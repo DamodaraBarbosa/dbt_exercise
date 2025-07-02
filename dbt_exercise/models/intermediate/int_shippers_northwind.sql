@@ -10,7 +10,14 @@ with shippers as (
 
 , transformed_table as (
     select
-        shippers.shipper_id
+        concat(
+            coalesce(shippers.shipper_id, '')
+            , '-'
+            , coalesce(shippers.company_name, '')
+            , '-'
+            , coalesce(orders.ship_address, '')
+        ) as ship_id
+        , shippers.shipper_id
         , shippers.company_name
         , orders.ship_address
         , orders.ship_city
