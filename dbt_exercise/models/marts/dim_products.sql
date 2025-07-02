@@ -14,6 +14,7 @@ with int_products as (
         , supplier_city
         , supplier_region
         , supplier_country
+        , supplier_continent
         , discontinued
     from int_products
 )
