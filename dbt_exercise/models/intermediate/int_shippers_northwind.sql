@@ -34,7 +34,7 @@ with stg_shippers_northwind as (
     from transformed_table
 )
 
-, final_table as (
+, int_shippers_northwind as (
     select 
         *
         , case
@@ -48,4 +48,4 @@ with stg_shippers_northwind as (
 )
 
 select *
-from final_table
+from int_shippers_northwind

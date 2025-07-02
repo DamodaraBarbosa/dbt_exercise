@@ -67,7 +67,7 @@ with stg_orders_northwind as (
         , stg_orders_northwind.ship_country
 )
 
-, final_table as (
+, int_orders_northwind as (
     select
         transformed_table.order_id
         , transformed_table.customer_id
@@ -95,4 +95,4 @@ with stg_orders_northwind as (
 )
 
 select *
-from final_table
+from int_orders_northwind

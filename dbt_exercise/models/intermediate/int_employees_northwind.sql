@@ -1,4 +1,4 @@
-with employees as (
+with raw_employees as (
     select *
     from {{ ref('stg_employees_northwind') }}
 )
@@ -14,7 +14,7 @@ with employees as (
     from {{ ref('stg_orders_northwind') }}
 )
 
-, final_table as (
+, int_employees_northwind as (
     select
         employee_id
         , concat(first_name, ' ', last_name) as employee_name
@@ -27,8 +27,8 @@ with employees as (
         , city
         , region
         , country
-    from employees
+    from raw_employees
 )
 
 select *
-from final_table
+from int_employees_northwind

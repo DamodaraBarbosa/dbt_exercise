@@ -13,7 +13,7 @@ with stg_products_northwind as (
     from {{ ref('stg_suppliers_northwind') }}
 )
 
-, final_table as (
+, int_products_northwind as (
     select
         stg_products_northwind.product_id
         , stg_products_northwind.product_name
@@ -43,4 +43,4 @@ with stg_products_northwind as (
 )
 
 select *
-from final_table
+from int_products_northwind
