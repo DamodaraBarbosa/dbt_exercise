@@ -30,7 +30,7 @@ models:
         description: 'País do fornecedor'
       - name: supplier_continent
         description: 'Continente do fornecedor'
-      - name: discontinued
+      - name: is_discontinued
         description: 'Indica se o produto está descontinuado'
         tests:
           - accepted_values:

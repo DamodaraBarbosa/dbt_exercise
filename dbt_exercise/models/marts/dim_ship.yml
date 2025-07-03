@@ -4,7 +4,7 @@ models:
   - name: dim_ship
     description: 'Dimensão de transportadoras e endereços de entrega do Northwind'
     columns:
-      - name: ship_sk
+      - name: sk_ship
         description: 'Surrogate key gerada para a entrega/transportadora'
         tests:
           - not_null

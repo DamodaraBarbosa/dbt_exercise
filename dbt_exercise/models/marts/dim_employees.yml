@@ -4,7 +4,7 @@ models:
   - name: dim_employees
     description: 'Dimensão de funcionários do Northwind'
     columns:
-      - name: employee_sk
+      - name: sk_employee
         description: 'Surrogate key gerada para o funcionário'
         tests:
           - not_null
