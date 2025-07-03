@@ -5,7 +5,7 @@ with int_shippers_northwind as (
 
 , dim_ship as (
     select
-        {{ dbt_utils.generate_surrogate_key(['shipper_id']) }} as sk_ship
+        {{ dbt_utils.generate_surrogate_key(['ship_id']) }} as sk_ship
         , ship_id
         , shipper_id
         , company_name
