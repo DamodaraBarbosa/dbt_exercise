@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_ship
+    description: 'Dimensão de transportadoras e endereços de entrega do Northwind'
+    columns:
+      - name: sk_ship
+        description: 'Surrogate key gerada para a entrega/transportadora'
+        tests:
+          - not_null
+          - unique
+      - name: ship_id
+        description: 'Chave construída com base na shipper_id, company_name e ship_address para garantir unicidade'
+        tests:
+          - not_null
+          - unique
+      - name: shipper_id
+        description: 'ID da transportadora original'
+        tests:
+          - not_null
+      - name: company_name
+        description: 'Nome da transportadora'
+      - name: ship_address
+        description: 'Endereço de entrega'
+      - name: ship_city
+        description: 'Cidade de entrega'
+      - name: ship_region
+        description: 'Região de entrega'
+      - name: ship_country
+        description: 'País de entrega'
+      - name: ship_continent
+        description: 'Continente de entrega'

@@ -31,8 +31,11 @@ with stg_orders_northwind as (
         ) as ship_id
         , stg_orders_northwind.ship_via      
         , stg_shippers_northwind.company_name as shipper_name
-        , sum(stg_order_details_northwind.unit_price * stg_order_details_northwind.quantity * (1 - stg_order_details_northwind.discount)) as total_order_amount
-        , stg_orders_northwind.freight
+        , stg_order_details_northwind.product_id
+        , sum(stg_order_details_northwind.unit_price * stg_order_details_northwind.quantity * (1 - stg_order_details_northwind.discount)) as amount
+        /* O frete na stg_orders_northwind corresponde ao valor total do pedido, no entanto, como o grão da tabela é o produto no pedido
+        , o valor do frete é racionado, sendo o total a soma do valor racionado por order_id */
+        , (stg_orders_northwind.freight) / count(stg_order_details_northwind.product_id) over (partition by stg_orders_northwind.order_id) as rationed_shipping        
         , stg_orders_northwind.ship_name
         , stg_orders_northwind.ship_address
         , stg_orders_northwind.ship_city
@@ -59,6 +62,7 @@ with stg_orders_northwind as (
         , stg_orders_northwind.shipped_date
         , stg_orders_northwind.ship_via
         , stg_shippers_northwind.company_name
+        , stg_order_details_northwind.product_id
         , stg_orders_northwind.freight
         , stg_orders_northwind.ship_name
         , stg_orders_northwind.ship_address
@@ -79,8 +83,9 @@ with stg_orders_northwind as (
         , transformed_table.ship_id
         , transformed_table.ship_via
         , transformed_table.shipper_name
-        , transformed_table.total_order_amount
-        , transformed_table.freight
+        , transformed_table.product_id
+        , transformed_table.amount
+        , round(transformed_table.rationed_shipping, 2) as rationed_shipping
         , transformed_table.ship_name
         , transformed_table.ship_address
         , transformed_table.ship_city
