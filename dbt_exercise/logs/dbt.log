@@ -38721,3 +38721,47 @@ parsing.
 [0m19:22:08.102483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78418ab233b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7841496b7560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784148f45d90>]}
 [0m19:22:08.103765 [debug] [MainThread]: Flushing usage events
 [0m19:22:08.478431 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:07:31.981880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72d4254c95e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72d422f16a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72d42338fe90>]}
+
+
+============================== 22:07:32.090862 | a3ce55c2-1ec7-4c6c-865e-df103dca5124 ==============================
+[0m22:07:32.090862 [info ] [MainThread]: Running with dbt=1.10.2
+[0m22:07:32.092087 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt test', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:09:01.776653 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key 'version' in "<unicode string>", line 4, column 1 in file
+`/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/dbt_project.yml`
+[0m22:09:01.778242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a3ce55c2-1ec7-4c6c-865e-df103dca5124', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72d3e59df380>]}
+[0m22:09:02.771165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a3ce55c2-1ec7-4c6c-865e-df103dca5124', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72d3e58cba10>]}
+[0m22:09:02.895016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a3ce55c2-1ec7-4c6c-865e-df103dca5124', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72d3e5ab2120>]}
+[0m22:09:02.899623 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m22:10:00.950666 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m22:10:01.407151 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading dbt_exercise: marts/fact_order_details_obt.yml - Runtime Error
+    Syntax error near line 4
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  | models:
+    4  | 	- name: fact_order_details_obt
+    5  | 		description: 'Fato detalhado de itens dos pedidos do Northwind, incluindo chaves técnicas, clientes, funcionários, produtos, valores e status.'
+    6  | 		columns:
+    7  | 			- name: sk_orders
+    
+    Raw Error:
+    ------------------------------
+    while scanning for the next token
+    found character that cannot start any token
+      in "<unicode string>", line 4, column 1
+[0m22:10:01.408498 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:10:01.417538 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 155.45345, "process_in_blocks": "142192", "process_kernel_time": 16.184526, "process_mem_max_rss": "359236", "process_out_blocks": "32", "process_user_time": 10.999154}
+[0m22:10:01.419462 [debug] [MainThread]: Command `dbt test` failed at 22:10:01.419041 after 155.46 seconds
+[0m22:10:01.420631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72d42335f650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72d3e5a5bc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72d4231c5e80>]}
+[0m22:10:01.421961 [debug] [MainThread]: Flushing usage events
+[0m22:10:02.065989 [debug] [MainThread]: An error was encountered while trying to flush usage events
