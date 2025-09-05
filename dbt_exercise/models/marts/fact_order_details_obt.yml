@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: fact_order_details_obt
+    description: 'Fato detalhado de itens dos pedidos do Northwind, incluindo chaves técnicas, valores e status.'
+    columns:
+      - name: sk_order_details
+        description: 'Surrogate key do detalhe do pedido (pedido + produto)'
+        tests:
+          - not_null
+          - unique
+      - name: order_id
+        description: 'Identificador do pedido original'
+        tests:
+          - not_null
+      - name: product_id
+        description: 'Identificador do produto no pedido'
+        tests:
+          - not_null
+      - name: sk_product
+        description: 'Surrogate key do produto'
+        tests:
+          - not_null
+      - name: sk_customer
+        description: 'Surrogate key do cliente'
+        tests:
+          - not_null
+      - name: sk_employee
+        description: 'Surrogate key do funcionário'
+        tests:
+          - not_null
+      - name: sk_ship
+        description: 'Surrogate key da entrega/transportadora'
+        tests:
+          - not_null
+      - name: order_date
+        description: 'Data em que o pedido foi realizado'
+      - name: shipped_date
+        description: 'Data em que o pedido foi enviado'
+      - name: amount
+        description: 'Valor total do item no pedido (considerando desconto)'
+      - name: rationed_shipping
+        description: 'Valor do frete racionado por item no pedido'
+      - name: is_shipped
+        description: 'Indica se o item já foi enviado (True/False)'
+        tests:
+          - accepted_values:
+              values: [true, false]
