@@ -45856,3 +45856,2811 @@ parsing.
 [0m14:45:05.144842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bcaa33f8470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bca5d1b6180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bca6582dd00>]}
 [0m14:45:05.145758 [debug] [MainThread]: Flushing usage events
 [0m14:45:05.511455 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:48:20.189263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724db3f7cd70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724db2ad1a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724db2e0cb00>]}
+
+
+============================== 14:48:20.209746 | b4557a7c-3026-4ec0-9659-5747c713d5e2 ==============================
+[0m14:48:20.209746 [info ] [MainThread]: Running with dbt=1.10.2
+[0m14:48:20.211134 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/logs', 'fail_fast': 'False', 'profiles_dir': '/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:49:16.266784 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key 'version' in "<unicode string>", line 4, column 1 in file
+`/home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/dbt_project.yml`
+[0m14:49:16.267793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'b4557a7c-3026-4ec0-9659-5747c713d5e2', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724db20cacf0>]}
+[0m14:49:17.100421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b4557a7c-3026-4ec0-9659-5747c713d5e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724d750abe60>]}
+[0m14:49:17.208078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b4557a7c-3026-4ec0-9659-5747c713d5e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724db21b5ca0>]}
+[0m14:49:17.212376 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m14:50:13.437603 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m14:50:19.164939 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:50:19.165581 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:50:19.435686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b4557a7c-3026-4ec0-9659-5747c713d5e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724d74fefe90>]}
+[0m14:50:19.637082 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m14:50:19.650541 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m14:50:20.198798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b4557a7c-3026-4ec0-9659-5747c713d5e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724d749988c0>]}
+[0m14:50:20.199616 [info ] [MainThread]: Found 21 models, 14 seeds, 68 data tests, 14 sources, 609 macros
+[0m14:50:20.200479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b4557a7c-3026-4ec0-9659-5747c713d5e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724d74bb7f20>]}
+[0m14:50:20.210186 [info ] [MainThread]: 
+[0m14:50:20.211089 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:50:20.212054 [info ] [MainThread]: 
+[0m14:50:20.213253 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:50:20.227494 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2_dbt_dw_staging'
+[0m14:50:20.228791 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:50:20.229704 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2_dbt_dw_raw'
+[0m14:50:20.231140 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2_dbt_dw_intermediate'
+[0m14:50:20.232976 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_corded-sunlight-464012-e2_dbt_dw_marts'
+[0m14:50:20.233609 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:50:20.234607 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:50:20.235739 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:50:21.326291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b4557a7c-3026-4ec0-9659-5747c713d5e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724d74fca630>]}
+[0m14:50:21.327275 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:50:21.341963 [debug] [Thread-1 (]: Began running node test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2
+[0m14:50:21.342775 [debug] [Thread-2 (]: Began running node test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0
+[0m14:50:21.343547 [debug] [Thread-3 (]: Began running node test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc
+[0m14:50:21.345273 [debug] [Thread-4 (]: Began running node test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m14:50:21.344608 [info ] [Thread-1 (]: 1 of 68 START test accepted_values_dim_products_is_discontinued__False__True__False  [RUN]
+[0m14:50:21.346704 [info ] [Thread-2 (]: 2 of 68 START test accepted_values_fact_order_details_obt_is_discontinued__False__True__False  [RUN]
+[0m14:50:21.348206 [info ] [Thread-3 (]: 3 of 68 START test accepted_values_fact_order_details_obt_is_shipped__True__False  [RUN]
+[0m14:50:21.349381 [info ] [Thread-4 (]: 4 of 68 START test not_null_dim_customers_customer_id .......................... [RUN]
+[0m14:50:21.351012 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_staging, now test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2)
+[0m14:50:21.352847 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_marts, now test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0)
+[0m14:50:21.354814 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_raw, now test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc)
+[0m14:50:21.356960 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly list_corded-sunlight-464012-e2_dbt_dw_intermediate, now test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d)
+[0m14:50:21.358499 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2
+[0m14:50:21.359743 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0
+[0m14:50:21.361400 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc
+[0m14:50:21.362911 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m14:50:21.433134 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2"
+[0m14:50:21.441575 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0"
+[0m14:50:21.444975 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc"
+[0m14:50:21.475824 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2
+[0m14:50:21.490177 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m14:50:21.510863 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc
+[0m14:50:21.540826 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0
+[0m14:50:21.542814 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m14:50:21.554622 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2"
+[0m14:50:21.562221 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc"
+[0m14:50:21.566967 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0"
+[0m14:50:21.572937 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m14:50:21.575659 [debug] [Thread-3 (]: On test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        is_shipped as value_field,
+        count(*) as n_records
+
+    from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_order_details_obt`
+    group by is_shipped
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'True','False'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:21.577096 [debug] [Thread-1 (]: On test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        is_discontinued as value_field,
+        count(*) as n_records
+
+    from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_products`
+    group by is_discontinued
+
+)
+
+select *
+from all_values
+where value_field not in (
+    True,False
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:21.578281 [debug] [Thread-2 (]: On test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        is_discontinued as value_field,
+        count(*) as n_records
+
+    from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_order_details_obt`
+    group by is_discontinued
+
+)
+
+select *
+from all_values
+where value_field not in (
+    True,False
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:21.579334 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:21.580479 [debug] [Thread-4 (]: On test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_customers`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:21.581398 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:21.582296 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:21.583335 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:22.780687 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:888a7d12-ca21-436e-862d-e26bcf1635f7&page=queryresults
+[0m14:50:22.782870 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:a84f0f09-6c40-4d59-b9ff-9e3d50b4f28e&page=queryresults
+[0m14:50:22.786273 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:a84f0f09-6c40-4d59-b9ff-9e3d50b4f28e&page=queryresults
+[0m14:50:22.803081 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:ee873a30-235d-4989-a50d-e0a5d402d85b&page=queryresults
+[0m14:50:22.828155 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:65af8255-10e3-4e7f-b965-96d07826ddd6&page=queryresults
+[0m14:50:22.909855 [debug] [Thread-3 (]: Database Error in test accepted_values_fact_order_details_obt_is_shipped__True__False (models/marts/fact_order_details_obt.yml)
+  No matching signature for operator IN for argument types BOOL and {STRING} at [27:23]
+  compiled code at target/run/dbt_exercise/models/marts/fact_order_details_obt.yml/accepted_values_fact_order_details_obt_is_shipped__True__False.sql
+[0m14:50:22.911156 [error] [Thread-3 (]: 3 of 68 ERROR accepted_values_fact_order_details_obt_is_shipped__True__False ... [[31mERROR[0m in 1.56s]
+[0m14:50:22.912793 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc
+[0m14:50:22.913668 [debug] [Thread-3 (]: Began running node test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070
+[0m14:50:22.914667 [debug] [Thread-7 (]: Marking all children of 'test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc' to be skipped because of status 'error'.  Reason: Database Error in test accepted_values_fact_order_details_obt_is_shipped__True__False (models/marts/fact_order_details_obt.yml)
+  No matching signature for operator IN for argument types BOOL and {STRING} at [27:23]
+  compiled code at target/run/dbt_exercise/models/marts/fact_order_details_obt.yml/accepted_values_fact_order_details_obt_is_shipped__True__False.sql.
+[0m14:50:22.915419 [info ] [Thread-3 (]: 5 of 68 START test not_null_dim_customers_sk_customer .......................... [RUN]
+[0m14:50:22.918083 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.accepted_values_fact_order_details_obt_is_shipped__True__False.0673faedcc, now test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070)
+[0m14:50:22.918946 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070
+[0m14:50:22.930852 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070"
+[0m14:50:22.932809 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070
+[0m14:50:22.940139 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070"
+[0m14:50:22.943434 [debug] [Thread-3 (]: On test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_customer
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_customers`
+where sk_customer is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:22.945145 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:23.942470 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:789c3b1c-72fb-4f49-bd8d-5e00acc035b9&page=queryresults
+[0m14:50:28.502565 [info ] [Thread-1 (]: 1 of 68 PASS accepted_values_dim_products_is_discontinued__False__True__False .. [[32mPASS[0m in 7.15s]
+[0m14:50:28.504067 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2
+[0m14:50:28.506116 [debug] [Thread-1 (]: Began running node test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291
+[0m14:50:28.509311 [info ] [Thread-1 (]: 6 of 68 START test not_null_dim_employees_employee_id .......................... [RUN]
+[0m14:50:28.512798 [info ] [Thread-3 (]: 5 of 68 PASS not_null_dim_customers_sk_customer ................................ [[32mPASS[0m in 5.59s]
+[0m14:50:28.514880 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.accepted_values_dim_products_is_discontinued__False__True__False.4507b1e7d2, now test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291)
+[0m14:50:28.519681 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070
+[0m14:50:28.522169 [info ] [Thread-2 (]: 2 of 68 PASS accepted_values_fact_order_details_obt_is_discontinued__False__True__False  [[32mPASS[0m in 7.17s]
+[0m14:50:28.523927 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291
+[0m14:50:28.525671 [debug] [Thread-3 (]: Began running node test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313
+[0m14:50:28.527917 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0
+[0m14:50:28.548918 [info ] [Thread-4 (]: 4 of 68 PASS not_null_dim_customers_customer_id ................................ [[32mPASS[0m in 7.19s]
+[0m14:50:28.545169 [info ] [Thread-3 (]: 7 of 68 START test not_null_dim_employees_sk_employee .......................... [RUN]
+[0m14:50:28.541574 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291"
+[0m14:50:28.551021 [debug] [Thread-2 (]: Began running node test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1
+[0m14:50:28.554345 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m14:50:28.556220 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_dim_customers_sk_customer.2dc07dc070, now test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313)
+[0m14:50:28.558570 [info ] [Thread-2 (]: 8 of 68 START test not_null_dim_products_product_id ............................ [RUN]
+[0m14:50:28.561531 [debug] [Thread-4 (]: Began running node test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece
+[0m14:50:28.563148 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313
+[0m14:50:28.564648 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291
+[0m14:50:28.568595 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.accepted_values_fact_order_details_obt_is_discontinued__False__True__False.67851c4db0, now test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1)
+[0m14:50:28.571021 [info ] [Thread-4 (]: 9 of 68 START test not_null_dim_products_sk_product ............................ [RUN]
+[0m14:50:28.585274 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313"
+[0m14:50:28.601265 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291"
+[0m14:50:28.602975 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1
+[0m14:50:28.605059 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_dim_customers_customer_id.dd91cd1c8d, now test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece)
+[0m14:50:28.615145 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1"
+[0m14:50:28.616365 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313
+[0m14:50:28.617674 [debug] [Thread-1 (]: On test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_employees`
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:28.618637 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece
+[0m14:50:28.623248 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313"
+[0m14:50:28.624750 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:28.633100 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece"
+[0m14:50:28.634059 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1
+[0m14:50:28.636042 [debug] [Thread-3 (]: On test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_employee
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_employees`
+where sk_employee is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:28.641454 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1"
+[0m14:50:28.643760 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:28.647150 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece
+[0m14:50:28.649097 [debug] [Thread-2 (]: On test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_products`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:28.653674 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece"
+[0m14:50:28.657000 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:28.738841 [debug] [Thread-4 (]: On test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_product
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_products`
+where sk_product is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:28.740627 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:29.673900 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:b5a8d318-9d84-44a0-b633-285eef5d0e37&page=queryresults
+[0m14:50:29.725223 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:b646c409-bc19-43eb-8526-d66a3faf28aa&page=queryresults
+[0m14:50:29.781004 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:20ebfd63-1744-4ef3-8dfa-cbef37572990&page=queryresults
+[0m14:50:29.810316 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:02b5e315-2c04-4324-853b-c43cfefad994&page=queryresults
+[0m14:50:30.551878 [info ] [Thread-2 (]: 8 of 68 PASS not_null_dim_products_product_id .................................. [[32mPASS[0m in 1.98s]
+[0m14:50:30.553812 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1
+[0m14:50:30.554704 [debug] [Thread-2 (]: Began running node test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a
+[0m14:50:30.556163 [info ] [Thread-2 (]: 10 of 68 START test not_null_dim_ship_ship_id .................................. [RUN]
+[0m14:50:30.557713 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_dim_products_product_id.c8aba288d1, now test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a)
+[0m14:50:30.558928 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a
+[0m14:50:30.572231 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a"
+[0m14:50:30.574353 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a
+[0m14:50:30.583893 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a"
+[0m14:50:30.590166 [info ] [Thread-1 (]: 6 of 68 PASS not_null_dim_employees_employee_id ................................ [[32mPASS[0m in 2.08s]
+[0m14:50:30.592054 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291
+[0m14:50:30.593143 [debug] [Thread-1 (]: Began running node test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3
+[0m14:50:30.594100 [debug] [Thread-2 (]: On test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ship_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_ship`
+where ship_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:30.596674 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:30.595225 [info ] [Thread-1 (]: 11 of 68 START test not_null_dim_ship_shipper_id ............................... [RUN]
+[0m14:50:30.600530 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_dim_employees_employee_id.ef83a0c291, now test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3)
+[0m14:50:30.601988 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3
+[0m14:50:30.624503 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3"
+[0m14:50:30.635437 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3
+[0m14:50:30.642388 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3"
+[0m14:50:30.693612 [debug] [Thread-1 (]: On test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select shipper_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_ship`
+where shipper_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:30.697606 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:30.700194 [info ] [Thread-4 (]: 9 of 68 PASS not_null_dim_products_sk_product .................................. [[32mPASS[0m in 2.10s]
+[0m14:50:30.704904 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece
+[0m14:50:30.703239 [info ] [Thread-3 (]: 7 of 68 PASS not_null_dim_employees_sk_employee ................................ [[32mPASS[0m in 2.15s]
+[0m14:50:30.706925 [debug] [Thread-4 (]: Began running node test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec
+[0m14:50:30.709523 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313
+[0m14:50:30.712106 [info ] [Thread-4 (]: 12 of 68 START test not_null_dim_ship_sk_ship .................................. [RUN]
+[0m14:50:30.714279 [debug] [Thread-3 (]: Began running node test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a
+[0m14:50:30.717958 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_dim_products_sk_product.7ce7792ece, now test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec)
+[0m14:50:30.761045 [info ] [Thread-3 (]: 13 of 68 START test not_null_fact_order_details_obt_customer_id ................ [RUN]
+[0m14:50:30.763093 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec
+[0m14:50:30.764754 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_dim_employees_sk_employee.92381e9313, now test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a)
+[0m14:50:30.775210 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec"
+[0m14:50:30.777032 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a
+[0m14:50:30.787165 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a"
+[0m14:50:30.788858 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a
+[0m14:50:30.790068 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec
+[0m14:50:30.795547 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a"
+[0m14:50:30.800458 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec"
+[0m14:50:30.802440 [debug] [Thread-3 (]: On test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_order_details_obt`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:30.803878 [debug] [Thread-4 (]: On test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_ship
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_ship`
+where sk_ship is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:30.805256 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:30.806669 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:31.817234 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:348960e8-1a38-42c0-9c40-65638982309e&page=queryresults
+[0m14:50:31.819359 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:71117724-a7a8-4c58-a6e3-ff362f730e64&page=queryresults
+[0m14:50:31.824301 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:e738e066-e04c-4a99-abdf-57fc20ac4010&page=queryresults
+[0m14:50:31.873088 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:7b0f9c00-6bcf-4153-9533-714af4750b58&page=queryresults
+[0m14:50:32.671128 [info ] [Thread-3 (]: 13 of 68 PASS not_null_fact_order_details_obt_customer_id ...................... [[32mPASS[0m in 1.91s]
+[0m14:50:32.673071 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a
+[0m14:50:32.674138 [debug] [Thread-3 (]: Began running node test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c
+[0m14:50:32.674931 [info ] [Thread-3 (]: 14 of 68 START test not_null_fact_order_details_obt_employee_id ................ [RUN]
+[0m14:50:32.675887 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_order_details_obt_customer_id.42854d593a, now test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c)
+[0m14:50:32.676640 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c
+[0m14:50:32.685781 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c"
+[0m14:50:32.687467 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c
+[0m14:50:32.694137 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c"
+[0m14:50:32.701127 [info ] [Thread-1 (]: 11 of 68 PASS not_null_dim_ship_shipper_id ..................................... [[32mPASS[0m in 2.10s]
+[0m14:50:32.705193 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3
+[0m14:50:32.707333 [debug] [Thread-3 (]: On test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_order_details_obt`
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:32.709988 [debug] [Thread-1 (]: Began running node test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466
+[0m14:50:32.714023 [info ] [Thread-2 (]: 10 of 68 PASS not_null_dim_ship_ship_id ........................................ [[32mPASS[0m in 2.16s]
+[0m14:50:32.715405 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:32.716468 [info ] [Thread-1 (]: 15 of 68 START test not_null_fact_order_details_obt_order_id ................... [RUN]
+[0m14:50:32.717733 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a
+[0m14:50:32.719004 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_dim_ship_shipper_id.78acf0f3d3, now test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466)
+[0m14:50:32.721218 [debug] [Thread-2 (]: Began running node test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4
+[0m14:50:32.723388 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466
+[0m14:50:32.725857 [info ] [Thread-2 (]: 16 of 68 START test not_null_fact_order_details_obt_product_id ................. [RUN]
+[0m14:50:32.738618 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466"
+[0m14:50:32.740461 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_dim_ship_ship_id.0e7926966a, now test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4)
+[0m14:50:32.791150 [info ] [Thread-4 (]: 12 of 68 PASS not_null_dim_ship_sk_ship ........................................ [[32mPASS[0m in 2.07s]
+[0m14:50:32.792472 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4
+[0m14:50:32.795273 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec
+[0m14:50:32.796695 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466
+[0m14:50:32.814301 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4"
+[0m14:50:32.816920 [debug] [Thread-4 (]: Began running node test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a
+[0m14:50:32.823155 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466"
+[0m14:50:32.824994 [info ] [Thread-4 (]: 17 of 68 START test not_null_fact_order_details_obt_sk_orders .................. [RUN]
+[0m14:50:32.827264 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_dim_ship_sk_ship.3ae993afec, now test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a)
+[0m14:50:32.828905 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a
+[0m14:50:32.829950 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4
+[0m14:50:32.837019 [debug] [Thread-1 (]: On test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_order_details_obt`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:32.841757 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a"
+[0m14:50:32.846257 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4"
+[0m14:50:32.847734 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:32.851533 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a
+[0m14:50:32.853100 [debug] [Thread-2 (]: On test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_order_details_obt`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:32.858363 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a"
+[0m14:50:32.860283 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:32.863165 [debug] [Thread-4 (]: On test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_orders
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_order_details_obt`
+where sk_orders is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:32.864499 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:33.735479 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:f444573a-e826-44a1-9213-1c630da77eeb&page=queryresults
+[0m14:50:33.891792 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:50cc0b3f-70ba-4510-8ae6-c436ad319477&page=queryresults
+[0m14:50:33.921182 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:f99e47ba-74a4-41a4-8330-2add82162729&page=queryresults
+[0m14:50:33.939285 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:7ba7167d-2b32-43ad-bc91-200e919b3974&page=queryresults
+[0m14:50:34.622747 [info ] [Thread-3 (]: 14 of 68 PASS not_null_fact_order_details_obt_employee_id ...................... [[32mPASS[0m in 1.95s]
+[0m14:50:34.624399 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c
+[0m14:50:34.625379 [debug] [Thread-3 (]: Began running node test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc
+[0m14:50:34.626473 [info ] [Thread-3 (]: 18 of 68 START test not_null_fact_orders_customer_id ........................... [RUN]
+[0m14:50:34.627539 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_order_details_obt_employee_id.94e80da48c, now test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc)
+[0m14:50:34.628358 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc
+[0m14:50:34.637419 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc"
+[0m14:50:34.639118 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc
+[0m14:50:34.644948 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc"
+[0m14:50:34.647097 [debug] [Thread-3 (]: On test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:34.648136 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:34.752507 [info ] [Thread-1 (]: 15 of 68 PASS not_null_fact_order_details_obt_order_id ......................... [[32mPASS[0m in 2.03s]
+[0m14:50:34.754300 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466
+[0m14:50:34.755640 [debug] [Thread-1 (]: Began running node test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32
+[0m14:50:34.756941 [info ] [Thread-1 (]: 19 of 68 START test not_null_fact_orders_employee_id ........................... [RUN]
+[0m14:50:34.759462 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_order_details_obt_order_id.eb7968f466, now test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32)
+[0m14:50:34.761917 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32
+[0m14:50:34.767734 [info ] [Thread-2 (]: 16 of 68 PASS not_null_fact_order_details_obt_product_id ....................... [[32mPASS[0m in 2.03s]
+[0m14:50:34.781039 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4
+[0m14:50:34.783343 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32"
+[0m14:50:34.784436 [debug] [Thread-2 (]: Began running node test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m14:50:34.786386 [info ] [Thread-2 (]: 20 of 68 START test not_null_fact_orders_order_id .............................. [RUN]
+[0m14:50:34.787654 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_order_details_obt_product_id.febe4eacd4, now test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0)
+[0m14:50:34.788698 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32
+[0m14:50:34.789722 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m14:50:34.798368 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32"
+[0m14:50:34.809602 [info ] [Thread-4 (]: 17 of 68 PASS not_null_fact_order_details_obt_sk_orders ........................ [[32mPASS[0m in 1.98s]
+[0m14:50:34.821484 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0"
+[0m14:50:34.823999 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a
+[0m14:50:34.825511 [debug] [Thread-1 (]: On test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:34.826778 [debug] [Thread-4 (]: Began running node test.dbt_exercise.not_null_fact_orders_product_id.346126b727
+[0m14:50:34.828812 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m14:50:34.830757 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:34.832725 [info ] [Thread-4 (]: 21 of 68 START test not_null_fact_orders_product_id ............................ [RUN]
+[0m14:50:34.838441 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0"
+[0m14:50:34.840444 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_order_details_obt_sk_orders.62e9b1f65a, now test.dbt_exercise.not_null_fact_orders_product_id.346126b727)
+[0m14:50:34.842223 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.not_null_fact_orders_product_id.346126b727
+[0m14:50:34.852743 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_orders_product_id.346126b727"
+[0m14:50:34.854094 [debug] [Thread-2 (]: On test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:34.856402 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:34.858754 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.not_null_fact_orders_product_id.346126b727
+[0m14:50:34.865337 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_orders_product_id.346126b727"
+[0m14:50:34.909950 [debug] [Thread-4 (]: On test.dbt_exercise.not_null_fact_orders_product_id.346126b727: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_orders_product_id.346126b727"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:34.913114 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:35.673428 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:88ad60dc-4b3d-4dbc-b2c2-4a20aee4ec18&page=queryresults
+[0m14:50:35.877057 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:d2f383ff-b0e7-4b80-96e2-4efa73e18c28&page=queryresults
+[0m14:50:35.969884 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:9ba599dd-5935-4803-9d54-8068a6dd3f85&page=queryresults
+[0m14:50:35.976298 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:41a252dd-c874-49d5-b9fe-37a7af1a04a5&page=queryresults
+[0m14:50:36.555711 [info ] [Thread-3 (]: 18 of 68 PASS not_null_fact_orders_customer_id ................................. [[32mPASS[0m in 1.93s]
+[0m14:50:36.557456 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc
+[0m14:50:36.558525 [debug] [Thread-3 (]: Began running node test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd
+[0m14:50:36.560984 [info ] [Thread-3 (]: 22 of 68 START test not_null_fact_orders_sk_customer ........................... [RUN]
+[0m14:50:36.567731 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_orders_customer_id.9c2270d0dc, now test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd)
+[0m14:50:36.569498 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd
+[0m14:50:36.581774 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd"
+[0m14:50:36.583695 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd
+[0m14:50:36.592123 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd"
+[0m14:50:36.593612 [debug] [Thread-3 (]: On test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_customer
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+where sk_customer is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:36.594827 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:36.833149 [info ] [Thread-1 (]: 19 of 68 PASS not_null_fact_orders_employee_id ................................. [[32mPASS[0m in 2.07s]
+[0m14:50:36.834468 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32
+[0m14:50:36.835312 [debug] [Thread-1 (]: Began running node test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff
+[0m14:50:36.836251 [info ] [Thread-1 (]: 23 of 68 START test not_null_fact_orders_sk_employee ........................... [RUN]
+[0m14:50:36.837357 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_orders_employee_id.4d01f9cb32, now test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff)
+[0m14:50:36.838287 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff
+[0m14:50:36.847132 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff"
+[0m14:50:36.848702 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff
+[0m14:50:36.853326 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff"
+[0m14:50:36.857052 [debug] [Thread-1 (]: On test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_employee
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+where sk_employee is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:36.858526 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:36.866177 [info ] [Thread-4 (]: 21 of 68 PASS not_null_fact_orders_product_id .................................. [[32mPASS[0m in 2.03s]
+[0m14:50:36.869501 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.not_null_fact_orders_product_id.346126b727
+[0m14:50:36.872834 [debug] [Thread-4 (]: Began running node test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5
+[0m14:50:36.875415 [info ] [Thread-2 (]: 20 of 68 PASS not_null_fact_orders_order_id .................................... [[32mPASS[0m in 2.09s]
+[0m14:50:36.881605 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m14:50:36.877605 [info ] [Thread-4 (]: 24 of 68 START test not_null_fact_orders_sk_orders ............................. [RUN]
+[0m14:50:36.926160 [debug] [Thread-2 (]: Began running node test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70
+[0m14:50:36.928264 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_orders_product_id.346126b727, now test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5)
+[0m14:50:36.929424 [info ] [Thread-2 (]: 25 of 68 START test not_null_fact_orders_sk_product ............................ [RUN]
+[0m14:50:36.930988 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5
+[0m14:50:36.932429 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_orders_order_id.6ba6d3f0a0, now test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70)
+[0m14:50:36.948428 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5"
+[0m14:50:36.950532 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70
+[0m14:50:36.962022 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70"
+[0m14:50:36.965075 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5
+[0m14:50:36.973407 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5"
+[0m14:50:36.975435 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70
+[0m14:50:36.980139 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70"
+[0m14:50:36.982029 [debug] [Thread-4 (]: On test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_orders
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+where sk_orders is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:36.984265 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:36.985882 [debug] [Thread-2 (]: On test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_product
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+where sk_product is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:36.987170 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:37.556075 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:f56c2396-acfe-42e3-b253-8d16f59e6ba4&page=queryresults
+[0m14:50:37.814635 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:147d6f26-8d93-4fb5-8c59-b0a3c0fd9432&page=queryresults
+[0m14:50:37.990479 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:156da183-ee1a-483b-b0b5-15440ab0355e&page=queryresults
+[0m14:50:38.056224 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:18e07530-b464-468d-8681-dea7c0d30a81&page=queryresults
+[0m14:50:38.381369 [info ] [Thread-3 (]: 22 of 68 PASS not_null_fact_orders_sk_customer ................................. [[32mPASS[0m in 1.81s]
+[0m14:50:38.383154 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd
+[0m14:50:38.391783 [debug] [Thread-3 (]: Began running node test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed
+[0m14:50:38.397252 [info ] [Thread-3 (]: 26 of 68 START test not_null_fact_orders_sk_ship ............................... [RUN]
+[0m14:50:38.399018 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_orders_sk_customer.6134ecd4cd, now test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed)
+[0m14:50:38.400456 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed
+[0m14:50:38.419022 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed"
+[0m14:50:38.421981 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed
+[0m14:50:38.431387 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed"
+[0m14:50:38.433933 [debug] [Thread-3 (]: On test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sk_ship
+from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+where sk_ship is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:38.435427 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:38.663899 [info ] [Thread-1 (]: 23 of 68 PASS not_null_fact_orders_sk_employee ................................. [[32mPASS[0m in 1.83s]
+[0m14:50:38.665366 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff
+[0m14:50:38.666194 [debug] [Thread-1 (]: Began running node test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae
+[0m14:50:38.667219 [info ] [Thread-1 (]: 27 of 68 START test source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood  [RUN]
+[0m14:50:38.668268 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_orders_sk_employee.cf36d136ff, now test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae)
+[0m14:50:38.669719 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae
+[0m14:50:38.694256 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae"
+[0m14:50:38.700516 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae
+[0m14:50:38.706394 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae"
+[0m14:50:38.707681 [debug] [Thread-1 (]: On test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        category_name as value_field,
+        count(*) as n_records
+
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`categories`
+    group by category_name
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Beverages','Condiments','Confections','Dairy Products','Grains/Cereals','Meat/Poultry','Produce','Seafood'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:38.708672 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:38.956928 [info ] [Thread-4 (]: 24 of 68 PASS not_null_fact_orders_sk_orders ................................... [[32mPASS[0m in 2.03s]
+[0m14:50:38.958194 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5
+[0m14:50:38.959058 [debug] [Thread-4 (]: Began running node test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828
+[0m14:50:38.960136 [info ] [Thread-4 (]: 28 of 68 START test source_not_null_northwind_categories_category_id ........... [RUN]
+[0m14:50:38.961355 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_orders_sk_orders.c6a2fa98b5, now test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828)
+[0m14:50:38.962163 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828
+[0m14:50:38.977292 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828"
+[0m14:50:38.981008 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828
+[0m14:50:38.986222 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828"
+[0m14:50:38.993608 [debug] [Thread-4 (]: On test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select category_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`categories`
+where category_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:38.995062 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:38.996704 [info ] [Thread-2 (]: 25 of 68 PASS not_null_fact_orders_sk_product .................................. [[32mPASS[0m in 2.06s]
+[0m14:50:38.998600 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70
+[0m14:50:38.999713 [debug] [Thread-2 (]: Began running node test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c
+[0m14:50:39.001020 [info ] [Thread-2 (]: 29 of 68 START test source_not_null_northwind_country_codes_country_code ....... [RUN]
+[0m14:50:39.002314 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_orders_sk_product.9e0a112d70, now test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c)
+[0m14:50:39.003836 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c
+[0m14:50:39.013373 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c"
+[0m14:50:39.017945 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c
+[0m14:50:39.071428 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c"
+[0m14:50:39.073577 [debug] [Thread-2 (]: On test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select country_code
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`country_codes`
+where country_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:39.075224 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:40.530460 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:5b0470fc-0697-44da-8c41-d4d058dee7c4&page=queryresults
+[0m14:50:40.846629 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:c6e12487-79ef-460b-a7f2-f88e8c73d954&page=queryresults
+[0m14:50:41.087766 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:f9a369d7-a326-4419-881f-937118754e9c&page=queryresults
+[0m14:50:41.115265 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:b51b3bb3-792a-40c8-8caf-da7532a834cd&page=queryresults
+[0m14:50:41.706974 [info ] [Thread-3 (]: 26 of 68 PASS not_null_fact_orders_sk_ship ..................................... [[32mPASS[0m in 3.31s]
+[0m14:50:41.708329 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed
+[0m14:50:41.709155 [debug] [Thread-3 (]: Began running node test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2
+[0m14:50:41.709948 [info ] [Thread-3 (]: 30 of 68 START test source_not_null_northwind_customers_customer_id ............ [RUN]
+[0m14:50:41.710873 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.not_null_fact_orders_sk_ship.c82a3b72ed, now test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2)
+[0m14:50:41.711575 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2
+[0m14:50:41.722737 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2"
+[0m14:50:41.725006 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2
+[0m14:50:41.731175 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2"
+[0m14:50:41.733030 [debug] [Thread-3 (]: On test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`customers`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:41.733891 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:41.788172 [info ] [Thread-1 (]: 27 of 68 PASS source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood  [[32mPASS[0m in 3.12s]
+[0m14:50:41.790523 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae
+[0m14:50:41.792282 [debug] [Thread-1 (]: Began running node test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7
+[0m14:50:41.793747 [info ] [Thread-1 (]: 31 of 68 START test source_not_null_northwind_dados_financeiros_data ........... [RUN]
+[0m14:50:41.795433 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_accepted_values_northwind_categories_category_name__Beverages__Condiments__Confections__Dairy_Products__Grains_Cereals__Meat_Poultry__Produce__Seafood.ea6d0ab2ae, now test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7)
+[0m14:50:41.797051 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7
+[0m14:50:41.807089 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7"
+[0m14:50:41.810946 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7
+[0m14:50:41.817090 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7"
+[0m14:50:41.818485 [debug] [Thread-1 (]: On test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select data
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`dados_financeiros`
+where data is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:41.819534 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:41.954509 [info ] [Thread-4 (]: 28 of 68 PASS source_not_null_northwind_categories_category_id ................. [[32mPASS[0m in 2.99s]
+[0m14:50:41.956578 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828
+[0m14:50:41.957558 [debug] [Thread-4 (]: Began running node test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec
+[0m14:50:41.958585 [info ] [Thread-4 (]: 32 of 68 START test source_not_null_northwind_employee_territories_employee_id . [RUN]
+[0m14:50:41.959594 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_categories_category_id.9a6df29828, now test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec)
+[0m14:50:41.960627 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec
+[0m14:50:41.973238 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec"
+[0m14:50:41.975482 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec
+[0m14:50:41.984762 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec"
+[0m14:50:41.986873 [debug] [Thread-4 (]: On test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`employee_territories`
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:41.988288 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:42.042527 [info ] [Thread-2 (]: 29 of 68 PASS source_not_null_northwind_country_codes_country_code ............. [[32mPASS[0m in 3.04s]
+[0m14:50:42.044081 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c
+[0m14:50:42.045456 [debug] [Thread-2 (]: Began running node test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88
+[0m14:50:42.046789 [info ] [Thread-2 (]: 33 of 68 START test source_not_null_northwind_employee_territories_territory_id  [RUN]
+[0m14:50:42.048536 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_country_codes_country_code.c623b5676c, now test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88)
+[0m14:50:42.049496 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88
+[0m14:50:42.058865 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88"
+[0m14:50:42.061136 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88
+[0m14:50:42.066909 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88"
+[0m14:50:42.068374 [debug] [Thread-2 (]: On test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select territory_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`employee_territories`
+where territory_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:42.069302 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:42.725540 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:becd9587-e926-4efa-99ea-5e9cb207d8d0&page=queryresults
+[0m14:50:42.842057 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:372dfb26-3950-4d53-a177-6de70d91f298&page=queryresults
+[0m14:50:42.950789 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:297662d5-145d-4227-8309-737522032ba2&page=queryresults
+[0m14:50:43.058257 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:e5cb72e0-92b5-470c-bc67-f17dc08a3ed6&page=queryresults
+[0m14:50:43.567799 [info ] [Thread-3 (]: 30 of 68 PASS source_not_null_northwind_customers_customer_id .................. [[32mPASS[0m in 1.86s]
+[0m14:50:43.569341 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2
+[0m14:50:43.570155 [debug] [Thread-3 (]: Began running node test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c
+[0m14:50:43.571024 [info ] [Thread-3 (]: 34 of 68 START test source_not_null_northwind_employees_employee_id ............ [RUN]
+[0m14:50:43.572541 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_customers_customer_id.dba99593d2, now test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c)
+[0m14:50:43.573682 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c
+[0m14:50:43.583092 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c"
+[0m14:50:43.585595 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c
+[0m14:50:43.593877 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c"
+[0m14:50:43.596481 [debug] [Thread-3 (]: On test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`employees`
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:43.597513 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:43.682263 [info ] [Thread-1 (]: 31 of 68 PASS source_not_null_northwind_dados_financeiros_data ................. [[32mPASS[0m in 1.89s]
+[0m14:50:43.683737 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7
+[0m14:50:43.684803 [debug] [Thread-1 (]: Began running node test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e
+[0m14:50:43.685729 [info ] [Thread-1 (]: 35 of 68 START test source_not_null_northwind_order_details_order_id ........... [RUN]
+[0m14:50:43.686664 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_dados_financeiros_data.cdd6b46fe7, now test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e)
+[0m14:50:43.687363 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e
+[0m14:50:43.697239 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e"
+[0m14:50:43.699405 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e
+[0m14:50:43.708618 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e"
+[0m14:50:43.710906 [debug] [Thread-1 (]: On test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`order_details`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:43.712169 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:43.814602 [info ] [Thread-4 (]: 32 of 68 PASS source_not_null_northwind_employee_territories_employee_id ....... [[32mPASS[0m in 1.85s]
+[0m14:50:43.816136 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec
+[0m14:50:43.816977 [debug] [Thread-4 (]: Began running node test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12
+[0m14:50:43.817906 [info ] [Thread-4 (]: 36 of 68 START test source_not_null_northwind_order_details_product_id ......... [RUN]
+[0m14:50:43.818896 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_employee_territories_employee_id.d7372217ec, now test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12)
+[0m14:50:43.819681 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12
+[0m14:50:43.828450 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12"
+[0m14:50:43.830780 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12
+[0m14:50:43.836646 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12"
+[0m14:50:43.839423 [debug] [Thread-4 (]: On test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`order_details`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:43.841209 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:43.938543 [info ] [Thread-2 (]: 33 of 68 PASS source_not_null_northwind_employee_territories_territory_id ...... [[32mPASS[0m in 1.89s]
+[0m14:50:43.940366 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88
+[0m14:50:43.941332 [debug] [Thread-2 (]: Began running node test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24
+[0m14:50:43.942221 [info ] [Thread-2 (]: 37 of 68 START test source_not_null_northwind_orders_customer_id ............... [RUN]
+[0m14:50:43.943161 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_employee_territories_territory_id.ae648a0b88, now test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24)
+[0m14:50:43.943932 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24
+[0m14:50:43.958980 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24"
+[0m14:50:43.961177 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24
+[0m14:50:43.967361 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24"
+[0m14:50:43.968834 [debug] [Thread-2 (]: On test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`orders`
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:43.970319 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:44.661399 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:505a8553-b230-444b-955b-ee6bc974694c&page=queryresults
+[0m14:50:44.806662 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:f7ab67b8-63a2-4943-b743-885335500648&page=queryresults
+[0m14:50:44.882144 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:6a2578b4-9edc-46e0-bef3-669b126c3283&page=queryresults
+[0m14:50:44.965427 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:c26f4bc0-34fc-4457-b562-90041cdd33d1&page=queryresults
+[0m14:50:45.477895 [info ] [Thread-3 (]: 34 of 68 PASS source_not_null_northwind_employees_employee_id .................. [[32mPASS[0m in 1.91s]
+[0m14:50:45.479585 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c
+[0m14:50:45.480870 [debug] [Thread-3 (]: Began running node test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3
+[0m14:50:45.482100 [info ] [Thread-3 (]: 38 of 68 START test source_not_null_northwind_orders_employee_id ............... [RUN]
+[0m14:50:45.483597 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_employees_employee_id.829479a08c, now test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3)
+[0m14:50:45.485151 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3
+[0m14:50:45.506000 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3"
+[0m14:50:45.509307 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3
+[0m14:50:45.514964 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3"
+[0m14:50:45.516552 [debug] [Thread-3 (]: On test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`orders`
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:45.517617 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:45.661207 [info ] [Thread-1 (]: 35 of 68 PASS source_not_null_northwind_order_details_order_id ................. [[32mPASS[0m in 1.97s]
+[0m14:50:45.662478 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e
+[0m14:50:45.663657 [debug] [Thread-1 (]: Began running node test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e
+[0m14:50:45.664845 [info ] [Thread-1 (]: 39 of 68 START test source_not_null_northwind_orders_order_id .................. [RUN]
+[0m14:50:45.666195 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_order_details_order_id.8acd43693e, now test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e)
+[0m14:50:45.667126 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e
+[0m14:50:45.676449 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e"
+[0m14:50:45.680058 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e
+[0m14:50:45.687988 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e"
+[0m14:50:45.689652 [debug] [Thread-1 (]: On test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`orders`
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:45.690486 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:45.743727 [info ] [Thread-4 (]: 36 of 68 PASS source_not_null_northwind_order_details_product_id ............... [[32mPASS[0m in 1.92s]
+[0m14:50:45.745080 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12
+[0m14:50:45.746017 [debug] [Thread-4 (]: Began running node test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c
+[0m14:50:45.747439 [info ] [Thread-4 (]: 40 of 68 START test source_not_null_northwind_products_product_id .............. [RUN]
+[0m14:50:45.749674 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_order_details_product_id.c084f7ad12, now test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c)
+[0m14:50:45.750803 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c
+[0m14:50:45.760038 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c"
+[0m14:50:45.761922 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c
+[0m14:50:45.767899 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c"
+[0m14:50:45.770042 [debug] [Thread-4 (]: On test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`products`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:45.771434 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:45.828021 [info ] [Thread-2 (]: 37 of 68 PASS source_not_null_northwind_orders_customer_id ..................... [[32mPASS[0m in 1.88s]
+[0m14:50:45.831119 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24
+[0m14:50:45.832911 [debug] [Thread-2 (]: Began running node test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3
+[0m14:50:45.834574 [info ] [Thread-2 (]: 41 of 68 START test source_not_null_northwind_region_region_id ................. [RUN]
+[0m14:50:45.835982 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_orders_customer_id.3e09955b24, now test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3)
+[0m14:50:45.836811 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3
+[0m14:50:45.853523 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3"
+[0m14:50:45.855048 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3
+[0m14:50:45.859586 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3"
+[0m14:50:45.864493 [debug] [Thread-2 (]: On test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select region_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`region`
+where region_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:45.866115 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:46.610166 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:137e2c45-762e-4efe-8503-2ac92aa2558b&page=queryresults
+[0m14:50:46.739044 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:a28a759a-7789-4eca-be9a-433ccf8e499b&page=queryresults
+[0m14:50:46.790625 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:b9528ce2-d025-4f76-9f38-90799a1b970c&page=queryresults
+[0m14:50:46.835723 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:ee68f0bb-c25f-4d8c-a1bd-e79aeb51a2df&page=queryresults
+[0m14:50:47.427714 [info ] [Thread-3 (]: 38 of 68 PASS source_not_null_northwind_orders_employee_id ..................... [[32mPASS[0m in 1.94s]
+[0m14:50:47.429488 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3
+[0m14:50:47.430401 [debug] [Thread-3 (]: Began running node test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca
+[0m14:50:47.431367 [info ] [Thread-3 (]: 42 of 68 START test source_not_null_northwind_shippers_shipper_id .............. [RUN]
+[0m14:50:47.432665 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_orders_employee_id.a8f4bf5ca3, now test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca)
+[0m14:50:47.433942 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca
+[0m14:50:47.443640 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca"
+[0m14:50:47.445806 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca
+[0m14:50:47.452475 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca"
+[0m14:50:47.454863 [debug] [Thread-3 (]: On test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select shipper_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`shippers`
+where shipper_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:47.456171 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:47.549321 [info ] [Thread-4 (]: 40 of 68 PASS source_not_null_northwind_products_product_id .................... [[32mPASS[0m in 1.80s]
+[0m14:50:47.550735 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c
+[0m14:50:47.551558 [debug] [Thread-4 (]: Began running node test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062
+[0m14:50:47.552494 [info ] [Thread-4 (]: 43 of 68 START test source_not_null_northwind_suppliers_supplier_id ............ [RUN]
+[0m14:50:47.553445 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_products_product_id.1bc1aa1d1c, now test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062)
+[0m14:50:47.554138 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062
+[0m14:50:47.563212 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062"
+[0m14:50:47.565622 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062
+[0m14:50:47.571189 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062"
+[0m14:50:47.573468 [debug] [Thread-4 (]: On test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select supplier_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`suppliers`
+where supplier_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:47.574507 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:47.644351 [info ] [Thread-2 (]: 41 of 68 PASS source_not_null_northwind_region_region_id ....................... [[32mPASS[0m in 1.81s]
+[0m14:50:47.646399 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3
+[0m14:50:47.647637 [debug] [Thread-2 (]: Began running node test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81
+[0m14:50:47.650045 [info ] [Thread-2 (]: 44 of 68 START test source_not_null_northwind_territories_region_id ............ [RUN]
+[0m14:50:47.652048 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_region_region_id.c95367d9e3, now test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81)
+[0m14:50:47.654672 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81
+[0m14:50:47.656996 [info ] [Thread-1 (]: 39 of 68 PASS source_not_null_northwind_orders_order_id ........................ [[32mPASS[0m in 1.99s]
+[0m14:50:47.669797 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81"
+[0m14:50:47.671153 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e
+[0m14:50:47.672598 [debug] [Thread-1 (]: Began running node test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9
+[0m14:50:47.673929 [info ] [Thread-1 (]: 45 of 68 START test source_not_null_northwind_territories_territory_id ......... [RUN]
+[0m14:50:47.674879 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81
+[0m14:50:47.677429 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_orders_order_id.5a7c008c6e, now test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9)
+[0m14:50:47.685646 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81"
+[0m14:50:47.686824 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9
+[0m14:50:47.697692 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9"
+[0m14:50:47.699441 [debug] [Thread-2 (]: On test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select region_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`territories`
+where region_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:47.701252 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:47.702694 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9
+[0m14:50:47.717975 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9"
+[0m14:50:47.720182 [debug] [Thread-1 (]: On test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select territory_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`territories`
+where territory_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:47.721451 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:48.461821 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:9c433908-6c4f-4b63-9cb0-6c1d0ec2504e&page=queryresults
+[0m14:50:48.514600 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:341edda7-3958-488c-a9f2-9c6c5ae1ca2f&page=queryresults
+[0m14:50:48.724133 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:1a0f7eda-5833-46ad-8f82-b7a419cf19e6&page=queryresults
+[0m14:50:49.238901 [info ] [Thread-3 (]: 42 of 68 PASS source_not_null_northwind_shippers_shipper_id .................... [[32mPASS[0m in 1.81s]
+[0m14:50:49.240342 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca
+[0m14:50:49.241157 [debug] [Thread-3 (]: Began running node test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78
+[0m14:50:49.242041 [info ] [Thread-3 (]: 46 of 68 START test source_not_null_northwind_us_states_state_id ............... [RUN]
+[0m14:50:49.243117 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_shippers_shipper_id.45221752ca, now test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78)
+[0m14:50:49.243800 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78
+[0m14:50:49.255738 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78"
+[0m14:50:49.264553 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78
+[0m14:50:49.270791 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78"
+[0m14:50:49.272235 [debug] [Thread-3 (]: On test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select state_id
+from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`us_states`
+where state_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:49.273067 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:49.337919 [info ] [Thread-4 (]: 43 of 68 PASS source_not_null_northwind_suppliers_supplier_id .................. [[32mPASS[0m in 1.78s]
+[0m14:50:49.339728 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062
+[0m14:50:49.340660 [debug] [Thread-4 (]: Began running node test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0
+[0m14:50:49.341571 [info ] [Thread-4 (]: 47 of 68 START test source_unique_northwind_categories_category_id ............. [RUN]
+[0m14:50:49.342658 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_suppliers_supplier_id.de5c4d0062, now test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0)
+[0m14:50:49.343918 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0
+[0m14:50:49.354838 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0"
+[0m14:50:49.356535 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0
+[0m14:50:49.362091 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0"
+[0m14:50:49.364767 [debug] [Thread-4 (]: On test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select category_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`categories`
+  where category_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:49.365952 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:49.530376 [info ] [Thread-2 (]: 44 of 68 PASS source_not_null_northwind_territories_region_id .................. [[32mPASS[0m in 1.88s]
+[0m14:50:49.532162 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81
+[0m14:50:49.533042 [debug] [Thread-2 (]: Began running node test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e
+[0m14:50:49.534191 [info ] [Thread-2 (]: 48 of 68 START test source_unique_northwind_country_codes_country_code ......... [RUN]
+[0m14:50:49.535323 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_territories_region_id.5df71bcf81, now test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e)
+[0m14:50:49.536116 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e
+[0m14:50:49.543579 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e"
+[0m14:50:49.545670 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e
+[0m14:50:49.552541 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e"
+[0m14:50:49.555116 [debug] [Thread-2 (]: On test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select country_code as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`country_codes`
+  where country_code is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:49.556065 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:49.736185 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:d63fc293-f53a-4274-bdf1-e191f1763514&page=queryresults
+[0m14:50:50.185797 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:2a558193-b924-4275-af40-32e5844ac8f9&page=queryresults
+[0m14:50:50.434176 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:03eda773-b4be-412c-8e47-6c0b9ddc4f90&page=queryresults
+[0m14:50:50.597979 [info ] [Thread-1 (]: 45 of 68 PASS source_not_null_northwind_territories_territory_id ............... [[32mPASS[0m in 2.92s]
+[0m14:50:50.600335 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9
+[0m14:50:50.601936 [debug] [Thread-1 (]: Began running node test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b
+[0m14:50:50.603801 [info ] [Thread-1 (]: 49 of 68 START test source_unique_northwind_customers_customer_id .............. [RUN]
+[0m14:50:50.605738 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_territories_territory_id.9b9655b8a9, now test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b)
+[0m14:50:50.607354 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b
+[0m14:50:50.620788 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b"
+[0m14:50:50.623116 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b
+[0m14:50:50.632100 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b"
+[0m14:50:50.636407 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:3d582f13-d0dd-4691-ac86-d2e53d79a7a8&page=queryresults
+[0m14:50:50.642392 [debug] [Thread-1 (]: On test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`customers`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:50.644450 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:51.027601 [info ] [Thread-3 (]: 46 of 68 PASS source_not_null_northwind_us_states_state_id ..................... [[32mPASS[0m in 1.78s]
+[0m14:50:51.029512 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78
+[0m14:50:51.030553 [debug] [Thread-3 (]: Began running node test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594
+[0m14:50:51.031531 [info ] [Thread-3 (]: 50 of 68 START test source_unique_northwind_employees_employee_id .............. [RUN]
+[0m14:50:51.032729 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_not_null_northwind_us_states_state_id.2e33a23d78, now test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594)
+[0m14:50:51.033492 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594
+[0m14:50:51.040946 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594"
+[0m14:50:51.043208 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594
+[0m14:50:51.048610 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594"
+[0m14:50:51.049869 [debug] [Thread-3 (]: On test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select employee_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`employees`
+  where employee_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:51.050567 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:51.254786 [info ] [Thread-2 (]: 48 of 68 PASS source_unique_northwind_country_codes_country_code ............... [[32mPASS[0m in 1.72s]
+[0m14:50:51.256336 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e
+[0m14:50:51.257359 [debug] [Thread-2 (]: Began running node test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128
+[0m14:50:51.258813 [info ] [Thread-2 (]: 51 of 68 START test source_unique_northwind_orders_order_id .................... [RUN]
+[0m14:50:51.260399 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_country_codes_country_code.cf83d0431e, now test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128)
+[0m14:50:51.261379 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128
+[0m14:50:51.270850 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128"
+[0m14:50:51.272057 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128
+[0m14:50:51.275630 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128"
+[0m14:50:51.277097 [debug] [Thread-2 (]: On test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select order_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`orders`
+  where order_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:51.277861 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:51.426204 [info ] [Thread-4 (]: 47 of 68 PASS source_unique_northwind_categories_category_id ................... [[32mPASS[0m in 2.08s]
+[0m14:50:51.428164 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0
+[0m14:50:51.429361 [debug] [Thread-4 (]: Began running node test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5
+[0m14:50:51.430539 [info ] [Thread-4 (]: 52 of 68 START test source_unique_northwind_products_product_id ................ [RUN]
+[0m14:50:51.432017 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_categories_category_id.17d9baa2e0, now test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5)
+[0m14:50:51.433105 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5
+[0m14:50:51.443991 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5"
+[0m14:50:51.447573 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5
+[0m14:50:51.451742 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5"
+[0m14:50:51.453621 [debug] [Thread-4 (]: On test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select product_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`products`
+  where product_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:51.454997 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:51.640972 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:2f5cdf22-5108-45e3-b7f6-c58e0e1293f9&page=queryresults
+[0m14:50:52.082797 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:9c2e0a9b-6aa6-4222-9eb9-1e21abf749c5&page=queryresults
+[0m14:50:52.221596 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:bfd796ed-d8cc-4d97-943d-6a9e4fbef191&page=queryresults
+[0m14:50:52.375105 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:8c75e2f3-f8ed-4a73-9635-2a691f225d21&page=queryresults
+[0m14:50:52.469027 [info ] [Thread-1 (]: 49 of 68 PASS source_unique_northwind_customers_customer_id .................... [[32mPASS[0m in 1.86s]
+[0m14:50:52.470678 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b
+[0m14:50:52.471436 [debug] [Thread-1 (]: Began running node test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd
+[0m14:50:52.472307 [info ] [Thread-1 (]: 53 of 68 START test source_unique_northwind_region_region_id ................... [RUN]
+[0m14:50:52.473167 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_customers_customer_id.ff818c137b, now test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd)
+[0m14:50:52.473818 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd
+[0m14:50:52.480150 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd"
+[0m14:50:52.481346 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd
+[0m14:50:52.486342 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd"
+[0m14:50:52.487572 [debug] [Thread-1 (]: On test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select region_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`region`
+  where region_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:52.488374 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:52.896669 [info ] [Thread-3 (]: 50 of 68 PASS source_unique_northwind_employees_employee_id .................... [[32mPASS[0m in 1.86s]
+[0m14:50:52.903373 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594
+[0m14:50:52.905161 [debug] [Thread-3 (]: Began running node test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736
+[0m14:50:52.906656 [info ] [Thread-3 (]: 54 of 68 START test source_unique_northwind_shippers_shipper_id ................ [RUN]
+[0m14:50:52.908340 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_employees_employee_id.e63c624594, now test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736)
+[0m14:50:52.909335 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736
+[0m14:50:52.926323 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736"
+[0m14:50:52.932583 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736
+[0m14:50:52.938341 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736"
+[0m14:50:52.939720 [debug] [Thread-3 (]: On test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select shipper_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`shippers`
+  where shipper_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:52.940680 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:52.995762 [info ] [Thread-2 (]: 51 of 68 PASS source_unique_northwind_orders_order_id .......................... [[32mPASS[0m in 1.74s]
+[0m14:50:52.997882 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128
+[0m14:50:52.999246 [debug] [Thread-2 (]: Began running node test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b
+[0m14:50:53.001546 [info ] [Thread-2 (]: 55 of 68 START test source_unique_northwind_suppliers_supplier_id .............. [RUN]
+[0m14:50:53.003074 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_orders_order_id.4a8a4df128, now test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b)
+[0m14:50:53.004471 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b
+[0m14:50:53.015538 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b"
+[0m14:50:53.017874 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b
+[0m14:50:53.024681 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b"
+[0m14:50:53.026512 [debug] [Thread-2 (]: On test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select supplier_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`suppliers`
+  where supplier_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:53.027746 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:53.188425 [info ] [Thread-4 (]: 52 of 68 PASS source_unique_northwind_products_product_id ...................... [[32mPASS[0m in 1.76s]
+[0m14:50:53.189656 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5
+[0m14:50:53.190453 [debug] [Thread-4 (]: Began running node test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860
+[0m14:50:53.191323 [info ] [Thread-4 (]: 56 of 68 START test source_unique_northwind_territories_territory_id ........... [RUN]
+[0m14:50:53.192384 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_products_product_id.740bf6f9a5, now test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860)
+[0m14:50:53.193078 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860
+[0m14:50:53.202786 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860"
+[0m14:50:53.204874 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860
+[0m14:50:53.210618 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860"
+[0m14:50:53.214223 [debug] [Thread-4 (]: On test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select territory_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`territories`
+  where territory_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:53.216074 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:53.404140 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:f03ad1f7-ce7f-465b-b108-6e936b836791&page=queryresults
+[0m14:50:53.925330 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:707ae270-cf66-424f-a0a9-fb54234f8cdf&page=queryresults
+[0m14:50:53.950195 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:181c3159-7c70-4735-875d-89762e1d88dd&page=queryresults
+[0m14:50:54.153393 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:ad0b013d-7a07-449a-a3f5-55c9968d72fd&page=queryresults
+[0m14:50:54.203449 [info ] [Thread-1 (]: 53 of 68 PASS source_unique_northwind_region_region_id ......................... [[32mPASS[0m in 1.73s]
+[0m14:50:54.205142 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd
+[0m14:50:54.205961 [debug] [Thread-1 (]: Began running node test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda
+[0m14:50:54.206830 [info ] [Thread-1 (]: 57 of 68 START test source_unique_northwind_us_states_state_id ................. [RUN]
+[0m14:50:54.207746 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_region_region_id.9688f1f5fd, now test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda)
+[0m14:50:54.208518 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda
+[0m14:50:54.219988 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda"
+[0m14:50:54.223996 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda
+[0m14:50:54.229296 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda"
+[0m14:50:54.231186 [debug] [Thread-1 (]: On test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select state_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`us_states`
+  where state_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:54.233016 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:54.724905 [info ] [Thread-3 (]: 54 of 68 PASS source_unique_northwind_shippers_shipper_id ...................... [[32mPASS[0m in 1.82s]
+[0m14:50:54.726574 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736
+[0m14:50:54.727498 [debug] [Thread-3 (]: Began running node test.dbt_exercise.total_amount_test
+[0m14:50:54.728786 [info ] [Thread-3 (]: 58 of 68 START test total_amount_test .......................................... [RUN]
+[0m14:50:54.729968 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_shippers_shipper_id.61edb3f736, now test.dbt_exercise.total_amount_test)
+[0m14:50:54.730870 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.total_amount_test
+[0m14:50:54.740781 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.total_amount_test"
+[0m14:50:54.742278 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.total_amount_test
+[0m14:50:54.752861 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.total_amount_test"
+[0m14:50:54.757960 [debug] [Thread-3 (]: On test.dbt_exercise.total_amount_test: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.total_amount_test"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  with source_orders as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`orders`
+)
+
+, source_order_details as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_raw`.`order_details`
+)
+
+, fact_orders as (
+    select *
+    from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+)
+
+
+
+, source_amount as (
+    select 
+        sum(source_order_details.unit_price * source_order_details.quantity * (1 - source_order_details.discount)) as total_amount
+    from source_orders
+    left join source_order_details
+        on source_orders.order_id = source_order_details.order_id
+    where 
+        format_date('%Y-%m', source_orders.order_date) = '1997-01'
+)
+
+, fact_amount as (
+    select 
+        sum(amount) as total_amount
+    from fact_orders
+    where 
+        format_date('%Y-%m', order_date) = '1997-01'
+)
+
+
+select *
+from fact_amount
+where 
+    total_amount != (select total_amount from source_amount)
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:54.759517 [info ] [Thread-2 (]: 55 of 68 PASS source_unique_northwind_suppliers_supplier_id .................... [[32mPASS[0m in 1.76s]
+[0m14:50:54.760806 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:54.761920 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b
+[0m14:50:54.763549 [debug] [Thread-2 (]: Began running node test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd
+[0m14:50:54.765326 [info ] [Thread-2 (]: 59 of 68 START test unique_dim_customers_customer_id ........................... [RUN]
+[0m14:50:54.769834 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_suppliers_supplier_id.aa7461739b, now test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m14:50:54.772475 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd
+[0m14:50:54.783461 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m14:50:54.787138 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd
+[0m14:50:54.795615 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m14:50:54.839009 [debug] [Thread-2 (]: On test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_customers`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:54.840721 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:54.945702 [info ] [Thread-4 (]: 56 of 68 PASS source_unique_northwind_territories_territory_id ................. [[32mPASS[0m in 1.75s]
+[0m14:50:54.947199 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860
+[0m14:50:54.948043 [debug] [Thread-4 (]: Began running node test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb
+[0m14:50:54.949011 [info ] [Thread-4 (]: 60 of 68 START test unique_dim_customers_sk_customer ........................... [RUN]
+[0m14:50:54.950211 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_territories_territory_id.08bc548860, now test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb)
+[0m14:50:54.951531 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb
+[0m14:50:54.960725 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb"
+[0m14:50:54.964043 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb
+[0m14:50:54.970687 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb"
+[0m14:50:54.972917 [debug] [Thread-4 (]: On test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select sk_customer as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_customers`
+  where sk_customer is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:54.974455 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:55.199752 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:a84a2f38-9492-4076-a6e6-50c7a4e814b2&page=queryresults
+[0m14:50:55.824545 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:493a0c10-a962-45de-aa81-819d0b9213c7&page=queryresults
+[0m14:50:55.922352 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:b2ccaac2-0dbf-4774-bbaf-f110ca1b78ac&page=queryresults
+[0m14:50:56.059716 [info ] [Thread-1 (]: 57 of 68 PASS source_unique_northwind_us_states_state_id ....................... [[32mPASS[0m in 1.85s]
+[0m14:50:56.061870 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda
+[0m14:50:56.063257 [debug] [Thread-1 (]: Began running node test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30
+[0m14:50:56.065102 [info ] [Thread-1 (]: 61 of 68 START test unique_dim_employees_employee_id ........................... [RUN]
+[0m14:50:56.066417 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.source_unique_northwind_us_states_state_id.c374c85cda, now test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30)
+[0m14:50:56.067559 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30
+[0m14:50:56.076521 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30"
+[0m14:50:56.078509 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30
+[0m14:50:56.084479 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30"
+[0m14:50:56.085964 [debug] [Thread-1 (]: On test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select employee_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_employees`
+  where employee_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:56.086954 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:56.174684 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:2830865e-772c-41c1-ab94-35f7d29b26db&page=queryresults
+[0m14:50:56.699613 [info ] [Thread-2 (]: 59 of 68 PASS unique_dim_customers_customer_id ................................. [[32mPASS[0m in 1.93s]
+[0m14:50:56.701461 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd
+[0m14:50:56.702267 [debug] [Thread-2 (]: Began running node test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188
+[0m14:50:56.703093 [info ] [Thread-2 (]: 62 of 68 START test unique_dim_employees_sk_employee ........................... [RUN]
+[0m14:50:56.704175 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.unique_dim_customers_customer_id.15c9f1e2fd, now test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188)
+[0m14:50:56.705060 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188
+[0m14:50:56.718754 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188"
+[0m14:50:56.726804 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188
+[0m14:50:56.733191 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188"
+[0m14:50:56.735357 [debug] [Thread-2 (]: On test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select sk_employee as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_employees`
+  where sk_employee is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:56.736676 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:56.842099 [info ] [Thread-4 (]: 60 of 68 PASS unique_dim_customers_sk_customer ................................. [[32mPASS[0m in 1.89s]
+[0m14:50:56.843345 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb
+[0m14:50:56.844228 [debug] [Thread-4 (]: Began running node test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985
+[0m14:50:56.845075 [info ] [Thread-4 (]: 63 of 68 START test unique_dim_products_product_id ............................. [RUN]
+[0m14:50:56.845958 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.unique_dim_customers_sk_customer.54188da6fb, now test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985)
+[0m14:50:56.846678 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985
+[0m14:50:56.859430 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985"
+[0m14:50:56.861806 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985
+[0m14:50:56.867898 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985"
+[0m14:50:56.869328 [debug] [Thread-4 (]: On test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select product_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_products`
+  where product_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:56.870150 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:57.004233 [info ] [Thread-3 (]: 58 of 68 PASS total_amount_test ................................................ [[32mPASS[0m in 2.27s]
+[0m14:50:57.006498 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.total_amount_test
+[0m14:50:57.007670 [debug] [Thread-3 (]: Began running node test.dbt_exercise.unique_dim_products_sk_product.1658453ef4
+[0m14:50:57.008874 [info ] [Thread-3 (]: 64 of 68 START test unique_dim_products_sk_product ............................. [RUN]
+[0m14:50:57.010171 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.total_amount_test, now test.dbt_exercise.unique_dim_products_sk_product.1658453ef4)
+[0m14:50:57.011315 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.unique_dim_products_sk_product.1658453ef4
+[0m14:50:57.023716 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.unique_dim_products_sk_product.1658453ef4"
+[0m14:50:57.025837 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.unique_dim_products_sk_product.1658453ef4
+[0m14:50:57.030830 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.unique_dim_products_sk_product.1658453ef4"
+[0m14:50:57.033615 [debug] [Thread-3 (]: On test.dbt_exercise.unique_dim_products_sk_product.1658453ef4: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_dim_products_sk_product.1658453ef4"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select sk_product as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_products`
+  where sk_product is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:57.035403 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:57.086220 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:d7ed0d3c-32a6-47c7-bf3c-1a8f4a22d1b4&page=queryresults
+[0m14:50:57.726249 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:68fe85a4-9312-481a-828f-60e38c8e9465&page=queryresults
+[0m14:50:57.807091 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:9bc9e92e-1a7d-44f8-a0d5-5938d7069b09&page=queryresults
+[0m14:50:57.850138 [info ] [Thread-1 (]: 61 of 68 PASS unique_dim_employees_employee_id ................................. [[32mPASS[0m in 1.78s]
+[0m14:50:57.852118 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30
+[0m14:50:57.852958 [debug] [Thread-1 (]: Began running node test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e
+[0m14:50:57.853740 [info ] [Thread-1 (]: 65 of 68 START test unique_dim_ship_ship_id .................................... [RUN]
+[0m14:50:57.854745 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.unique_dim_employees_employee_id.79828c8f30, now test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e)
+[0m14:50:57.855535 [debug] [Thread-1 (]: Began compiling node test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e
+[0m14:50:57.866121 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e"
+[0m14:50:57.867458 [debug] [Thread-1 (]: Began executing node test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e
+[0m14:50:57.872007 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e"
+[0m14:50:57.873835 [debug] [Thread-1 (]: On test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select ship_id as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_ship`
+  where ship_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:57.875060 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:58.267680 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:e2a13076-3586-4e3b-b3b8-5243881b98d8&page=queryresults
+[0m14:50:58.550178 [info ] [Thread-2 (]: 62 of 68 PASS unique_dim_employees_sk_employee ................................. [[32mPASS[0m in 1.85s]
+[0m14:50:58.551734 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188
+[0m14:50:58.552655 [debug] [Thread-2 (]: Began running node test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73
+[0m14:50:58.553542 [info ] [Thread-2 (]: 66 of 68 START test unique_dim_ship_sk_ship .................................... [RUN]
+[0m14:50:58.554591 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.unique_dim_employees_sk_employee.2c4a61e188, now test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73)
+[0m14:50:58.555253 [debug] [Thread-2 (]: Began compiling node test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73
+[0m14:50:58.566387 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73"
+[0m14:50:58.567660 [debug] [Thread-2 (]: Began executing node test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73
+[0m14:50:58.572782 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73"
+[0m14:50:58.575729 [debug] [Thread-2 (]: On test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select sk_ship as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`dim_ship`
+  where sk_ship is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:58.577869 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:50:58.631825 [info ] [Thread-4 (]: 63 of 68 PASS unique_dim_products_product_id ................................... [[32mPASS[0m in 1.79s]
+[0m14:50:58.633462 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985
+[0m14:50:58.634880 [debug] [Thread-4 (]: Began running node test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a
+[0m14:50:58.636416 [info ] [Thread-4 (]: 67 of 68 START test unique_fact_order_details_obt_sk_orders .................... [RUN]
+[0m14:50:58.638621 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.unique_dim_products_product_id.ef7b2a9985, now test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a)
+[0m14:50:58.640183 [debug] [Thread-4 (]: Began compiling node test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a
+[0m14:50:58.649230 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a"
+[0m14:50:58.651245 [debug] [Thread-4 (]: Began executing node test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a
+[0m14:50:58.663305 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a"
+[0m14:50:58.664812 [debug] [Thread-4 (]: On test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select sk_orders as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_order_details_obt`
+  where sk_orders is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:58.665759 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m14:50:58.827834 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:7f0a169f-55ce-41c0-800d-865633081b95&page=queryresults
+[0m14:50:59.065590 [info ] [Thread-3 (]: 64 of 68 PASS unique_dim_products_sk_product ................................... [[32mPASS[0m in 2.06s]
+[0m14:50:59.066937 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.unique_dim_products_sk_product.1658453ef4
+[0m14:50:59.068133 [debug] [Thread-3 (]: Began running node test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8
+[0m14:50:59.068997 [info ] [Thread-3 (]: 68 of 68 START test unique_fact_orders_sk_orders ............................... [RUN]
+[0m14:50:59.070027 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_exercise.unique_dim_products_sk_product.1658453ef4, now test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8)
+[0m14:50:59.070719 [debug] [Thread-3 (]: Began compiling node test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8
+[0m14:50:59.081338 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8"
+[0m14:50:59.083559 [debug] [Thread-3 (]: Began executing node test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8
+[0m14:50:59.091151 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8"
+[0m14:50:59.093488 [debug] [Thread-3 (]: On test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_exercise", "target_name": "dev", "node_id": "test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select sk_orders as unique_field
+  from `corded-sunlight-464012-e2`.`dbt_dw_marts`.`fact_orders`
+  where sk_orders is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:50:59.095330 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:50:59.505101 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:8c7730b2-4c4f-443e-8d51-4f7ac77e1947&page=queryresults
+[0m14:50:59.641074 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:d82ce371-559e-4f7f-947f-7e4dacc7d07a&page=queryresults
+[0m14:50:59.680427 [info ] [Thread-1 (]: 65 of 68 PASS unique_dim_ship_ship_id .......................................... [[32mPASS[0m in 1.83s]
+[0m14:50:59.682239 [debug] [Thread-1 (]: Finished running node test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e
+[0m14:51:00.024733 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=corded-sunlight-464012-e2&j=bq:US:086b7276-3971-4382-b29f-53dc0cb8c172&page=queryresults
+[0m14:51:00.323702 [info ] [Thread-2 (]: 66 of 68 PASS unique_dim_ship_sk_ship .......................................... [[32mPASS[0m in 1.77s]
+[0m14:51:00.326643 [debug] [Thread-2 (]: Finished running node test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73
+[0m14:51:00.439211 [info ] [Thread-4 (]: 67 of 68 PASS unique_fact_order_details_obt_sk_orders .......................... [[32mPASS[0m in 1.80s]
+[0m14:51:00.440894 [debug] [Thread-4 (]: Finished running node test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a
+[0m14:51:00.863424 [info ] [Thread-3 (]: 68 of 68 PASS unique_fact_orders_sk_orders ..................................... [[32mPASS[0m in 1.79s]
+[0m14:51:00.865196 [debug] [Thread-3 (]: Finished running node test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8
+[0m14:51:00.869599 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:51:00.881099 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:51:00.882354 [debug] [MainThread]: Connection 'test.dbt_exercise.unique_dim_ship_ship_id.8825a91f8e' was properly closed.
+[0m14:51:00.883272 [debug] [MainThread]: Connection 'test.dbt_exercise.unique_fact_orders_sk_orders.072a29dba8' was properly closed.
+[0m14:51:00.884710 [debug] [MainThread]: Connection 'test.dbt_exercise.unique_fact_order_details_obt_sk_orders.e9cd7fd60a' was properly closed.
+[0m14:51:00.885951 [debug] [MainThread]: Connection 'test.dbt_exercise.unique_dim_ship_sk_ship.14db8b5f73' was properly closed.
+[0m14:51:00.887551 [info ] [MainThread]: 
+[0m14:51:00.888673 [info ] [MainThread]: Finished running 68 data tests in 0 hours 0 minutes and 40.67 seconds (40.67s).
+[0m14:51:00.906802 [debug] [MainThread]: Command end result
+[0m14:51:01.007199 [debug] [MainThread]: Wrote artifact WritableManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/manifest.json
+[0m14:51:01.025584 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/semantic_manifest.json
+[0m14:51:01.042840 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/damodara_barbosa/projetos/dbt_exercise/dbt_exercise/target/run_results.json
+[0m14:51:01.043651 [info ] [MainThread]: 
+[0m14:51:01.044512 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:51:01.045220 [info ] [MainThread]: 
+[0m14:51:01.046025 [error] [MainThread]: [31mFailure in test accepted_values_fact_order_details_obt_is_shipped__True__False (models/marts/fact_order_details_obt.yml)[0m
+[0m14:51:01.046758 [error] [MainThread]:   Database Error in test accepted_values_fact_order_details_obt_is_shipped__True__False (models/marts/fact_order_details_obt.yml)
+  No matching signature for operator IN for argument types BOOL and {STRING} at [27:23]
+  compiled code at target/run/dbt_exercise/models/marts/fact_order_details_obt.yml/accepted_values_fact_order_details_obt_is_shipped__True__False.sql
+[0m14:51:01.047385 [info ] [MainThread]: 
+[0m14:51:01.049000 [info ] [MainThread]:   compiled code at target/compiled/dbt_exercise/models/marts/fact_order_details_obt.yml/accepted_values_fact_order_details_obt_is_shipped__True__False.sql
+[0m14:51:01.050268 [info ] [MainThread]: 
+[0m14:51:01.051399 [info ] [MainThread]: Done. PASS=67 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=68
+[0m14:51:01.053499 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:51:01.061406 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 155.91269, "process_in_blocks": "138224", "process_kernel_time": 15.702029, "process_mem_max_rss": "376176", "process_out_blocks": "5736", "process_user_time": 20.836388}
+[0m14:51:01.063550 [debug] [MainThread]: Command `dbt test` failed at 14:51:01.062943 after 155.92 seconds
+[0m14:51:01.065893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724db290aab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724d74b5b6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x724d6ca148c0>]}
+[0m14:51:01.067258 [debug] [MainThread]: Flushing usage events
+[0m14:51:01.449865 [debug] [MainThread]: An error was encountered while trying to flush usage events
