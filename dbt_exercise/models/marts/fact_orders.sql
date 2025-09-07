@@ -39,6 +39,7 @@ with int_orders_northwind as (
         , int_orders_northwind.days_to_ship
         , dim_products.sk_product
         , int_orders_northwind.product_id
+        , int_orders_northwind.quantity
         , int_orders_northwind.amount
         , int_orders_northwind.rationed_shipping
         , int_orders_northwind.is_shipped
