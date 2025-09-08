@@ -51,6 +51,8 @@ models:
         description: 'ID do produto original'
         tests:
           - not_null
+      - name: quantity
+        description: 'Quantidade do produto no pedido'
       - name: amount
         description: 'Valor total do produto no pedido (considerando desconto)'
       - name: rationed_shipping

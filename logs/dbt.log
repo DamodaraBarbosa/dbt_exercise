@@ -633,3 +633,66 @@ Runtime Error
 [0m15:19:32.834017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77087b931760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77087b2e4bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77087b8808c0>]}
 [0m15:19:32.835672 [debug] [MainThread]: Flushing usage events
 [0m15:19:33.258353 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:45:20.526616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d89dec9670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d89c5ec4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d89ca6f5c0>]}
+
+
+============================== 21:45:20.560954 | 08ad870a-5a51-44bd-9802-8f215b268eea ==============================
+[0m21:45:20.560954 [info ] [MainThread]: Running with dbt=1.10.2
+[0m21:45:20.561882 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m21:45:21.169002 [info ] [MainThread]: dbt version: 1.10.2
+[0m21:45:21.169488 [info ] [MainThread]: python version: 3.12.3
+[0m21:45:21.169830 [info ] [MainThread]: python path: /mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/bin/python3
+[0m21:45:21.170157 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m21:46:29.486149 [info ] [MainThread]: Using profiles dir at /home/damodara_barbosa/.dbt
+[0m21:46:29.487522 [info ] [MainThread]: Using profiles.yml file at /home/damodara_barbosa/.dbt/profiles.yml
+[0m21:46:29.488122 [info ] [MainThread]: Using dbt_project.yml file at /home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml
+[0m21:46:29.488774 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m21:46:29.493570 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 68.254074, "process_in_blocks": "122864", "process_kernel_time": 7.637696, "process_mem_max_rss": "349272", "process_out_blocks": "16", "process_user_time": 7.907262}
+[0m21:46:29.494770 [debug] [MainThread]: Command `dbt debug` failed at 21:46:29.494632 after 68.26 seconds
+[0m21:46:29.495360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d89c970bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d89c90ddf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71d85eec2330>]}
+[0m21:46:29.495892 [debug] [MainThread]: Flushing usage events
+[0m21:46:29.849675 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:18:07.971250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3694247800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d36947bd070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3694314cb0>]}
+
+
+============================== 19:18:08.003511 | ea01aeb5-0598-455a-858a-ffa1e3519cdd ==============================
+[0m19:18:08.003511 [info ] [MainThread]: Running with dbt=1.10.2
+[0m19:18:08.004917 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:18:08.460237 [info ] [MainThread]: dbt version: 1.10.2
+[0m19:18:08.460939 [info ] [MainThread]: python version: 3.12.3
+[0m19:18:08.461666 [info ] [MainThread]: python path: /mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/bin/python3
+[0m19:18:08.462480 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m19:19:07.104613 [info ] [MainThread]: Using profiles dir at /home/damodara_barbosa/.dbt
+[0m19:19:07.105456 [info ] [MainThread]: Using profiles.yml file at /home/damodara_barbosa/.dbt/profiles.yml
+[0m19:19:07.106197 [info ] [MainThread]: Using dbt_project.yml file at /home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml
+[0m19:19:07.107254 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m19:19:07.111993 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 59.235172, "process_in_blocks": "122856", "process_kernel_time": 8.941712, "process_mem_max_rss": "349764", "process_out_blocks": "16", "process_user_time": 8.955518}
+[0m19:19:07.113229 [debug] [MainThread]: Command `dbt debug` failed at 19:19:07.113043 after 59.24 seconds
+[0m19:19:07.114268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d36962dddc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3656bc1d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3656d30890>]}
+[0m19:19:07.115499 [debug] [MainThread]: Flushing usage events
+[0m19:19:07.509349 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:27:14.494892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7747ab763a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7747ab9c18b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7747ab9dd370>]}
+
+
+============================== 14:27:14.518459 | 675a5cbf-ceb9-4d32-acfb-b49e6926ef2a ==============================
+[0m14:27:14.518459 [info ] [MainThread]: Running with dbt=1.10.2
+[0m14:27:14.519841 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/damodara_barbosa/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:27:15.186533 [info ] [MainThread]: dbt version: 1.10.2
+[0m14:27:15.187227 [info ] [MainThread]: python version: 3.12.3
+[0m14:27:15.187959 [info ] [MainThread]: python path: /mnt/c/Users/Damodara Barbosa/Desktop/Projetos/dbt/dbt_exercise/venv/bin/python3
+[0m14:27:15.188589 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m14:28:08.366950 [info ] [MainThread]: Using profiles dir at /home/damodara_barbosa/.dbt
+[0m14:28:08.368228 [info ] [MainThread]: Using profiles.yml file at /home/damodara_barbosa/.dbt/profiles.yml
+[0m14:28:08.369148 [info ] [MainThread]: Using dbt_project.yml file at /home/damodara_barbosa/projetos/dbt_exercise/dbt_project.yml
+[0m14:28:08.370157 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:28:08.375892 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 52.497868, "process_in_blocks": "122864", "process_kernel_time": 9.330905, "process_mem_max_rss": "349540", "process_out_blocks": "24", "process_user_time": 8.861397}
+[0m14:28:08.377470 [debug] [MainThread]: Command `dbt debug` failed at 14:28:08.377121 after 52.50 seconds
+[0m14:28:08.378410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7747ad5bbbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77476df2bdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77476e137320>]}
+[0m14:28:08.379389 [debug] [MainThread]: Flushing usage events
+[0m14:28:08.744822 [debug] [MainThread]: An error was encountered while trying to flush usage events

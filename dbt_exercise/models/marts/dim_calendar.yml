@@ -1,0 +1,50 @@
+version: 2
+
+models:
+- name: dim_calendar
+  description: 'Dimensão de calendário, contendo datas, atributos de tempo e nomes em português.'
+  columns:
+    - name: date
+      description: 'Data completa (YYYY-MM-DD)'
+      tests:
+        - not_null
+        - unique
+    - name: year
+      description: 'Ano da data'
+      tests:
+        - not_null
+    - name: quarter
+      description: 'Trimestre do ano'
+      tests:
+        - not_null
+    - name: month
+      description: 'Mês da data (numérico)'
+      tests:
+        - not_null
+    - name: month_name
+      description: 'Nome do mês em português'
+      tests:
+        - not_null
+    - name: week_of_year
+      description: 'Semana do ano (ISO)'
+      tests:
+        - not_null
+    - name: day_of_month
+      description: 'Dia do mês'
+      tests:
+        - not_null
+    - name: day_of_week
+      description: 'Dia da semana (1=domingo, 7=sábado)'
+      tests:
+        - not_null
+    - name: day_name
+      description: 'Nome do dia da semana em português'
+      tests:
+        - not_null
+    - name: is_weekend
+      description: 'Indica se a data é final de semana (true/false)'
+      tests:
+        - not_null
+        - accepted_values:
+            values: [true, false]
+            quote: false

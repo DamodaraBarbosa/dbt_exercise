@@ -89,6 +89,8 @@ models:
         - accepted_values:
             values: [true, false]
             quote: false
+    - name: quantity
+      description: 'Quantidade do item no pedido'
     - name: amount
       description: 'Valor total do item no pedido (considerando desconto)'
     - name: rationed_shipping

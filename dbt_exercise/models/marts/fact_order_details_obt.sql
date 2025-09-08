@@ -55,6 +55,7 @@ with int_orders_northwind as (
         , int_products_northwind.supplier_country
         , int_products_northwind.supplier_continent
         , int_products_northwind.is_discontinued
+        , int_orders_northwind.quantity
         , int_orders_northwind.amount
         , int_orders_northwind.rationed_shipping
         , int_orders_northwind.ship_name
